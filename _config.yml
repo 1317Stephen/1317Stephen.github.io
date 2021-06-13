@@ -1,5 +1,5 @@
 # Build settings
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll # WARNING: , "minimal-mistakes-jekyll", which is not supported by GitHub Pages
 minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-paginate
