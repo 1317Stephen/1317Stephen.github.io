@@ -1,2 +1,169 @@
-theme: jekyll-theme-cayman
+# Build settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag # favicon
+
+# Site Settings
 title: Blog
+email: 1317Stephen@gmail.com
+description:
+baseurl: ""
+url: ""
+github_username: 1317Stephen@gmail.com
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+# teaser: "/assets/images/emoji-dizzy.svg"
+search: true
+# logo: "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+comments:
+  provider: disqus # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "custom"
+  disqus:
+    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+  utterances:
+    theme: # "github-light" (default), "github-dark"
+    issue_term: # "pathname" (default)
+  staticman:
+    branch: # "master"
+    endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
+
+# Site Author
+author:
+  name: "Stephen"
+  avatar: "/assets/images/emoji-dizzy.svg"
+  bio: "What am I doing??"
+  location: "Somewhere in the world"
+  links:
+    # - label: "Project Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://your-site.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/1317Stephen"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/1317Stephen"
+    # - label: "My Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://your-site.com"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - _daily
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# daily_archive:
+#   type: liquid
+#   path: /daily/
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+# Collections
+collections:
+  daily:
+    output: true
+    permalink: /:collection/:path/
+#   pets:
+#     output: true
+#     permalink: /:collection/:path/
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _daily
+  - scope:
+      path: ""
+      type: daily
+    values:
+      show_date: true
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true

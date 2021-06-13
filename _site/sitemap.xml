@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/daily/2021-06-12/</loc>
+<lastmod>2021-06-12T11:12:34+09:00</lastmod>
+</url>
+<url>
+<loc>/_daily/2021-06-12/</loc>
+</url>
+<url>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/categories/</loc>
+</url>
+<url>
+<loc>/daily-archive/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/search/</loc>
+</url>
+<url>
+<loc>/tags/</loc>
+</url>
+</urlset>

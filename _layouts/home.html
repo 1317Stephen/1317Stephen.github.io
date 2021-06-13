@@ -1,30 +1,22 @@
 ---
-layout: default
+layout: archive
 ---
 
-<div>
+{{ content }}
 
-  {{ content }}
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-  <h2>Latest Posts</h2>
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
 
-  <div>&nbsp;</div>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-
-        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-        </h2>
-
-        {{ post.excerpt | markdownify | truncatewords: 30 }}
-
-      </li>
-    {% endfor %}
-  </ul>
-
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
 </div>
+
+{% include paginator.html %}

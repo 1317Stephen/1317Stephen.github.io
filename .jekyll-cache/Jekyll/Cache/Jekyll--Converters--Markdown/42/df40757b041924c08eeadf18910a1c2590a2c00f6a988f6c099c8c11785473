@@ -1,0 +1,39 @@
+I"<h2 id="jekyll-blog">Jekyll Blog</h2>
+
+<ul>
+  <li>Based on <a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a></li>
+  <li>Current Blog structure
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Posts</code>: Section for the project-related recording</li>
+      <li><code class="language-plaintext highlighter-rouge">Daily</code>: Section for the daily study record</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="future-challenges">Future Challenges</h2>
+
+<ul>
+  <li>
+    <p>Language switch: English ⇔ Korean</p>
+
+    <ul>
+      <li><a href="https://github.com/mmistakes/minimal-mistakes/issues/612">language switcher (Github)</a></li>
+      <li><a href="https://sylvaindurand.org/making-jekyll-multilingual/">Making Jekyll multilingual</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Add daily graph on <code class="language-plaintext highlighter-rouge">Daily</code> (similar with Github commit graph)</p>
+  </li>
+</ul>
+
+<!--
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+ -->
+
+:ET

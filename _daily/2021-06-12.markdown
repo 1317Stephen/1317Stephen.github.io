@@ -1,0 +1,39 @@
+---
+# layout: posts
+title: "[Daily] 2021-06-12 SAT"
+date: 2021-06-12 11:12:34 +0900
+# tags:
+#   - Blog
+#   - Jekyll
+excerpt: "Started Jekyll GitHub Blog."
+---
+
+## Jekyll Blog
+
+- Based on [minimal-mistakes][minimal-mistakes]
+- Current Blog structure
+  - `Posts`: Section for the project-related recording
+  - `Daily`: Section for the daily study record
+
+## Future Challenges
+
+- Language switch: English ⇔ Korean
+
+  - [language switcher (Github)][language switcher (github)]
+  - [Making Jekyll multilingual][making jekyll multilingual]
+
+- Add daily graph on `Daily` (similar with Github commit graph)
+
+<!--
+{% highlight ruby %}
+def print_hi(name)
+puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+ -->
+
+[minimal-mistakes]: https://github.com/mmistakes/minimal-mistakes
+[language switcher (github)]: https://github.com/mmistakes/minimal-mistakes/issues/612
+[making jekyll multilingual]: https://sylvaindurand.org/making-jekyll-multilingual/
