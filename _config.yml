@@ -24,7 +24,7 @@ description:
 baseurl: ""
 url: ""
 github_username: 1317Stephen@gmail.com
-repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository: 1317Stephen/1317Stephen.github.io
 # teaser: "/assets/images/emoji-dizzy.svg"
 search: true
 # logo: "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
