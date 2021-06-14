@@ -14,6 +14,13 @@ excerpt: "Started Jekyll GitHub Blog."
 - Current Blog structure
   - `Posts`: Section for the project-related recording
   - `Daily`: Section for the daily study record
+- Other references
+  - [minimal-mistakes docs][minimal-mistakes docs]
+  - [devinlife blog][devinlife blog] & [devinlife-git][devinlife-git]
+
+### Bugs
+
+- [#4 build issues][#4 build issues]: Github-page build issue ⇒ Add css/js & package files
 
 ## Future Challenges
 
@@ -37,3 +44,7 @@ print_hi('Tom')
 [minimal-mistakes]: https://github.com/mmistakes/minimal-mistakes
 [language switcher (github)]: https://github.com/mmistakes/minimal-mistakes/issues/612
 [making jekyll multilingual]: https://sylvaindurand.org/making-jekyll-multilingual/
+[minimal-mistakes docs]: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+[devinlife blog]: https://devinlife.com/categories/
+[devinlife-git]: https://github.com/devinlife/devinlife.github.io
+[#4 build issues]: https://github.com/1317Stephen/1317Stephen.github.io/issues/4
