@@ -1,0 +1,51 @@
+---
+# layout: posts
+title: "[Daily] 2021-06-14 MON"
+date: 2021-06-14 21:13:00 +0900
+# tags:
+#   - Blog
+#   - Jekyll
+excerpt: "LeetCode Dynamic Programming Medium #1043"
+---
+
+## LeetCode
+
+### Plan
+
+- Previous
+  - Tree (this is mainly for DFS)
+  - Array
+  - String (this part was a bit of a drawback in last season's tests.)
+- To-Do
+  - File I/O !!! (Mac Setting & basic things are broken... MUST!)
+  - Database
+  - String
+  - Dynamic Programming
+
+### Today: Dynamic Programming
+[1043. Partition Array for Maximum Sum][1043. partition array for maximum sum]
+: k-size sliding windows within dp[i]
+
+`dp[i] = max(dp[i-j] + max(arr[i-1...i-j])) ・・・・・・・・ j: [1, k]`
+{% highlight c++ %}
+iMax = arr[i];
+for(int j=1; j<=k; j++) {
+  iMax = max(iMax, arr[i-j]);
+  dp[i] = max(dp[i], dp[i-j] + iMax*j);
+}
+{% endhighlight %}
+
+#### Additional picks
+
+- accumulate function:
+  {% highlight c++ %}
+  #include <numeric>
+  accumulate(arr.begin(), arr.being()+k, 0);
+  {% endhighlight %}
+- greater:
+  {% highlight c++ %}
+  sort(arr.begin(), arr.end(), greater<int>());
+  {% endhighlight %}
+
+
+[1043. partition array for maximum sum]: https://leetcode.com/problems/partition-array-for-maximum-sum/
