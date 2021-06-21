@@ -5,7 +5,7 @@ date: 2021-06-14 21:13:00 +0900
 # tags:
 #   - Blog
 #   - Jekyll
-excerpt: "LeetCode Dynamic Programming Medium #1043"
+excerpt: "Planning Algorithm. LeetCode #1043(Dynamic Programming)"
 ---
 
 ## LeetCode
@@ -26,7 +26,7 @@ excerpt: "LeetCode Dynamic Programming Medium #1043"
 [1043. Partition Array for Maximum Sum][1043. partition array for maximum sum]
 : k-size sliding windows within dp[i]
 
-`dp[i] = max(dp[i-j] + max(arr[i-1...i-j])) ・・・・・・・・ j: [1, k]`
+`dp[i] = max(dp[i-j] + max(arr[i-1...i-j]) * j) ・・・・・・・・ j: [1, k]`
 {% highlight c++ %}
 iMax = arr[i];
 for(int j=1; j<=k; j++) {

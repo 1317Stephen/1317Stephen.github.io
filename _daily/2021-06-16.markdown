@@ -1,0 +1,81 @@
+---
+# layout: posts
+title: "[Daily] 2021-06-16 WED"
+date: 2021-06-16 21:09:00 +0900
+# tags:
+#   - Blog
+#   - Jekyll
+excerpt: "Planning physics & computer science. Leetcode #1358 (String, sliding window)"
+---
+
+## Physics
+
+### Quantum Information/Quantum Computation
+
+- Book: `Quantum Computation and Quantum Information`
+- Lectures
+  - [Quantum Computation and Quantum Information 2018 lecture][quantum computation and quantum information 2018 lecture] (included Youtube lecture)
+  - [Quantum Computation 2004 lecture][quantum computation 2004 lecture] (Umesh Vazirani)
+- Papers
+  - MA Nielsen, I Chuang, [Quantum Computation and Quantum Information][quantum computation and quantum information]
+
+### Quantum simulator
+
+- [List of Open Quantum Projects]
+
+## Game
+
+### Game Engine Programming
+
+: I don't know where to start...
+
+## iOS
+
+- Movie Application (Price/watched/related platform...)
+
+## Backend
+
+- Spring Boot & Vue.js(or React.js) Project: Copy other apps or use free API or Github
+
+## LeetCode
+
+### Today: String
+
+[1358. Number of Substrings Containing All Three Characters][1358. number of substrings containing all three characters]
+: sliding window
+
+- Problems: TLE
+
+  - Brute-force solution: make the substring ⇨ check a, b, c ⇨ ans++
+  - Time Complexity: `O(N^2)`
+
+- Solution
+  - [Easy and Concise Solution][easy and concise solution]: `O(N)` Time complexity
+    {% highlight c++ %}
+    for(int j=0; j<sSize; j++) {
+    cnt[s[j]-'a']++;
+    while(cnt[0] && cnt[1] && cnt[2]) {
+    cnt[s[i++]-'a']--;
+    }
+    ans += i;
+    }
+    {% endhighlight %}
+
+#### Additional picks
+
+- More Similar Sliding Window Problems (from [easy and concise solution][easy and concise solution])
+  - Count Number of Nice Subarrays
+  - Replace the Substring for Balanced String
+  - Max Consecutive Ones III
+  - Binary Subarrays With Sum
+  - Subarrays with K Different Integers
+  - Fruit Into Baskets
+  - Shortest Subarray with Sum at Least K
+  - Minimum Size Subarray Sum
+
+[1358. number of substrings containing all three characters]: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/
+[quantum computation and quantum information]: https://aapt.scitation.org/doi/abs/10.1119/1.1463744?journalCode=ajp
+[quantum computation and quantum information 2018 lecture]: https://www.cs.cmu.edu/~odonnell/quantum18/
+[quantum computation 2004 lecture]: https://people.eecs.berkeley.edu/~vazirani/f04quantum/quantum.html
+[list of open quantum projects]: https://qosf.org/project_list/
+[easy and concise solution]: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/discuss/516977/JavaC%2B%2BPython-Easy-and-Concise
