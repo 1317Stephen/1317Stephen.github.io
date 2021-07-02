@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[Daily] 2021-06-12 SAT - Blog</title>
-<meta name="description" content="Started Jekyll GitHub Blog.">
+<!-- begin _includes/seo.html --><title>[Daily] 2021-06-21 MON - Blog</title>
+<meta name="description" content="Dev. Plan. Leetcode #1451 (String, bucket)">
 
 
   <meta name="author" content="Stephen">
@@ -22,26 +22,26 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Blog">
-<meta property="og:title" content="[Daily] 2021-06-12 SAT">
-<meta property="og:url" content="http://localhost:4000/daily/2021-06-12/">
+<meta property="og:title" content="[Daily] 2021-06-21 MON">
+<meta property="og:url" content="http://localhost:4000/_daily/2021-06-21/">
 
 
-  <meta property="og:description" content="Started Jekyll GitHub Blog.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-06-12T11:12:34+09:00">
+  <meta property="og:description" content="Dev. Plan. Leetcode #1451 (String, bucket)">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/daily/2021-06-12/">
+
+  <meta property="article:published_time" content="2021-06-21T21:55:00+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/_daily/2021-06-21/">
 
 
 
@@ -270,42 +270,17 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[Daily] 2021-06-12 SAT">
-    <meta itemprop="description" content="Started Jekyll GitHub Blog.">
-    <meta itemprop="datePublished" content="2021-06-12T11:12:34+09:00">
+    <meta itemprop="headline" content="[Daily] 2021-06-21 MON">
+    <meta itemprop="description" content="Dev. Plan. Leetcode #1451 (String, bucket)">
+    <meta itemprop="datePublished" content="2021-06-21T21:55:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">[Daily] 2021-06-12 SAT
+          <h1 id="page-title" class="page__title" itemprop="headline">[Daily] 2021-06-21 MON
 </h1>
           
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2021-06-12T11:12:34+09:00">June 12, 2021</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
 
 
         </header>
@@ -313,55 +288,45 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="jekyll-blog">Jekyll Blog</h2>
+        <h2 id="movie-recommendation">Movie Recommendation</h2>
 
 <ul>
-  <li>Based on <a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a></li>
-  <li>Current Blog structure
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">Posts</code>: Section for the project-related recording</li>
-      <li><code class="language-plaintext highlighter-rouge">Daily</code>: Section for the daily study record</li>
-    </ul>
-  </li>
-  <li>Other references
-    <ul>
-      <li><a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">minimal-mistakes docs</a></li>
-      <li><a href="https://devinlife.com/categories/">devinlife blog</a> &amp; <a href="https://github.com/devinlife/devinlife.github.io">devinlife-git</a></li>
-    </ul>
-  </li>
+  <li>Plan: 6/28</li>
 </ul>
 
-<h3 id="bugs">Bugs</h3>
+<h2 id="leetcode">LeetCode</h2>
+
+<h3 id="today-string">Today: String</h3>
+
+<dl>
+  <dt><a href="https://leetcode.com/problems/rearrange-words-in-a-sentence/">1451. Rearrange Words in a Sentence</a></dt>
+  <dd>map bucket solution</dd>
+</dl>
+
+<h4 id="better-solution-additional-stringstream--map">Better Solution: additional stringstream &amp; map</h4>
 
 <ul>
-  <li><a href="https://github.com/1317Stephen/1317Stephen.github.io/issues/4">#4 build issues</a>: Github-page build issue ⇒ Add css/js &amp; package files</li>
+  <li>stringstream</li>
 </ul>
 
-<h2 id="future-challenges">Future Challenges</h2>
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="k">while</span><span class="p">(</span><span class="n">ss</span> <span class="o">&gt;&gt;</span> <span class="n">word</span><span class="p">)</span>
+  </code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="n">p</span><span class="o">:</span> <span class="n">m</span><span class="p">)</span> <span class="n">rs</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="p">.</span><span class="n">second</span><span class="p">;</span>
+  </code></pre></figure>
 
 <ul>
-  <li>
-    <p>Language switch: English ⇔ Korean</p>
-
-    <ul>
-      <li><a href="https://github.com/mmistakes/minimal-mistakes/issues/612">language switcher (Github)</a></li>
-      <li><a href="https://sylvaindurand.org/making-jekyll-multilingual/">Making Jekyll multilingual</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>Add daily graph on <code class="language-plaintext highlighter-rouge">Daily</code> (similar with Github commit graph)</p>
-  </li>
+  <li>map: (same length of word) add to end of the string</li>
 </ul>
 
-<!--
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="n">m</span><span class="p">[</span><span class="n">word</span><span class="p">.</span><span class="n">size</span><span class="p">()]</span> <span class="o">+=</span> <span class="n">word</span> <span class="o">+</span> <span class="s">" "</span><span class="p">;</span>
+  </code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h4 id="reminder">Reminder</h4>
 
- -->
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;cctype&gt;</code>: <code class="language-plaintext highlighter-rouge">toupper()</code>, <code class="language-plaintext highlighter-rouge">tolower()</code>, <code class="language-plaintext highlighter-rouge">isupper()</code>, <code class="language-plaintext highlighter-rouge">islower()</code></li>
+</ul>
 
 
         
@@ -374,95 +339,20 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-06-12T11:12:34+09:00">June 12, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-06-21T21:55:00+09:00">June 21, 2021</time></p>
 
 
       </footer>
 
-      <!-- <section class="page__share">
-  
-
-  <a href="https://twitter.com/intent/tweet?text=%5BDaily%5D+2021-06-12+SAT%20http%3A%2F%2Flocalhost%3A4000%2Fdaily%2F2021-06-12%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdaily%2F2021-06-12%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdaily%2F2021-06-12%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section> -->
-
+      
 
       
-  <nav class="pagination">
-    
-      <a href="#" class="pagination--pager disabled">Previous</a>
-    
-    
-      <a href="/daily/2021-06-14/" class="pagination--pager" title="[Daily] 2021-06-14 MON
-">Next</a>
-    
-  </nav>
-
     </div>
 
     
   </article>
 
   
-  
-    <div class="page__related">
-      <h4 class="page__related-title">You May Also Enjoy</h4>
-      <div class="grid__wrapper">
-        
-          
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/server/edge-case-nested-and-mixed-lists/" rel="permalink">Start Website based on
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2009-05-15T00:00:00+09:00">May 15, 2009</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that
-
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
   
 </div>
 

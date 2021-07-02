@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[Daily] 2021-06-12 SAT - Blog</title>
-<meta name="description" content="Started Jekyll GitHub Blog.">
+<!-- begin _includes/seo.html --><title>Start Website based on  - Blog</title>
+<meta name="description" content="Nested and mixed lists are an interesting beast. It’s a corner case to make sure that">
 
 
   <meta name="author" content="Stephen">
@@ -22,26 +22,26 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Blog">
-<meta property="og:title" content="[Daily] 2021-06-12 SAT">
-<meta property="og:url" content="http://localhost:4000/daily/2021-06-12/">
+<meta property="og:title" content="Start Website based on">
+<meta property="og:url" content="http://localhost:4000/server/edge-case-nested-and-mixed-lists/">
 
 
-  <meta property="og:description" content="Started Jekyll GitHub Blog.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-06-12T11:12:34+09:00">
+  <meta property="og:description" content="Nested and mixed lists are an interesting beast. It’s a corner case to make sure that">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/daily/2021-06-12/">
+
+  <meta property="article:published_time" content="2009-05-15T00:00:00+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/server/edge-case-nested-and-mixed-lists/">
 
 
 
@@ -270,15 +270,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[Daily] 2021-06-12 SAT">
-    <meta itemprop="description" content="Started Jekyll GitHub Blog.">
-    <meta itemprop="datePublished" content="2021-06-12T11:12:34+09:00">
+    <meta itemprop="headline" content="Start Website based on">
+    <meta itemprop="description" content="Nested and mixed lists are an interesting beast. It’s a corner case to make sure that">
+    <meta itemprop="datePublished" content="2009-05-15T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">[Daily] 2021-06-12 SAT
+          <h1 id="page-title" class="page__title" itemprop="headline">Start Website based on
 </h1>
           
 
@@ -288,7 +288,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2021-06-12T11:12:34+09:00">June 12, 2021</time>
+        <time datetime="2009-05-15T00:00:00+09:00">May 15, 2009</time>
       </span>
     
 
@@ -313,56 +313,107 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="jekyll-blog">Jekyll Blog</h2>
+        <p>Nested and mixed lists are an interesting beast. It’s a corner case to make sure that</p>
 
 <ul>
-  <li>Based on <a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a></li>
-  <li>Current Blog structure
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">Posts</code>: Section for the project-related recording</li>
-      <li><code class="language-plaintext highlighter-rouge">Daily</code>: Section for the daily study record</li>
-    </ul>
+  <li>Lists within lists do not break the ordered list numbering order</li>
+  <li>Your list styles go deep enough.</li>
+</ul>
+
+<h3 id="ordered--unordered--ordered">Ordered – Unordered – Ordered</h3>
+
+<ol>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<ul>
+  <li><strong>unordered</strong></li>
+  <li><strong>unordered</strong>
+    <ol>
+      <li>ordered item</li>
+      <li>ordered item</li>
+    </ol>
   </li>
-  <li>Other references
+</ul>
+
+<ol>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<h3 id="ordered--unordered--unordered">Ordered – Unordered – Unordered</h3>
+
+<ol>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<ul>
+  <li><strong>unordered</strong></li>
+  <li><strong>unordered</strong>
     <ul>
-      <li><a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">minimal-mistakes docs</a></li>
-      <li><a href="https://devinlife.com/categories/">devinlife blog</a> &amp; <a href="https://github.com/devinlife/devinlife.github.io">devinlife-git</a></li>
+      <li>unordered item</li>
+      <li>unordered item</li>
     </ul>
   </li>
 </ul>
 
-<h3 id="bugs">Bugs</h3>
+<ol>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<h3 id="unordered--ordered--unordered">Unordered – Ordered – Unordered</h3>
 
 <ul>
-  <li><a href="https://github.com/1317Stephen/1317Stephen.github.io/issues/4">#4 build issues</a>: Github-page build issue ⇒ Add css/js &amp; package files</li>
+  <li>unordered item</li>
+  <li>unordered item
+    <ol>
+      <li>ordered</li>
+      <li>ordered
+        <ul>
+          <li>unordered item</li>
+          <li>unordered item</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
 </ul>
 
-<h2 id="future-challenges">Future Challenges</h2>
+<h3 id="unordered--unordered--ordered">Unordered – Unordered – Ordered</h3>
 
 <ul>
-  <li>
-    <p>Language switch: English ⇔ Korean</p>
-
+  <li>unordered item</li>
+  <li>unordered item
     <ul>
-      <li><a href="https://github.com/mmistakes/minimal-mistakes/issues/612">language switcher (Github)</a></li>
-      <li><a href="https://sylvaindurand.org/making-jekyll-multilingual/">Making Jekyll multilingual</a></li>
+      <li>unordered</li>
+      <li>unordered
+        <ol>
+          <li><strong>ordered item</strong></li>
+          <li><strong>ordered item</strong></li>
+        </ol>
+      </li>
     </ul>
   </li>
-  <li>
-    <p>Add daily graph on <code class="language-plaintext highlighter-rouge">Daily</code> (similar with Github commit graph)</p>
-  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
 </ul>
 
-<!--
+<h3 id="task-lists">Task Lists</h3>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
- -->
-
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Finish my changes</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Push my commits to GitHub</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open a pull request
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Follow discussions</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Push new commits</li>
+    </ul>
+  </li>
+</ul>
 
         
       </section>
@@ -370,11 +421,53 @@
       <footer class="page__meta">
         
         
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#backend" class="page__taxonomy-item" rel="tag">Backend</a><span class="sep">, </span>
+    
+      <a href="/tags/#frontend" class="page__taxonomy-item" rel="tag">Frontend</a><span class="sep">, </span>
+    
+      <a href="/tags/#node-js" class="page__taxonomy-item" rel="tag">Node.js</a><span class="sep">, </span>
+    
+      <a href="/tags/#oracle-atp-database" class="page__taxonomy-item" rel="tag">Oracle ATP Database</a><span class="sep">, </span>
+    
+      <a href="/tags/#oracle-cloud" class="page__taxonomy-item" rel="tag">Oracle Cloud</a><span class="sep">, </span>
+    
+      <a href="/tags/#spring-boot" class="page__taxonomy-item" rel="tag">Spring Boot</a><span class="sep">, </span>
+    
+      <a href="/tags/#vue-js" class="page__taxonomy-item" rel="tag">Vue.js</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#server" class="page__taxonomy-item" rel="tag">Server</a>
+    
+    </span>
+  </p>
 
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-06-12T11:12:34+09:00">June 12, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2009-05-15T00:00:00+09:00">May 15, 2009</time></p>
 
 
       </footer>
@@ -382,25 +475,15 @@
       <!-- <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5BDaily%5D+2021-06-12+SAT%20http%3A%2F%2Flocalhost%3A4000%2Fdaily%2F2021-06-12%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Start+Website+based+on+%20http%3A%2F%2Flocalhost%3A4000%2Fserver%2Fedge-case-nested-and-mixed-lists%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdaily%2F2021-06-12%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fserver%2Fedge-case-nested-and-mixed-lists%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdaily%2F2021-06-12%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fserver%2Fedge-case-nested-and-mixed-lists%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section> -->
 
 
       
-  <nav class="pagination">
-    
-      <a href="#" class="pagination--pager disabled">Previous</a>
-    
-    
-      <a href="/daily/2021-06-14/" class="pagination--pager" title="[Daily] 2021-06-14 MON
-">Next</a>
-    
-  </nav>
-
     </div>
 
     
@@ -413,54 +496,7 @@
       <div class="grid__wrapper">
         
           
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/server/edge-case-nested-and-mixed-lists/" rel="permalink">Start Website based on
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2009-05-15T00:00:00+09:00">May 15, 2009</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that
-
-</p>
-  </article>
-</div>
-
-        
+            
       </div>
     </div>
   
@@ -520,6 +556,11 @@
 <script src="/assets/js/lunr/lunr-en.js"></script>
 
 
+
+
+    
+
+  
 
 
 

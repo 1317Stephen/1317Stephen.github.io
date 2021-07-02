@@ -1,0 +1,42 @@
+---
+# layout: posts
+title: "[Daily] 2021-06-21 MON"
+date: 2021-06-21 21:55:00 +0900
+# tags:
+#   - Blog
+#   - Jekyll
+excerpt: "Dev. Plan. Leetcode #1451 (String, bucket)"
+---
+
+## Movie Recommendation
+
+- Plan: 6/28
+
+## LeetCode
+
+### Today: String
+
+[1451. Rearrange Words in a Sentence][1451. rearrange words in a sentence]
+: map bucket solution
+
+#### Better Solution: additional stringstream & map
+
+- stringstream
+  {% highlight c++ %}
+  while(ss >> word)
+  {% endhighlight %}
+
+  {% highlight c++ %}
+  for(auto p: m) rs << p.second;
+  {% endhighlight %}
+
+- map: (same length of word) add to end of the string
+  {% highlight c++ %}
+  m[word.size()] += word + " ";
+  {% endhighlight %}
+
+#### Reminder
+
+- `<cctype>`: `toupper()`, `tolower()`, `isupper()`, `islower()`
+
+[1451. rearrange words in a sentence]: https://leetcode.com/problems/rearrange-words-in-a-sentence/

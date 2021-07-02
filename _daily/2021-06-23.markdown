@@ -1,0 +1,48 @@
+---
+# layout: posts
+title: "[Daily] 2021-06-23 WED"
+date: 2021-06-23 21:52:00 +0900
+# tags:
+#   - Blog
+#   - Jekyll
+excerpt: "Leetcode #1 (Swift basic)"
+---
+
+## LeetCode
+
+### Today: Swift
+
+[1. Two Sum][1. two sum]
+: Swift basic functions
+
+#### Summary
+
+- Array
+  {% highlight swift %}
+  var arr : [Int] = []
+  var arr2 = [Int]()
+  var arr3 : Array<Int> = []
+
+  arr.append(2)
+  {% endhighlight %}
+
+- For
+  {% highlight swift %}
+  for i in arr {}
+  for i in 0...n {}
+  for i in 0..<n {}
+  for i in (0...n).reversed() {}
+  for i in (0..<n>).reversed() {}
+  for i in stride(from: n, to: 0, by: -2) {}
+  {% endhighlight %}
+
+#### Appendix
+
+- [Swift array blog][swift array blog]
+- [Swift for blog][swift for blog]
+- [Swift stride blog][swift stride blog]
+
+[1. two sum]: https://leetcode.com/problems/two-sum/
+[swift array blog]: https://zeddios.tistory.com/114
+[swift for blog]: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=hjleesm&logNo=221222952341
+[swift stride blog]: https://zeddios.tistory.com/73

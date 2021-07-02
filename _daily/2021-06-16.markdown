@@ -21,7 +21,8 @@ excerpt: "Planning physics & computer science. Leetcode #1358 (String, sliding w
 
 ### Quantum simulator
 
-- [List of Open Quantum Projects]
+- [List of Open Quantum Projects][list of qc simulators]
+- [List of QC simulators][list of qc simulators]
 
 ## Game
 
@@ -79,4 +80,5 @@ excerpt: "Planning physics & computer science. Leetcode #1358 (String, sliding w
 [quantum computation and quantum information 2018 lecture]: https://www.cs.cmu.edu/~odonnell/quantum18/
 [quantum computation 2004 lecture]: https://people.eecs.berkeley.edu/~vazirani/f04quantum/quantum.html
 [list of open quantum projects]: https://qosf.org/project_list/
+[list of qc simulators]: https://quantiki.org/wiki/list-qc-simulators
 [easy and concise solution]: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/discuss/516977/JavaC%2B%2BPython-Easy-and-Concise

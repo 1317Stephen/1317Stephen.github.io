@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-21T21:18:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><author><name>Stephen</name></author><entry><title type="html">Edge Case: Nested and Mixed Lists</title><link href="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/" rel="alternate" type="text/html" title="Edge Case: Nested and Mixed Lists" /><published>2009-05-15T00:00:00+09:00</published><updated>2009-05-15T00:00:00+09:00</updated><id>http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists</id><content type="html" xml:base="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/">&lt;p&gt;Nested and mixed lists are an interesting beast. It’s a corner case to make sure that&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-02T11:12:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><author><name>Stephen</name></author><entry><title type="html">Start Website based on</title><link href="http://localhost:4000/server/edge-case-nested-and-mixed-lists/" rel="alternate" type="text/html" title="Start Website based on" /><published>2009-05-15T00:00:00+09:00</published><updated>2009-05-15T00:00:00+09:00</updated><id>http://localhost:4000/server/edge-case-nested-and-mixed-lists</id><content type="html" xml:base="http://localhost:4000/server/edge-case-nested-and-mixed-lists/">&lt;p&gt;Nested and mixed lists are an interesting beast. It’s a corner case to make sure that&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Lists within lists do not break the ordered list numbering order&lt;/li&gt;
@@ -9,16 +9,20 @@
 
 &lt;ol&gt;
   &lt;li&gt;ordered item&lt;/li&gt;
-  &lt;li&gt;ordered item
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+  &lt;li&gt;ordered item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;
     &lt;ol&gt;
       &lt;li&gt;ordered item&lt;/li&gt;
       &lt;li&gt;ordered item&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
   &lt;li&gt;ordered item&lt;/li&gt;
   &lt;li&gt;ordered item&lt;/li&gt;
 &lt;/ol&gt;
@@ -27,16 +31,20 @@
 
 &lt;ol&gt;
   &lt;li&gt;ordered item&lt;/li&gt;
-  &lt;li&gt;ordered item
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+  &lt;li&gt;ordered item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;unordered item&lt;/li&gt;
       &lt;li&gt;unordered item&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
   &lt;li&gt;ordered item&lt;/li&gt;
   &lt;li&gt;ordered item&lt;/li&gt;
 &lt;/ol&gt;
@@ -90,4 +98,4 @@
       &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Push new commits&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Edge Case" /><category term="content" /><category term="css" /><category term="edge case" /><category term="lists" /><category term="markup" /><summary type="html">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Server" /><category term="Oracle Cloud" /><category term="Spring Boot" /><category term="Node.js" /><category term="Vue.js" /><category term="Oracle ATP Database" /><category term="Backend" /><category term="Frontend" /><summary type="html">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that</summary></entry></feed>
