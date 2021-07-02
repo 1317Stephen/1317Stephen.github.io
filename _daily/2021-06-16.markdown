@@ -32,6 +32,7 @@ excerpt: "Planning physics & computer science. Leetcode #1358 (String, sliding w
 ## iOS
 
 - Movie Application (Price/watched/related platform...)
+- Swift (Flutter?)
 
 ## Backend
 
