@@ -1,0 +1,838 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Swift Basic - Blog</title>
+<meta name="description" content="Swift Data Structure, Operator, Control Flow.">
+
+
+  <meta name="author" content="Stephen">
+  
+  <meta property="article:author" content="Stephen">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Blog">
+<meta property="og:title" content="Swift Basic">
+<meta property="og:url" content="http://localhost:4000/ios/Swift-Basic/">
+
+
+  <meta property="og:description" content="Swift Data Structure, Operator, Control Flow.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-07-09T09:32:40+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/ios/Swift-Basic/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/svg" href="/assets/images/emoji-dizzy.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/daily-archive/">Daily</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/emoji-dizzy.svg" alt="Stephen" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Stephen</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>What am I doing??</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Somewhere in the world</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/1317Stephen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Swift Basic">
+    <meta itemprop="description" content="Swift Data Structure, Operator, Control Flow.">
+    <meta itemprop="datePublished" content="2021-07-09T09:32:40+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Swift Basic
+</h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-09T09:32:40+09:00">July 9, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#1-swift-collection-data-structure">1. Swift Collection Data Structure</a><ul><li><a href="#array">Array</a></li><li><a href="#stringcharacter">String/Character</a></li><li><a href="#dictionary">Dictionary</a></li></ul></li><li><a href="#2-control-flow">2. Control Flow</a><ul><li><a href="#for">For</a></li></ul></li><li><a href="#3-operator">3. Operator</a><ul><li><a href="#unsupported-operator">Unsupported Operator</a></li></ul></li><li><a href="#4-optional">4. Optional</a><ul><li><a href="#converting-optional">Converting Optional</a></li></ul></li><li><a href="#referece">Referece</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="1-swift-collection-data-structure">1. Swift Collection Data Structure</h2>
+
+<h3 id="array">Array</h3>
+<ul>
+  <li>Initialization</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift">  <span class="k">var</span> <span class="nv">arr</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+  <span class="k">var</span> <span class="nv">arr2</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">var</span> <span class="nv">arr3</span> <span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[]</span>
+ </code></pre></figure>
+
+<ul>
+  <li>Get size</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">n</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">count</span></code></pre></figure>
+
+<ul>
+  <li>Access</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">arr</span><span class="p">[</span><span class="n">arr</span><span class="o">.</span><span class="n">startIndex</span><span class="p">]</span>
+<span class="n">arr</span><span class="o">.</span><span class="n">first</span>
+
+<span class="n">arr</span><span class="p">[</span><span class="n">arr</span><span class="o">.</span><span class="n">endIndex</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">arr</span><span class="o">.</span><span class="n">last</span></code></pre></figure>
+
+<ul>
+  <li>Append/Insert</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift">  <span class="n">arr</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="s">"something"</span><span class="p">)</span>
+  <span class="n">arr</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="s">"something insert"</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span>
+  </code></pre></figure>
+
+<ul>
+  <li>Remove/Pop/Drop</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">arr</span><span class="o">.</span><span class="nf">removeFirst</span><span class="p">()</span>
+
+<span class="n">arr</span><span class="o">.</span><span class="nf">popLast</span><span class="p">()</span>
+<span class="n">arr</span><span class="o">.</span><span class="nf">removeLast</span><span class="p">()</span>
+
+<span class="n">arr</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">arr</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">()</span>
+
+<span class="k">let</span> <span class="nv">getArrExceptFirst</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">getArrExceptLast</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="nf">dropLast</span><span class="p">()</span></code></pre></figure>
+
+<ul>
+  <li>Modify</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Test"</span>
+<span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"First"</span><span class="p">,</span> <span class="s">"Second"</span><span class="p">]</span>
+<span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"First"</span><span class="p">,</span> <span class="s">"Second"</span><span class="p">,</span> <span class="s">"Third"</span><span class="p">]</span></code></pre></figure>
+
+<ul>
+  <li>Sort/Sorted</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">arr</span><span class="o">.</span><span class="nf">sort</span><span class="p">()</span>
+<span class="n">arr</span><span class="o">.</span><span class="nf">sort</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="o">&gt;</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">sortedArr</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span><span class="o">&lt;</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">sortedArrDescending</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span><span class="o">&gt;</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li>Min/Max</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">arr</span><span class="o">.</span><span class="nf">min</span><span class="p">()</span>
+<span class="n">arr</span><span class="o">.</span><span class="nf">max</span><span class="p">()</span></code></pre></figure>
+
+<ul>
+  <li>Reverse</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">arr</span><span class="o">.</span><span class="nf">reverse</span><span class="p">()</span></code></pre></figure>
+
+<h3 id="stringcharacter">String/Character</h3>
+<ul>
+  <li>Access String’s Character</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">str</span> <span class="o">=</span> <span class="s">"Swift String Test"</span>
+<span class="n">str</span><span class="p">[</span><span class="n">str</span><span class="o">.</span><span class="n">startIndex</span><span class="p">]</span>
+<span class="n">str</span><span class="p">[</span><span class="n">str</span><span class="o">.</span><span class="nf">index</span><span class="p">(</span><span class="nv">before</span><span class="p">:</span> <span class="n">endIndex</span><span class="p">)]</span>
+<span class="n">str</span><span class="p">[</span><span class="n">str</span><span class="o">.</span><span class="nf">index</span><span class="p">(</span><span class="n">str</span><span class="o">.</span><span class="n">startIndex</span><span class="p">,</span> <span class="nv">offsetBy</span><span class="p">:</span> <span class="mi">4</span><span class="p">)]</span>
+<span class="n">str</span><span class="p">[</span><span class="n">str</span><span class="o">.</span><span class="nf">index</span><span class="p">(</span><span class="n">str</span><span class="o">.</span><span class="n">endIndex</span><span class="p">,</span> <span class="nv">offsetBy</span><span class="p">:</span> <span class="o">-</span><span class="mi">2</span><span class="p">)]</span></code></pre></figure>
+
+<ul>
+  <li>Append a Character to a String
+    <ul>
+      <li>Convert a Character to a String</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">newStr</span> <span class="o">=</span> <span class="n">str</span> <span class="o">+</span> <span class="p">[</span><span class="n">aCharacter</span><span class="p">]</span></code></pre></figure>
+
+<ul>
+  <li>Using <code class="language-plaintext highlighter-rouge">insert()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">str</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">??</span> <span class="s">"-"</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="n">str</span><span class="o">.</span><span class="n">endIndex</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="dictionary">Dictionary</h3>
+<ul>
+  <li>Initialization</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">dic</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Integer</span><span class="p">:</span> <span class="kt">String</span><span class="p">]()</span></code></pre></figure>
+
+<ul>
+  <li>Sort</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">sortedByKey</span> <span class="o">=</span> <span class="n">dic</span><span class="o">.</span><span class="n">keys</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span><span class="o">&lt;</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">sortedByVal</span> <span class="o">=</span> <span class="n">dic</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span><span class="o">&lt;</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">sortedByAll</span> <span class="o">=</span> <span class="n">dic</span><span class="o">.</span><span class="nf">sorted</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span><span class="o">&lt;</span><span class="p">)</span></code></pre></figure>
+
+<p>: The two above return an Array. So, if you want to access the values of <code class="language-plaintext highlighter-rouge">sortedByKey</code>, try this</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">for</span> <span class="n">key</span> <span class="k">in</span> <span class="n">sortedByKey</span> <span class="p">{</span>
+  <span class="nf">print</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="2-control-flow">2. Control Flow</h2>
+<h3 id="for">For</h3>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift">  <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">arr</span> <span class="p">{}</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="n">n</span> <span class="p">{}</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">n</span> <span class="p">{}</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="nf">in</span> <span class="p">(</span><span class="mi">0</span><span class="o">...</span><span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="nf">reversed</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="nf">in</span> <span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="n">n</span><span class="o">&gt;</span><span class="p">)</span><span class="o">.</span><span class="nf">reversed</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="nf">stride</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">n</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">by</span><span class="p">:</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="p">{}</span>
+  </code></pre></figure>
+
+<h2 id="3-operator">3. Operator</h2>
+<h3 id="unsupported-operator">Unsupported Operator</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">++</code>, <code class="language-plaintext highlighter-rouge">--</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">someInt</span><span class="o">++</span>       <span class="c1">//Not working
+</span>
+<span class="n">someInt</span> <span class="o">+=</span> <span class="mi">1</span></code></pre></figure>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&amp;&amp;</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">if</span> <span class="n">someInt</span><span class="o">&gt;</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">someInt</span><span class="o">&lt;</span><span class="mi">10</span> <span class="p">{}</span> <span class="c1">//Not working
+</span>
+<span class="k">if</span> <span class="n">someInt</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">,</span> <span class="n">someInt</span><span class="o">&lt;</span><span class="mi">10</span> <span class="p">{}</span></code></pre></figure>
+
+<h2 id="4-optional">4. Optional</h2>
+<h3 id="converting-optional">Converting Optional</h3>
+<ul>
+  <li>Optional Binding</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">something</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"Hello!"</span>
+<span class="k">if</span> <span class="k">let</span> <span class="nv">val</span> <span class="o">=</span> <span class="n">something</span> <span class="p">{</span>
+  <span class="nf">print</span><span class="p">(</span><span class="s">"This is not nill."</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Optional Chaining (+ Optional Binding)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">dic</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Integer</span><span class="p">:</span> <span class="n">someClass</span><span class="p">]</span>
+<span class="k">if</span> <span class="k">let</span> <span class="nv">val</span> <span class="o">=</span> <span class="n">dic</span><span class="p">[</span><span class="n">keyValue</span><span class="p">]?</span><span class="o">.</span><span class="n">someProperty</span> <span class="p">{</span>
+  <span class="nf">print</span><span class="p">(</span><span class="s">"This is not nil."</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>
+    <dl>
+      <dt>Forced Unwrapping</dt>
+      <dd>This is usually used when class initialization or implicitly unwrapped optionals.</dd>
+    </dl>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">button</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre></figure>
+
+<ul>
+  <li>Nil-Coalescing Operator</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">intLet</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">somethingOptional</span> <span class="p">??</span> <span class="mi">0</span></code></pre></figure>
+
+<h2 id="referece">Referece</h2>
+<ul>
+  <li>Data Structure
+    <ul>
+      <li><a href="https://zeddios.tistory.com/114">Swift array blog</a></li>
+      <li><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=hjleesm&amp;logNo=221222952341">Swift for blog</a></li>
+      <li><a href="https://zeddios.tistory.com/73">Swift stride blog</a></li>
+      <li><a href="https://velog.io/@ssionii/Swift-%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8-%EA%B8%B0%EC%B4%88-%EB%AC%B8%EB%B2%95-1-%EC%9E%90%EB%A3%8C%ED%98%95">Swift data structure</a></li>
+      <li><a href="https://zeddios.tistory.com/116">Swift3 Array Usage</a></li>
+      <li><a href="http://minsone.github.io/mac/ios/swift-string-and-characters-summary">Swift String and Characters</a></li>
+      <li><a href="https://stackoverflow.com/questions/25457615/how-to-append-a-character-to-a-string-in-swift">How to append a character to a string in Swift?</a></li>
+      <li><a href="https://zeddios.tistory.com/14">Dictionary Sort</a></li>
+      <li><a href="https://fomaios.tistory.com/entry/Swift-%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-%EB%B0%B8%EB%A5%98%EA%B0%92%EC%9C%BC%EB%A1%9C-%ED%82%A4%EA%B0%92-%EC%88%9C%EC%84%9C%EB%8C%80%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0Sort-Dictionary-keys-by-values">Sort Dictionary by Key(Example)</a></li>
+    </ul>
+  </li>
+  <li>Optional
+    <ul>
+      <li><a href="https://useyourloaf.com/blog/warning-converting-optional-to-string/">Warning Converting Optional to String</a></li>
+      <li><a href="https://zeddios.tistory.com/16">What is Optional</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#ios" class="page__taxonomy-item" rel="tag">iOS</a><span class="sep">, </span>
+    
+      <a href="/tags/#swift" class="page__taxonomy-item" rel="tag">Swift</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#ios" class="page__taxonomy-item" rel="tag">iOS</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-09T09:32:40+09:00">July 9, 2021</time></p>
+
+
+      </footer>
+
+      <!-- <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Swift+Basic%20http%3A%2F%2Flocalhost%3A4000%2Fios%2FSwift-Basic%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fios%2FSwift-Basic%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fios%2FSwift-Basic%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section> -->
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ios/iOS-Application/" class="pagination--pager" title="Webtoon Application(iOS)
+">Previous</a>
+    
+    
+      <a href="/project/Web-Application/" class="pagination--pager" title="Web Application
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/project/Web-Application-SpringBoot-Impementation/" rel="permalink">Web Application SpringBoot Implementation
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-12T22:02:14+09:00">July 12, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Web Application implementation of Backend(SpringBoot).
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/project/Web-Application/" rel="permalink">Web Application
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-11T20:08:08+09:00">July 11, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ios/iOS-Application/" rel="permalink">Webtoon Application(iOS)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-01T11:12:34+09:00">July 1, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Based on existing webtoons applications, produce an iOS sample webtoon application as a test.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/1317Stephen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+
+  
+
+
+
+
+
+  </body>
+</html>
