@@ -1,6 +1,6 @@
 ---
 # layout: posts
-title: "Web Application SpringBoot Implementation"
+title: "[Project] Blog Implementation"
 date: 2021-07-12 22:02:14 +0900
 categories:
   - Project
@@ -10,7 +10,7 @@ tags:
   - Oracle Cloud
   - Backend
   - Database
-excerpt: "Web Application implementation of Backend(SpringBoot)."
+excerpt: "Blog Web Application implementation of Backend(SpringBoot)."
 toc: true
 ---
 
