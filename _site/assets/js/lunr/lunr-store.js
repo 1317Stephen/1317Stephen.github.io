@@ -47,9 +47,21 @@ var store = [{
         "url": "/project/Web-Application/",
         "teaser": null
       },{
+        "title": "Web Application",
+        "excerpt":"Quantum information Basic Concepts in Quantum Information, Steven M. Girvin… 양자 정보의 기본적 개념 In the last 25 years a new understanding has evolved of the role of information in quantum mechanics. 지난 25년은 양자 역학에서 정보의 역할에 대한 새로운 이해관계가 발달하게 되었다. At the same time there has been...","categories": ["Physics"],
+        "tags": [],
+        "url": "/physics/Quantum-information/",
+        "teaser": null
+      },{
         "title": "Web Application SpringBoot Implementation",
         "excerpt":"Backend Setting application.properties server.port = 1111 spring.datasource.driver-class-name=oracle.jdbc.pool.OracleDataSource spring.datasource.url=YOUR_ORALCE_WALLET_TNSNAME_AND_DIRECTORY spring.datasource.username=YOUR_ID spring.datasource.password=YOUR_PASSWORD oracle.ucp.minPoolSize=5 oracle.ucp.maxPoolSize=50 spring.main.allow-bean-definition-overriding=true spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl logging.level.com.example.demo=debug Config Package MongoConfig Class : Embedded Database Setting (Mongo DB) @Profile(value = \"mongo\") @Configuration @Import(EmbeddedMongoAutoConfiguration.class) public class MongoConfig { } OracleConfig Class : External Database Setting (Oracle ATP DB) @Profile(value = \"oracle\") @Configuration public class...","categories": ["Project"],
         "tags": ["Spring Boot","Oracle ATP Database","Oracle Cloud","Backend","Database"],
         "url": "/project/Web-Application-SpringBoot-Impementation/",
+        "teaser": null
+      },{
+        "title": "[Project] Smoking/Nonsmoking Area",
+        "excerpt":"1. Requirements Project Objectives Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea. Specification version 1.0.0 Mark smoking areas in the map. (YongSan-Gu) Mark non-smoking areas in the map. The map screen can be zoomed. Can move to the current position...","categories": ["iOS"],
+        "tags": ["iOS","Swift","Public API","API"],
+        "url": "/ios/iOS-Application/",
         "teaser": null
       }]

@@ -1,0 +1,913 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Web Application - Blog</title>
+<meta name="description" content="https://1317stephen.github.io">
+
+
+  <meta name="author" content="Stephen">
+  
+  <meta property="article:author" content="Stephen">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Blog">
+<meta property="og:title" content="Web Application">
+<meta property="og:url" content="http://localhost:4000/physics/Quantum-information/">
+
+
+  <meta property="og:description" content="https://1317stephen.github.io">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-07-11T20:08:08+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/physics/Quantum-information/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/svg" href="/assets/images/emoji-dizzy.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/daily-archive/">Daily</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/emoji-dizzy.svg" alt="Stephen" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Stephen</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>What am I doing??</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Somewhere in the world</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/1317Stephen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Web Application">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2021-07-11T20:08:08+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Web Application
+</h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-11T20:08:08+09:00">July 11, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="quantum-information">Quantum information</h2>
+
+<p>Basic Concepts in Quantum Information, Steven M. Girvin…
+양자 정보의 기본적 개념</p>
+
+<p>In the last 25 years a new understanding has evolved of the role of information in quantum mechanics.
+지난 25년은 양자 역학에서 정보의 역할에 대한 새로운 이해관계가 발달하게 되었다.</p>
+
+<p>At the same time there has been tremendous progress in atomic/optical physics and condensed matter physics, and particularly at the interface between these two formerly distinct fields, in developing experimental systems whose quantum states are long-lived and which can be engineered to perform quantum information processing tasks
+동시에, 서로 큰 구별이 있는 분야인 원자/광학 물리와 응집 물질 물리학에서 실험적 물질계에서 양자 상태가 양자 정보 절차를 수행할 수 있다는 발전을 남기며, 엄청난 진보가 있었다.</p>
+
+<p>These lecture notes will present a brief introduction to the basic theoretical concepts behind this ‘second quantum revolution.’
+이 강의 노트는 ‘두번째 양자 혁명’에 대한 기본적 이론 개념에 대한 짧은 소개이다.</p>
+
+<p>These notes will also provide an introduction to ‘circuit QED.’
+이 노트는 또한 ‘회로 QED’에 대한 소개를 담고 있다.</p>
+
+<p>In addition to being a novel test bed for non-linear quantum optics of microwave electrical circuits which use superconducting qubits as artificial atoms, circuit QED offers an architecture for constructing quantum information processors.
+마이크로파 전자 회로의 비선형 양자 광학에 대한 novel test bed 로써, 회로 QED는 양자 정보 절차를 수행할 수 있게 하는 기저를 제공해준다.</p>
+
+<ol>
+  <li>INTRODUCTION and OVERVIEW
+소개와 개요</li>
+</ol>
+
+<p>Quantum mechanics is now more than 85 years old and is one of the most successful theories in all of physics.
+양자 역학은 이제 85년이 넘었으며, 이제 모든 물리학 중 가장 성공적인 이론 중 하나이다.</p>
+
+<p>With this theory we are able to make remarkably precise predictions of the outcome of experiments in the microscopic world of atoms, molecules, photons, and elementary particles.
+이 이론을 바탕으로, 우리는 미시적인 세계의 원자, 분자, 광자, 기본 입자들의 실험 결과에 대한 정확한 예측을 할 수 있다.</p>
+
+<p>Yet despite this success, the subject remains shrouded in mystery because quantum phenomena are highly counter-intuitive to human beings whose intuition is built upon experience in the macroscopic world.
+이러한 성공에도 불구하고, 양자 현상은 거시적인 세계에서 실험을 하는 인간의 직관과 상반되기에, 이 주제는 장막에 덮혀 있었다.</p>
+
+<p>Indeed, the founders of the field struggled mightily to compre- hend it.
+실로, 이 분야의 창시자들은 이를 이해하기 위해 맹렬하게 투쟁하였다.</p>
+
+<p>Albert Einstein, who made truly fundamental contributions to the theory, never fully believed it
+이 이론의 진정한 창시자인 알버트 아인슈타인조차 이를 완전히 믿지 못하였다.</p>
+
+<p>Ironically this was because he had the deepest understanding of the counter-intuitive predictions of the theory.
+아이러니하게도, 이는 그가 양자역학의 직관적이지 못한 예측을 진정으로 이해했기 때문이었다.</p>
+
+<p>In his remarkable ‘EPR’ paper with Podolsky and Rosen,1 he famously proposed a thought experiment showing that quantum entanglement produced experimental outcomes that seemed to be obviously impossible. 
+Podolsky와 Rosen과의 놀라운 EPR 논문에서, 그는 양자 얽힘이 불가능해 보이는 것으로 확실한 실험적 결과를 도출해낸다는 철저한 실험을 발표하였다.</p>
+
+<p>In an even greater irony, modern experiments based on John Bell’s analysis of the EPR ‘paradox’ now provide the best proof not only that quan- tum mechanics is correct, but that reality itself is simply not what we naively think it is.</p>
+
+<p>심지어 더욱이 아이러니하게도, 존 벨의 EPR 패러독스 분석에 기반한 현대 실험들은 양자 역학이 올바르며, 현실은 우리가 막연히 생각해 왔던 것 이상이라는 것을 증명하였다.</p>
+
+<p>In the last 25 years we have suddenly and quite unexpectedly come to a deeper understanding of the role of information in the quantum world. 
+지난 25년 동안, 양자 세계에서 정보의 중요성을 갑작스럽고 예측하지 못하게 이해하게 되었다.</p>
+
+<p>These ideas could very easily have been understood in 1930 because of the laws of quantum mechan- ics were known at the time.
+1930년에는 양자 역학의 법직들이 알려져 있었기에, 이러한 이론들은 그 당시에는 쉽게 받아들여졌다.</p>
+
+<p>Yet, because of the counter-intuitive nature of these concepts, it would be nearly another 60 years before these further implications of the quantum laws came to be understood.
+하지만, 이러한 이론들의 반-직관적 습성 때문에, 양자 법칙에 대한 또다른 함축적 의미가 받아들여지기까지 추가적인 60년이 걸렸다.</p>
+
+<p>We begin with a high-level ‘executive summary’ overview of these concepts and ideas which will then be developed in more detail in later sections.
+우리는 이 이론에 대한 고난도의 ‘실용적으로 압축한’ 개요를 훑어본 뒤에, 상세한 부분을 살펴볼 것이다.</p>
+
+<p>From the earliest days of the quantum theory, the Heisenberg uncertainty prin- ciple taught us that certain physical quantities could never be known to arbitrary precision.
+양자 이론의 초기에서부터, 하이젠버그의 불확실성 원리는 특정 물리적 양자는 임의의 정확성을 절대로 가질 수 없다는 것을 가르쳐 주었다.</p>
+
+<p>This, combined with the genuine randomness of the outcome of certain measurements, seemed to indicate that somehow we were ‘worse off’ than we had been in the old world of classical physics. 
+이는, 특정 측정 결과의 비정확성은 우리가 고전 역학에서 가지고 있었던 것과는 ‘훨씬 더 멀’ 다는 것을 보여주었다.</p>
+
+<p>Recently however, we have come to un- derstand that quantum uncertainty, far from being a ‘bug’, is actually a ‘feature’ in the program of the universe.
+하지만 최근에는, 우리는 양자적 불확실성이, ‘오류’라기보다는 실제로는 우주의 계획된 ‘특징’이라는 것을 이해하였다.</p>
+
+<p>Quantum uncertainty and its kin, entanglement, are actually powerful resources which we can use to great advantage to, encode, decode, transmit and process information in highly efficient ways that are impossible in the classical world.
+양자 불확실성과 그 동류인 양자 얽힘은 이전의 고전 역학에서는 하지 못하였던 방식으로, 정보를 암호화,복호화, 전송, 처리하는 데에 극도로 효율적인 방법이었다.</p>
+
+<p>In addition to being a profound advance in our understanding of quantum mechanics, these revolutionary ideas have spurred development of a new kind of quantum engineering whose goal is to develop working quantum ‘machines.’2
+이 뿐만 아니라 양자 역학의 깊은 이해를 하기 앞서서, 이러한 혁명적인 아이디어들은 실제로 동작하는 양자 ‘기계’들을 개발하는 것이 목표인 양자 엔지니어링의 개발에 박차를 가하였다.</p>
+
+<p>The new ideas that have been developed also have profound applications for pre- cision measurements and atomic clocks.
+개발된 새로운 이론도 역시 원자 시계의 정확한 측량을 위한 심도 깊은 응용이었다.</p>
+
+<p>For example, ordinary atomic clocks keep track of time by following the evolution of product states of N spins, each precessing at frequency Ω0:
+|Ψ(t)⟩ = [|0⟩ + e−iΩ0 t |1⟩] ⊗ [|0⟩ + e−iΩ0 t |1⟩] ⊗ . . . ⊗ [|0⟩ + e−iΩ0 t |1⟩]. (
+예를 들어서, 기존의 원자 시계는 Ω0 frequency, N 스핀 상태 물질의 진화는 아래와 같이 시간을 따라 흘러간다:</p>
+
+<p>By using maximally entangled states of the form
+|Ψ(t)⟩ = [|0000 . . . 0⟩ + e−iN Ω0 t |1111 . . . 1⟩] (2)
+one gets a clock which runs N times faster and therefore gains a factor of √N in precision.
+최대한으로 얽힌 상대인 (2)는 N배 빠른 시계를 가지며, 루트 N 팩터의 정확도를 가진다.</p>
+
+<p>3</p>
+
+<p>Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)</p>
+
+<h1 id="1-requirements">1. Requirements</h1>
+<h2 id="project-objectives">Project Objectives</h2>
+<ul>
+  <li>Develop an Web Application that works as a personal Blog.</li>
+</ul>
+
+<h2 id="specification">Specification</h2>
+<ul>
+  <li>Article, Category CRUD.</li>
+  <li>Parent/Child relationships in categories.</li>
+  <li>Show projects by year.</li>
+  <li>Backend API -&gt; Frontend.</li>
+  <li>Docker.</li>
+</ul>
+
+<h1 id="2-structure">2. Structure</h1>
+
+<figure class=" ">
+  
+  
+    <figcaption>Web Application Project stucture.
+</figcaption>
+  
+</figure>
+
+<ul>
+  <li>Database: Oracle ATP Database, (Partial) Mongo DB</li>
+  <li>Backend: SpringBoot</li>
+  <li>Frontend: Node.js, Vue.js</li>
+</ul>
+
+<h1 id="3-function">3. Function</h1>
+<h2 id="backend">Backend</h2>
+<p>: There are three APIs that hand over data from ATP Database to frontend.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Menu</code>
+    <ul>
+      <li>One <code class="language-plaintext highlighter-rouge">Menu</code> is consisted of several(or one) <code class="language-plaintext highlighter-rouge">Article</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">Menu</code> has Parent/Child relationship. (ex. Computer Science Menu - iOS/Android Menu)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Article</code>
+    <ul>
+      <li>One <code class="language-plaintext highlighter-rouge">Article</code> is a page of writing.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Project</code>
+    <ul>
+      <li>Project is the has information(ex. started date, ended date, project title…) about previously conducted projects.</li>
+      <li><code class="language-plaintext highlighter-rouge">Project</code> API is mainly used on the homepage.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="frontend">Frontend</h2>
+<p>: There are five main pages. (+ one sidebar)</p>
+
+<ul>
+  <li>Main features and design were implemented using <code class="language-plaintext highlighter-rouge">Bootstrap-vue</code>.</li>
+  <li>Axios used to call Springboot APIs.</li>
+</ul>
+
+<figure class=" ">
+  
+  
+    <figcaption>Frontend Vue.js plan draft.
+</figcaption>
+  
+</figure>
+
+<h1 id="4-implementation">4. Implementation</h1>
+<h2 id="backend-1">Backend</h2>
+<h3 id="implemented">Implemented</h3>
+<ul>
+  <li>Basic Settings
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">application.properties</code> file: <a href="/project/Web-Application-SpringBoot-Impementation/#applicationproperties">See Code…</a></li>
+    </ul>
+  </li>
+  <li>Packages
+    <ul>
+      <li>5 packages for basic functions have been developed.
+        <ul>
+          <li>Two packages are for setting: <code class="language-plaintext highlighter-rouge">ApiResponse</code> and <code class="language-plaintext highlighter-rouge">Config</code>.</li>
+          <li>The other packages are for API: <code class="language-plaintext highlighter-rouge">ArticleItem</code>, <code class="language-plaintext highlighter-rouge">MenuItem</code> and <code class="language-plaintext highlighter-rouge">ProjectItem</code>.</li>
+        </ul>
+      </li>
+      <li>
+        <p>Except <code class="language-plaintext highlighter-rouge">Config</code> and <code class="language-plaintext highlighter-rouge">ApiResponse</code> package, one package consists of <code class="language-plaintext highlighter-rouge">Item</code>, <code class="language-plaintext highlighter-rouge">Adapter</code>, <code class="language-plaintext highlighter-rouge">Controller</code>, <code class="language-plaintext highlighter-rouge">Repository</code>, <code class="language-plaintext highlighter-rouge">Request</code>, <code class="language-plaintext highlighter-rouge">Response</code> and <code class="language-plaintext highlighter-rouge">Service</code>.</p>
+
+        <p><img src="/assets/images/backend-package.png" alt="One package" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <dl>
+      <dt><code class="language-plaintext highlighter-rouge">Config</code> package</dt>
+      <dd>This package is for the Database, Frontend and (+Security) connection settings.</dd>
+    </dl>
+    <ul>
+      <li>Class: <code class="language-plaintext highlighter-rouge">MongoConfig</code>, <code class="language-plaintext highlighter-rouge">OracleConfig</code>, <code class="language-plaintext highlighter-rouge">WebConfig</code></li>
+      <li>Detailed implementation of the <code class="language-plaintext highlighter-rouge">Config</code> package: <a href="/project/Web-Application-SpringBoot-Impementation/#config-package">See Code…</a></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">ApiReseponse</code> package
+    <ul>
+      <li>This class is for the abstract <code class="language-plaintext highlighter-rouge">ApiResponse</code>.</li>
+      <li>API Response classes in other main three packages’ API Response classes are inherited from this Abstract.</li>
+      <li><code class="language-plaintext highlighter-rouge">ApiReseponse</code> Abstart: <a href="/project/Web-Application-SpringBoot-Impementation/#apiresponse-package">See Code..</a></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">ArticleItem</code>, <code class="language-plaintext highlighter-rouge">MenuItem</code>, <code class="language-plaintext highlighter-rouge">ProjectItem</code> packages
+    <ul>
+      <li>One package consists of 6 classes and 1 interface: <code class="language-plaintext highlighter-rouge">Item</code>, <code class="language-plaintext highlighter-rouge">Repository</code>, <code class="language-plaintext highlighter-rouge">Service</code>, <code class="language-plaintext highlighter-rouge">Adapter</code>, <code class="language-plaintext highlighter-rouge">Controller</code>, <code class="language-plaintext highlighter-rouge">Request</code>, <code class="language-plaintext highlighter-rouge">Response</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">Item</code> Class: Model class.</li>
+      <li><code class="language-plaintext highlighter-rouge">Adapter</code> Class: <code class="language-plaintext highlighter-rouge">ItemRespoense</code> and <code class="language-plaintext highlighter-rouge">Item</code> methods exist to build object.</li>
+      <li><code class="language-plaintext highlighter-rouge">Repository</code> Interface: Send queries to Database.</li>
+      <li><code class="language-plaintext highlighter-rouge">Service</code> Class: Send <code class="language-plaintext highlighter-rouge">Item</code> to browser. (<code class="language-plaintext highlighter-rouge">get</code>, <code class="language-plaintext highlighter-rouge">getAll</code>, <code class="language-plaintext highlighter-rouge">create</code>, <code class="language-plaintext highlighter-rouge">update</code>, <code class="language-plaintext highlighter-rouge">delete</code> methods)</li>
+      <li><code class="language-plaintext highlighter-rouge">Controller</code> Class: URL resolution.</li>
+      <li><code class="language-plaintext highlighter-rouge">Response</code> and <code class="language-plaintext highlighter-rouge">Request</code> Class</li>
+      <li><a href="/project/Web-Application-SpringBoot-Impementation/#main-api-packages">See Code…</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="to-do--ongoing">To Do / Ongoing</h3>
+<ul>
+  <li>Membership related parts: <code class="language-plaintext highlighter-rouge">Security</code> package, <code class="language-plaintext highlighter-rouge">SecurityConfig</code> Class.</li>
+  <li>CI/CD with Docker!</li>
+</ul>
+
+<h2 id="frontend-1">Frontend</h2>
+<h3 id="implemented-1">Implemented</h3>
+<ul>
+  <li>Main three Pages implemented. Screenshots of the pages are at the below.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Home.vue</code>: Projects and Articles.</li>
+      <li><code class="language-plaintext highlighter-rouge">Posts.vue</code>: Entire articles with Menu(ex. Physics, Computer Science).</li>
+      <li><code class="language-plaintext highlighter-rouge">Aricle.vue</code>: Descriptions.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="to-do--ongoing-1">To Do / Ongoing</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Admin</code> page for the Blog. (This shoud be linked with the articleEdit, menuEdit pages.)</li>
+</ul>
+
+<h1 id="5-result">5. Result</h1>
+<h2 id="v100">v1.0.0</h2>
+<ul>
+  <li>Backend: Finish CRUD APIs for the Blog’s Article, Menu and Project.</li>
+  <li>Frontend: Development of pages for visitor completed.(include edit article/menu which is not below screenshots.)</li>
+</ul>
+
+<figure class="half ">
+  
+    
+      <a href="/assets/images/Home_page.png">
+          <img src="/assets/images/Home_page.png" alt="Home page" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/Home_page_with_sidebar_open.png">
+          <img src="/assets/images/Home_page_with_sidebar_open.png" alt="Home page with sidebar" />
+      </a>
+    
+  
+  
+    <figcaption>Blog v1.0.0 Homepage, Homepage with sidebar, Post page, Article page
+</figcaption>
+  
+</figure>
+
+<blockquote>
+  <p>The above page is the acutually working, but Oracle Cloud does not support free domain services in my region, I can’t attach Blog URL.</p>
+</blockquote>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#physics" class="page__taxonomy-item" rel="tag">Physics</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-11T20:08:08+09:00">July 11, 2021</time></p>
+
+
+      </footer>
+
+      <!-- <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Web+Application%20http%3A%2F%2Flocalhost%3A4000%2Fphysics%2FQuantum-information%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fphysics%2FQuantum-information%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fphysics%2FQuantum-information%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section> -->
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/project/Web-Application/" class="pagination--pager" title="Web Application
+">Previous</a>
+    
+    
+      <a href="/project/Web-Application-SpringBoot-Impementation/" class="pagination--pager" title="Web Application SpringBoot Implementation
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ios/iOS-Application/" rel="permalink">[Project] Smoking/Nonsmoking Area
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-08-07T15:28:33+09:00">August 7, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/project/Web-Application-SpringBoot-Impementation/" rel="permalink">Web Application SpringBoot Implementation
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-12T22:02:14+09:00">July 12, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Web Application implementation of Backend(SpringBoot).
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/project/Web-Application/" rel="permalink">Web Application
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-11T20:08:08+09:00">July 11, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ios/Swift-Basic/" rel="permalink">Swift Basic
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-09T09:32:40+09:00">July 9, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Swift Data Structure, Operator, Control Flow.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/1317Stephen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+
+  
+
+
+
+
+
+  </body>
+</html>

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Webtoon Application(iOS) - Blog</title>
-<meta name="description" content="Based on existing webtoons applications, produce an iOS sample webtoon application as a test.">
+<!-- begin _includes/seo.html --><title>[Project] Smoking/Nonsmoking Area - Blog</title>
+<meta name="description" content="Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)">
 
 
   <meta name="author" content="Stephen">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Blog">
-<meta property="og:title" content="Webtoon Application(iOS)">
+<meta property="og:title" content="[Project] Smoking/Nonsmoking Area">
 <meta property="og:url" content="http://localhost:4000/ios/iOS-Application/">
 
 
-  <meta property="og:description" content="Based on existing webtoons applications, produce an iOS sample webtoon application as a test.">
+  <meta property="og:description" content="Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)">
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-07-01T11:12:34+09:00">
+  <meta property="article:published_time" content="2021-08-07T15:28:33+09:00">
 
 
 
@@ -270,15 +270,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Webtoon Application(iOS)">
-    <meta itemprop="description" content="Based on existing webtoons applications, produce an iOS sample webtoon application as a test.">
-    <meta itemprop="datePublished" content="2021-07-01T11:12:34+09:00">
+    <meta itemprop="headline" content="[Project] Smoking/Nonsmoking Area">
+    <meta itemprop="description" content="Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)">
+    <meta itemprop="datePublished" content="2021-08-07T15:28:33+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Webtoon Application(iOS)
+          <h1 id="page-title" class="page__title" itemprop="headline">[Project] Smoking/Nonsmoking Area
 </h1>
           
 
@@ -288,7 +288,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2021-07-01T11:12:34+09:00">July 1, 2021</time>
+        <time datetime="2021-08-07T15:28:33+09:00">August 7, 2021</time>
       </span>
     
 
@@ -301,7 +301,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          4 minute read
         
       </span>
     
@@ -313,53 +313,446 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="webtoon-market-research">Webtoon Market Research</h2>
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#1-requirements">1. Requirements</a><ul><li><a href="#project-objectives">Project Objectives</a></li><li><a href="#specification">Specification</a><ul><li><a href="#version-100">version 1.0.0</a></li><li><a href="#next-version">Next version</a></li></ul></li></ul></li><li><a href="#2-structurefunction">2. Structure/Function</a><ul><li><a href="#version-100-1">version 1.0.0</a></li><li><a href="#next-version-1">Next version</a></li></ul></li><li><a href="#3-implementation-focus-on-the-problem-solving">3. Implementation: Focus on the Problem-Solving</a><ul><li><a href="#version-100-2">version 1.0.0</a><ul><li><a href="#functions">Functions</a><ul><li><a href="#-move-to-current-locations">➀ Move to current locations.</a></li><li><a href="#-zoom-map-with-stepper">➁ Zoom map with Stepper</a></li><li><a href="#-addremove-multiple-annotations-in-the-map">➂ Add/Remove multiple Annotations in the map</a></li><li><a href="#-exchange-latitude--longitude-to-address">➃ Exchange Latitude &amp; Longitude to Address</a></li><li><a href="#-api-xml-format">➄ API: XML format</a></li><li><a href="#-api-json-format">➅ API: JSON format</a></li></ul></li><li><a href="#further-improvement">Further Improvement</a><ul><li><a href="#refactoring">Refactoring</a></li><li><a href="#calling-multiple-apis-fast-without-cpu-momory-overloading">Calling multiple APIs FAST without CPU, Momory overloading.</a></li></ul></li></ul></li></ul></li><li><a href="#4-result">4. Result</a><ul><li><a href="#version-100-3">version 1.0.0</a></li></ul></li></ul>
 
-<!-- picture -->
+            </nav>
+          </aside>
+        
+        <h1 id="1-requirements">1. Requirements</h1>
+<h2 id="project-objectives">Project Objectives</h2>
+<p>Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea.</p>
 
-<p>reference: <a href="https://platum.kr/archives/155134">Webtoon market share (Android)</a></p>
-
+<h2 id="specification">Specification</h2>
+<h3 id="version-100">version 1.0.0</h3>
 <ul>
-  <li>Naver Webtoon (5,521,674 users)</li>
-  <li>KakaoPage (2,411,481 users)</li>
+  <li>Mark smoking areas in the map. (YongSan-Gu)</li>
+  <li>Mark non-smoking areas in the map.</li>
+  <li>The map screen can be zoomed.</li>
+  <li>Can move to the current position on the map screen.</li>
 </ul>
 
-<h2 id="common-features">Common Features</h2>
-
+<h3 id="next-version">Next version</h3>
 <ul>
-  <li>Bottom Navigation Bar</li>
-  <li>Main Page: Weekly Webtoons (+ Novels…)</li>
-  <li>My Page: Webtoons I’ve seen.</li>
-  <li>View More: Setting, Cookie/Cash, Notice…</li>
+  <li>Precise way to mark ‘near’ positioin in non-smoking area. (current: same administrative &amp; locality)</li>
+  <li>Mark other localities’ smoking area API. (current: smoking area 1, non-smoking area: all South Korea except API error area.)</li>
+  <li>Show information of the selected area.</li>
+  <li>Optional: people density</li>
 </ul>
 
-<h2 id="naver-webtoon-vs-kakaopage">Naver Webtoon vs KakaoPage</h2>
+<p><br />
+<br /></p>
 
-<h2 id="ios-application-development">iOS Application Development</h2>
+<h1 id="2-structurefunction">2. Structure/Function</h1>
+<h2 id="version-100-1">version 1.0.0</h2>
+<p>: one view, one controller, one model.</p>
 
-<h3 id="interface-sketch">Interface: Sketch</h3>
-
+<p>(1) View(main storyboard)</p>
 <ul>
-  <li>reference: https://www.sketch.com/docs/</li>
-  <li>blogs
-    <ul>
-      <li><a href="http://uidesignguides.com/gui_design_tools/">GUI Introduction Blog</a></li>
-      <li><a href="https://designcompass.org/2020/11/16/02-인터페이스-화면을-살펴보자/">Sketch Blog - Start!</a></li>
-    </ul>
-  </li>
+  <li>Apple MapView</li>
+  <li>two switch(smoking area, nonsmoking area on/off) with each label → stack view</li>
+  <li>stepper(zoom)</li>
+  <li>button(current location)</li>
 </ul>
 
-<p>###</p>
+<figure class=" ">
+  
+    
+      <a href="/assets/images/smokingArea/smokingArea_mainstoryboard_with_constraints_v1.png">
+          <img src="/assets/images/smokingArea/smokingArea_mainstoryboard_with_constraints_v1.png" alt="storyboard" />
+      </a>
+    
+  
+  
+    <figcaption>Smoking Area v1.0.0 storyboard with constraints
+</figcaption>
+  
+</figure>
 
-<!--
+<p>(2) Main Controller</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">moveToCurrentLocation()</code>: move to current location.</li>
+  <li><code class="language-plaintext highlighter-rouge">getCoordinateToAddress()</code>: transfer coordinate(latitude &amp; longitude) to Korean address.</li>
+  <li><code class="language-plaintext highlighter-rouge">addAnnotations()</code>: add/remove multiple Annotations(markers) in the Apple MapView.</li>
+  <li><code class="language-plaintext highlighter-rouge">mapScaleStepper()</code>: zoom in/out.</li>
+  <li><code class="language-plaintext highlighter-rouge">callJsonApi()</code>: call public API in JSON format.</li>
+  <li><code class="language-plaintext highlighter-rouge">callXmlApi()</code>: get public API in XML format.</li>
+  <li><code class="language-plaintext highlighter-rouge">smokingAreaSwitchAction()</code>: smoking area annotations on/off.</li>
+  <li><code class="language-plaintext highlighter-rouge">nonsmokingAreaSwitchAction()</code>: nonsmoking area annotations on/off.</li>
+</ul>
 
- -->
+<p>(3) API Model</p>
+<ul>
+  <li>nonsmoking area API model</li>
+  <li>smoking area API model</li>
+  <li>address model</li>
+</ul>
+
+<h2 id="next-version-1">Next version</h2>
+<ul>
+  <li>(main map) MVVC + (additional swipe window) MVC</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h1 id="3-implementation-focus-on-the-problem-solving">3. Implementation: Focus on the Problem-Solving</h1>
+<p>: Among the implementations, parts that take a long time or still have a room for improvement are summarized with the source.</p>
+
+<h2 id="version-100-2">version 1.0.0</h2>
+<p>In version 1.0.0, there are main 4 features.</p>
+
+<p>➀ Move to current location. <br />
+➁ Zoom in/out map. <br />
+➂ Display the non-smoking area data near the user on the map. <br />
+➃ Display the smoking area data of Yonsan-Gu on the map.</p>
+
+<p>The codes below are the main functions needed to implement these four features.</p>
+
+<h3 id="functions">Functions</h3>
+<h4 id="-move-to-current-locations">➀ Move to current locations.</h4>
+<ul>
+  <li>basic settings in <code class="language-plaintext highlighter-rouge">viewDidLoad()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">locationManager</span> <span class="o">=</span> <span class="kt">CLLocationManager</span><span class="p">()</span>
+<span class="n">locationManager</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+
+<span class="n">locationManager</span><span class="o">.</span><span class="nf">requestWhenInUseAuthorization</span><span class="p">()</span>
+
+<span class="n">locationManager</span><span class="o">.</span><span class="n">desiredAccuracy</span> <span class="o">=</span> <span class="n">kCLLocationAccuracyBest</span>
+<span class="n">locationManager</span><span class="o">.</span><span class="nf">startUpdatingLocation</span><span class="p">()</span>
+
+<span class="nf">moveToCurrentLocation</span><span class="p">()</span>
+<span class="n">currentDisplayCenter</span> <span class="o">=</span> <span class="n">mapView</span><span class="o">.</span><span class="n">centerCoordinate</span>
+
+<span class="n">mapView</span><span class="o">.</span><span class="n">showsUserLocation</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="k">self</span><span class="o">.</span><span class="n">mapView</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span></code></pre></figure>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">moveToCurrentLocation()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">private</span> <span class="kd">func</span> <span class="nf">moveToCurrentLocation</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">userLocation</span> <span class="o">=</span> <span class="n">locationManager</span><span class="o">.</span><span class="n">location</span><span class="p">?</span><span class="o">.</span><span class="n">coordinate</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">viewRegion</span> <span class="o">=</span> <span class="kt">MKCoordinateRegion</span><span class="p">(</span><span class="nv">center</span><span class="p">:</span> <span class="n">userLocation</span><span class="p">,</span> <span class="nv">latitudinalMeters</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="nv">longitudinalMeters</span><span class="p">:</span> <span class="mi">500</span><span class="p">)</span>
+        <span class="n">mapView</span><span class="o">.</span><span class="nf">setRegion</span><span class="p">(</span><span class="n">viewRegion</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="-zoom-map-with-stepper">➁ Zoom map with Stepper</h4>
+<ul>
+  <li>basic settings in <code class="language-plaintext highlighter-rouge">viewDidLoad()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="c1">// zoom in/out stepper setup
+</span>
+<span class="n">mapScaleStepperOulet</span><span class="o">.</span><span class="n">wraps</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">mapScaleStepperOulet</span><span class="o">.</span><span class="n">autorepeat</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">mapScaleStepperOulet</span><span class="o">.</span><span class="n">minimumValue</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1000</span>
+<span class="n">mapScaleStepperOulet</span><span class="o">.</span><span class="n">maximumValue</span> <span class="o">=</span> <span class="mi">1000</span></code></pre></figure>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">mapScaleStepper(_ sender: UIStepper)</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">mapScaleStepper</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIStepper</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">var</span> <span class="nv">region</span> <span class="o">=</span> <span class="n">mapView</span><span class="o">.</span><span class="n">region</span>
+  
+  <span class="k">if</span> <span class="n">sender</span><span class="o">.</span><span class="n">value</span> <span class="o">&gt;</span> <span class="n">mapScaleValue</span> <span class="p">{</span>
+      <span class="n">region</span><span class="o">.</span><span class="n">span</span><span class="o">.</span><span class="n">latitudeDelta</span> <span class="o">/=</span> <span class="mf">2.0</span>
+      <span class="n">region</span><span class="o">.</span><span class="n">span</span><span class="o">.</span><span class="n">longitudeDelta</span> <span class="o">/=</span> <span class="mf">2.0</span>
+      <span class="n">mapView</span><span class="o">.</span><span class="nf">setRegion</span><span class="p">(</span><span class="n">region</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">else</span>  <span class="p">{</span>
+      <span class="n">region</span><span class="o">.</span><span class="n">span</span><span class="o">.</span><span class="n">latitudeDelta</span> <span class="o">*=</span> <span class="mf">2.0</span>
+      <span class="n">region</span><span class="o">.</span><span class="n">span</span><span class="o">.</span><span class="n">longitudeDelta</span> <span class="o">*=</span> <span class="mf">2.0</span>
+      <span class="n">mapView</span><span class="o">.</span><span class="nf">setRegion</span><span class="p">(</span><span class="n">region</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+      
+  <span class="p">}</span>
+  <span class="n">mapScaleValue</span> <span class="o">=</span> <span class="n">sender</span><span class="o">.</span><span class="n">value</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="-addremove-multiple-annotations-in-the-map">➂ Add/Remove multiple Annotations in the map</h4>
+<p>: <code class="language-plaintext highlighter-rouge">Area</code> is the structure implemented in the <code class="language-plaintext highlighter-rouge">Model</code>.</p>
+
+<ul>
+  <li>Add</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">private</span> <span class="kd">func</span> <span class="nf">addAnnotations</span><span class="p">(</span><span class="nv">areas</span><span class="p">:</span> <span class="p">[</span><span class="kt">Area</span><span class="p">]){</span>
+    <span class="k">let</span> <span class="nv">annotations</span> <span class="o">=</span> <span class="n">areas</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">area</span> <span class="o">-&gt;</span> <span class="kt">MKAnnotation</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="nv">annotation</span> <span class="o">=</span> <span class="kt">MKPointAnnotation</span><span class="p">()</span>
+        <span class="n">annotation</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">area</span><span class="o">.</span><span class="n">placeName</span>
+        <span class="n">annotation</span><span class="o">.</span><span class="n">coordinate</span> <span class="o">=</span> <span class="n">area</span><span class="o">.</span><span class="n">coordinate</span>
+        <span class="n">annotation</span><span class="o">.</span><span class="n">subtitle</span> <span class="o">=</span> <span class="n">area</span><span class="o">.</span><span class="n">placeSubtitle</span><span class="o">.</span><span class="n">rawValue</span>
+        
+        <span class="k">return</span> <span class="n">annotation</span>
+    <span class="p">}</span>
+    <span class="n">mapView</span><span class="o">.</span><span class="nf">addAnnotations</span><span class="p">(</span><span class="n">annotations</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Remove</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">nonsmokingAreaSwitchAction</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UISwitch</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">sender</span><span class="o">.</span><span class="n">isOn</span> <span class="p">{</span>
+        <span class="nf">callXmlApi</span><span class="p">(</span><span class="nv">baseUrl</span><span class="p">:</span> <span class="kt">URLs</span><span class="o">.</span><span class="n">nonsmokingAreaBaseURL</span><span class="o">.</span><span class="n">rawValue</span><span class="p">,</span> <span class="nv">endPage</span><span class="p">:</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span> <span class="n">nonsmokingAreas</span> <span class="k">in</span>
+            <span class="k">self</span><span class="o">.</span><span class="nf">addAnnotations</span><span class="p">(</span><span class="nv">areas</span><span class="p">:</span> <span class="n">nonsmokingAreas</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Remove the anotations that have 'Nonsmoking' subtitle.
+</span>
+        <span class="k">for</span> <span class="n">annotation</span> <span class="k">in</span> <span class="k">self</span><span class="o">.</span><span class="n">mapView</span><span class="o">.</span><span class="n">annotations</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="k">let</span> <span class="nv">subtitle</span> <span class="o">=</span> <span class="n">annotation</span><span class="o">.</span><span class="n">subtitle</span><span class="p">,</span> <span class="n">subtitle</span> <span class="o">==</span> <span class="kt">Area</span><span class="o">.</span><span class="kt">PlaceSubtitle</span><span class="o">.</span><span class="kt">Nonsmoking</span><span class="o">.</span><span class="n">rawValue</span> <span class="p">{</span>
+                <span class="n">mapView</span><span class="o">.</span><span class="nf">removeAnnotation</span><span class="p">(</span><span class="n">annotation</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="-exchange-latitude--longitude-to-address">➃ Exchange Latitude &amp; Longitude to Address</h4>
+<p>: This function is used in the <code class="language-plaintext highlighter-rouge">nonsmokingAreaSwitchAction()</code> function with the flow shown below.</p>
+<blockquote>
+  <p>Get current location’s latitude &amp; longitude  <br />
+→ exchange latitude &amp; longitude to Korean Address  <br />
+→ Extract the specific factor (ex. <code class="language-plaintext highlighter-rouge">administrativeArea</code>, <code class="language-plaintext highlighter-rouge">locality</code> of Address)   <br />
+→ get current location’s non-smoking areas’ API using the factor</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">private</span> <span class="kd">func</span> <span class="nf">getCoordinateToAddress</span><span class="p">(</span><span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">coordinateLocation</span> <span class="o">=</span> <span class="kt">CLLocation</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="n">coordinate</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="n">coordinate</span><span class="o">.</span><span class="n">longitude</span><span class="p">)</span>
+    <span class="k">let</span> <span class="nv">geocoder</span> <span class="o">=</span> <span class="kt">CLGeocoder</span><span class="p">()</span>
+    <span class="k">let</span> <span class="nv">locale</span> <span class="o">=</span> <span class="kt">Locale</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="s">"Ko-kr"</span><span class="p">)</span>
+    
+    <span class="n">geocoder</span><span class="o">.</span><span class="nf">reverseGeocodeLocation</span><span class="p">(</span><span class="n">coordinateLocation</span><span class="p">,</span> <span class="nv">preferredLocale</span><span class="p">:</span> <span class="n">locale</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">{(</span><span class="n">placemarks</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+        <span class="k">if</span> <span class="k">let</span> <span class="nv">fullAddress</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLPlacemark</span><span class="p">]</span> <span class="o">=</span> <span class="n">placemarks</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="k">let</span> <span class="nv">locality</span> <span class="o">=</span> <span class="n">fullAddress</span><span class="o">.</span><span class="n">last</span><span class="p">?</span><span class="o">.</span><span class="n">locality</span><span class="p">,</span> <span class="k">let</span> <span class="nv">administrativeArea</span> <span class="o">=</span> <span class="n">fullAddress</span><span class="o">.</span><span class="n">last</span><span class="p">?</span><span class="o">.</span><span class="n">administrativeArea</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">currentDisplayAddress</span> <span class="o">=</span> <span class="kt">Address</span><span class="p">(</span><span class="nv">administrativeArea</span><span class="p">:</span> <span class="n">administrativeArea</span><span class="p">,</span> <span class="nv">locality</span><span class="p">:</span> <span class="n">locality</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">})</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="-api-xml-format">➄ API: XML format</h4>
+<p>: In this project, the <code class="language-plaintext highlighter-rouge">Alamofire</code>, <code class="language-plaintext highlighter-rouge">CFRunLoop</code> and <code class="language-plaintext highlighter-rouge">completion</code> is used to handle the XML type multiple API in the loop.</p>
+
+<p>Calling API with <code class="language-plaintext highlighter-rouge">NSXMLParserDelegate</code>, handling its data and other ways to synchronize it will be delt with in another post.</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">private</span> <span class="kd">func</span> <span class="nf">callXmlApi</span><span class="p">(</span><span class="nv">baseUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">endPage</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">Area</span><span class="p">])</span><span class="o">-&gt;</span><span class="p">()){</span>
+  <span class="k">var</span> <span class="nv">nonsmokingAreas</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Area</span><span class="p">]()</span>
+  <span class="k">var</span> <span class="nv">isEndPage</span> <span class="o">=</span> <span class="kc">false</span>
+  <span class="k">let</span> <span class="nv">runLoop</span> <span class="o">=</span> <span class="kt">CFRunLoopGetCurrent</span><span class="p">()</span>
+
+  <span class="k">for</span> <span class="n">pageNo</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="n">endPage</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">isEndPage</span> <span class="p">{</span> <span class="k">break</span> <span class="p">}</span>
+
+    <span class="kt">Alamofire</span><span class="o">.</span><span class="nf">request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="o">.</span><span class="k">get</span><span class="p">)</span><span class="o">.</span><span class="nf">validate</span><span class="p">()</span><span class="o">.</span><span class="n">responseString</span> <span class="p">{</span> <span class="n">response</span> <span class="k">in</span>
+      <span class="kt">CFRunLoopStop</span><span class="p">(</span><span class="n">runLoop</span><span class="p">)</span>
+      <span class="k">switch</span> <span class="n">response</span><span class="o">.</span><span class="n">result</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="o">.</span><span class="nv">success</span><span class="p">:</span>
+        <span class="k">if</span> <span class="k">let</span> <span class="nv">responseData</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">data</span> <span class="p">{</span>
+          <span class="k">let</span> <span class="nv">responseDataEncoding</span> <span class="o">=</span> <span class="kt">NSString</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">responseData</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="kt">String</span><span class="o">.</span><span class="kt">Encoding</span><span class="o">.</span><span class="n">utf8</span><span class="o">.</span><span class="n">rawValue</span><span class="p">)</span>
+          <span class="k">let</span> <span class="nv">xml</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">XML</span><span class="o">.</span><span class="nf">parse</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">responseDataEncoding</span><span class="o">!</span><span class="p">))</span>
+          
+          <span class="k">if</span> <span class="k">let</span> <span class="nv">endPageCode</span> <span class="o">=</span> <span class="n">xml</span><span class="p">[</span><span class="s">"response"</span><span class="p">][</span><span class="s">"header"</span><span class="p">][</span><span class="s">"code"</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="k">let</span> <span class="nv">endPageCodeName</span> <span class="o">=</span> <span class="n">xml</span><span class="p">[</span><span class="s">"response"</span><span class="p">][</span><span class="s">"header"</span><span class="p">][</span><span class="s">"codeNm"</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> <span class="p">{</span>
+              <span class="n">isEndPage</span> <span class="o">=</span> <span class="kc">true</span>
+              <span class="nf">print</span><span class="p">(</span><span class="s">"EndCode: </span><span class="se">\(</span><span class="n">endPageCode</span><span class="se">)</span><span class="s">, EndCodeName: </span><span class="se">\(</span><span class="n">endPageCodeName</span><span class="se">)</span><span class="s">"</span><span class="p">,</span> <span class="n">isEndPage</span><span class="p">)</span>
+              <span class="k">break</span>
+          <span class="p">}</span>
+          
+          <span class="k">for</span> <span class="n">element</span> <span class="k">in</span> <span class="n">xml</span><span class="p">[</span><span class="s">"response"</span><span class="p">][</span><span class="s">"body"</span><span class="p">][</span><span class="s">"items"</span><span class="p">][</span><span class="s">"item"</span><span class="p">]{</span>
+              <span class="k">if</span> <span class="k">let</span> <span class="nv">placeName</span> <span class="o">=</span> <span class="n">element</span><span class="p">[</span><span class="s">"prhsmkNm"</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="k">let</span> <span class="nv">latitude</span> <span class="o">=</span> <span class="n">element</span><span class="p">[</span><span class="s">"latitude"</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="k">let</span> <span class="nv">longitude</span> <span class="o">=</span> <span class="n">element</span><span class="p">[</span><span class="s">"longitude"</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> <span class="p">{</span>
+                  <span class="k">let</span> <span class="nv">latitudeDoube</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="kt">Double</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span><span class="o">!</span>
+                  <span class="k">let</span> <span class="nv">longitudeDoube</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="kt">Double</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span><span class="o">!</span>
+
+                  <span class="n">nonsmokingAreas</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">Area</span><span class="p">(</span><span class="nv">placeSubtitle</span><span class="p">:</span> <span class="kt">Area</span><span class="o">.</span><span class="kt">PlaceSubtitle</span><span class="o">.</span><span class="kt">Nonsmoking</span> <span class="p">,</span> <span class="nv">placeName</span><span class="p">:</span> <span class="n">placeName</span><span class="p">,</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="n">latitudeDoube</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="n">longitudeDoube</span><span class="p">)))</span>
+              <span class="p">}</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+      <span class="nf">print</span><span class="p">(</span><span class="s">"fail to get response from </span><span class="se">\(</span><span class="n">url</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="kt">CFRunLoopRun</span><span class="p">()</span>
+  <span class="p">}</span>
+  <span class="nf">completion</span><span class="p">(</span><span class="n">nonsmokingAreas</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="-api-json-format">➅ API: JSON format</h4>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">private</span> <span class="kd">func</span> <span class="nf">callJsonApi</span><span class="p">(</span><span class="nv">urlStr</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">Area</span><span class="p">])</span><span class="o">-&gt;</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">smokingAreas</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Area</span><span class="p">]()</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="n">urlStr</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>  <span class="k">return</span>  <span class="p">}</span>
+    <span class="k">let</span> <span class="nv">session</span> <span class="o">=</span> <span class="kt">URLSession</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="kt">URLSessionConfiguration</span><span class="o">.</span><span class="k">default</span><span class="p">)</span>
+    <span class="k">let</span> <span class="nv">task</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">{(</span><span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+        <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">" &gt; Error: </span><span class="se">\(</span><span class="n">error</span><span class="o">!</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+        <span class="k">guard</span> <span class="k">let</span> <span class="nv">resData</span> <span class="o">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="k">let</span> <span class="nv">dataDecode</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">JSONDecoder</span><span class="p">()</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">SmokingArea</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">resData</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="k">in</span> <span class="n">dataDecode</span><span class="o">.</span><span class="n">data</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="k">let</span> <span class="nv">latitudeDouble</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="kt">Double</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">latitude</span><span class="p">),</span><span class="k">let</span> <span class="nv">longitudeDouble</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="kt">Double</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">longitude</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">smokingAreas</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">Area</span><span class="p">(</span><span class="nv">placeSubtitle</span><span class="p">:</span> <span class="kt">Area</span><span class="o">.</span><span class="kt">PlaceSubtitle</span><span class="o">.</span><span class="kt">Smoking</span><span class="p">,</span> <span class="nv">placeName</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">installationLocation</span><span class="p">,</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="n">latitudeDouble</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="n">longitudeDouble</span><span class="p">)))</span>
+                <span class="p">}</span>   
+            <span class="p">}</span>           
+            <span class="nf">completion</span><span class="p">(</span><span class="n">smokingAreas</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="k">let</span> <span class="nv">error</span> <span class="p">{</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"JSONDecoder Error: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">})</span>
+    <span class="n">task</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
+<span class="p">}</span></code></pre></figure>
+
+<!-- #### ➆
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"></code></pre></figure>
+
+
+
+➀➁➂➃➄➅➆➇➈➉
+
+#### -->
+
+<h3 id="further-improvement">Further Improvement</h3>
+<h4 id="refactoring">Refactoring</h4>
+<ul>
+  <li>guard</li>
+  <li>error message (current: console)</li>
+  <li>Other ways to synchronize the API function.</li>
+</ul>
+
+<h4 id="calling-multiple-apis-fast-without-cpu-momory-overloading">Calling multiple APIs FAST without CPU, Momory overloading.</h4>
+
+<!-- ## Problems
+### 1) Calling API and extract Data.
+Since this is the first time of using public API, I faced with problem that how to get (public) API with `.xml` or `json` and use it.
+
+#### XML Format API
+: Nonsmoking area API
+- `NSXMLParserDelegate`
+First time, I tried to call API with just `XMLParserDelegate` in Swift and `parse()` function. But this is not effective way in my project, so I removed `parse()` functions and not used this. Below are the webpages I referred to when I used `XMLParserDelegate`.
+
+[XML parsing: This page has full coding and clear description.]: https://rhammer.tistory.com/131
+
+
+- `Alamofire`
+
+[Install Alamofire Library]: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=hoon299&logNo=221589855345
+
+[Cocoapods Repository Update Error]: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=cicron&logNo=220887524542
+
+[Podfile usage and CocoaPods install]: https://zeddios.tistory.com/25
+
+
+#### JSON Format API
+: Smoking Area in Yong-San Gu send API in JSON format. 
+
+
+
+#### Synchronize the Asynchronous function
+- Without Loop: Completion
+
+
+
+- call multiple Open APIs with Loop: CFRunLoop
+: The nonsmoking area Open API has the whole country 
+
+
+### 2) Calling multiple API pages(upto 900 APIs with 1000 rows) FAST without CPU, Momory overloading.
+
+The URL of Open API consists approximately of th following:
+ `http://something_api_name&pageNo=800&numOfRows=100&other_parameters`
+
+The entire data has about more than 800 pages with 100rows. 
+There are mainly 
+
+- Calling All APIs in one time when the button pressed.
+First, I tried to call the entire data (about 800 APIs in one time) when ths UISwitch turned on. 
+This led to a catastrophe for the program. Before a quarter of the entire API could be loaded, the application stopped running!
+
+- Other ways to call APIs
+Then I tried to call the APIs with more rows(aboutt 500 rows in one API).
+Of course, this makes situation more worse. 
+
+I realized this is the stupid thing, so I treid to think about another options.
+Then, I thought about how the map applications in maket show location information. The best example was the residual vaccine reservation service.
+Of course, this service was not bringing in information from all places at once. The service was showing only nearby information about location selected by user. Shrinking the map showed more information, but there was a limit. The point is, they did NOT display the all the informations at one time.
+
+- Calling APIs only near the region selected by user.
+So I finally tried to call the API more efficient way!
+There are mainly 4 processes that I should additionaly develop.
+
+➀ Get current/selected(moved) location → ➁ Get the location information(city name...) → ➂ Call the APIs nearby → ➃ Display the APIs' information
+
+What had to be considered in the process was the definition of 'near'.
+The simplest thing is the circle of the pinpoint, but it is impossible to call the APIS with range of latitude and longitude.
+The next thing is to 
+
+
+
+
+- Should I call the entire data in the first time when button pressed?
+  - This is way too heavy. (Calling the 1/4 of the entire data also takes too long... and don't want to recommended)
+
+
+
+
+http://api.data.go.kr/openapi/tn_pubr_public_prhsmk_zn_api?serviceKey=54PZHQOEMuoKu%2F2qc%2FePaSammRtXkjShRY1JS4dLgXmCr1LOoLA3keN2CApbO65Uj64E6O3oxWkwYypedHf8sA%3D%3D&pageNo=0&numOfRows=100&ctprvnNm=서울특별시&type=xml
+
+
+### 3) Other problems.
+- Settings
+➀ HTTP allow for API
+[Allow HTTP in iOS]: https://slobell.com/blogs/54
+
+  not helpful bul readable thigs:
+  [iOS 9 / OS X 10.11 App Network Security Policy]: http://seorenn.blogspot.com/2015/09/ios-9-os-x-1011.html
+  [ATS Errors]: https://y8k.me/article/847
+
+➀➁➂➃➄➅➆➇➈➉
+
+
+- Show multiple `Annotations` in Apple MapView 
+: non-smoking area datas in `areas`struct Array → mapping to annotation → add annotations in mapView. (For security purpose, Variable names and details are slightly different from actual code developed.)
+
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">annotations</span>  <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">areas</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span>
+    <span class="n">area</span> <span class="o">-&gt;</span> <span class="kt">MKAnnotation</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="nv">annotation</span> <span class="o">=</span> <span class="kt">MKPointAnnotation</span><span class="p">()</span>
+    <span class="n">annotation</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">area</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">annotation</span><span class="o">.</span><span class="n">coordinate</span> <span class="o">=</span> <span class="n">area</span><span class="o">.</span><span class="n">coordinate</span>
+    <span class="n">annotation</span><span class="o">.</span><span class="n">subtitle</span> <span class="o">=</span> <span class="kt">AreaSubtitle</span><span class="o">.</span><span class="n">nonsmoking</span>
+    <span class="o">...</span>
+    <span class="k">return</span> <span class="n">annotation</span>
+<span class="p">}</span>
+<span class="k">self</span><span class="o">.</span><span class="n">map</span><span class="o">.</span><span class="nf">addAnnotations</span><span class="p">(</span><span class="n">annotations</span><span class="p">)</span>
+<span class="k">self</span><span class="o">.</span><span class="n">map</span><span class="o">.</span><span class="nf">showAnnotations</span><span class="p">(</span><span class="n">annotations</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span></code></pre></figure>
+
+
+
+
+(reference: 
+Similar problem: 
+https://stackoverflow.com/questions/51795862/how-to-add-annotations-in-map-view-only-show-one-pin
+
+Fix: 
+https://stackoverflow.com/questions/36666968/how-to-set-up-array-for-multi-annotations-with-swift/36668011#36668011) -->
+
+<p><br />
+<br /></p>
+
+<h1 id="4-result">4. Result</h1>
+<h2 id="version-100-3">version 1.0.0</h2>
+<video height="900" controls="controls">
+  <source src="/assets/images/smokingArea/smokingArea_v1_video.mp4" type="video/mp4" />
+</video>
 
 
         
@@ -377,7 +770,13 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#ios-application" class="page__taxonomy-item" rel="tag">iOS Application</a>
+      <a href="/tags/#api" class="page__taxonomy-item" rel="tag">API</a><span class="sep">, </span>
+    
+      <a href="/tags/#ios" class="page__taxonomy-item" rel="tag">iOS</a><span class="sep">, </span>
+    
+      <a href="/tags/#public-api" class="page__taxonomy-item" rel="tag">Public API</a><span class="sep">, </span>
+    
+      <a href="/tags/#swift" class="page__taxonomy-item" rel="tag">Swift</a>
     
     </span>
   </p>
@@ -402,7 +801,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-01T11:12:34+09:00">July 1, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-08-07T15:28:33+09:00">August 7, 2021</time></p>
 
 
       </footer>
@@ -410,7 +809,7 @@
       <!-- <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Webtoon+Application%28iOS%29%20http%3A%2F%2Flocalhost%3A4000%2Fios%2FiOS-Application%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5BProject%5D+Smoking%2FNonsmoking+Area%20http%3A%2F%2Flocalhost%3A4000%2Fios%2FiOS-Application%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fios%2FiOS-Application%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -421,11 +820,11 @@
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="/project/Web-Application-SpringBoot-Impementation/" class="pagination--pager" title="Web Application SpringBoot Implementation
+">Previous</a>
     
     
-      <a href="/ios/Swift-Basic/" class="pagination--pager" title="Swift Basic
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -482,6 +881,53 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">Web Application implementation of Backend(SpringBoot).
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics/Quantum-information/" rel="permalink">Web Application
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-11T20:08:08+09:00">July 11, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
@@ -568,7 +1014,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          1 minute read
         
       </span>
     
