@@ -1,6 +1,6 @@
 ---
 # layout: posts
-title: "[Project] Smoking/Nonsmoking Area"
+title: "[Swift Project] Smoking/Nonsmoking Area"
 date: 2021-08-07 15:28:33 +0900
 categories:
   - iOS
@@ -10,7 +10,7 @@ tags:
   - Public API
   - API
 
-excerpt: "Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)"
+excerpt: "Develop the iOS Application(Swift) that mark the Smoking/Non-smoking Areas in the map."
 toc: true
 
 
@@ -109,7 +109,11 @@ In version 1.0.0, there are main 4 features.
 ➃ Display the smoking area data of Yonsan-Gu on the map.   
    
 The codes below are the main functions needed to implement these four features.
-   
+
+### Main problems
+- call XML/JSON API
+- synchronize with/without loop
+
 ### Functions
 #### ➀ Move to current locations.
 - basic settings in `viewDidLoad()`
@@ -341,6 +345,7 @@ private func callJsonApi(urlStr: String, completion: @escaping ([Area])->()) {
 
 #### -->
 
+
 ### Further Improvement
 #### Refactoring
 - guard
@@ -348,6 +353,7 @@ private func callJsonApi(urlStr: String, completion: @escaping ([Area])->()) {
 - Other ways to synchronize the API function.
 
 #### Calling multiple APIs FAST without CPU, Momory overloading.
+: In version 1.0.0, the application is quite slow especially when calling API.
 
 
 

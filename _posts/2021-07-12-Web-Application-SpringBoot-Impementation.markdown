@@ -1,6 +1,6 @@
 ---
 # layout: posts
-title: "[Project] Blog Implementation"
+title: "[Project] Blog Implementation - Spring Boot"
 date: 2021-07-12 22:02:14 +0900
 categories:
   - Project
