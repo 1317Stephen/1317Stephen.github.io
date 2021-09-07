@@ -1,9 +1,9 @@
 ---
 # layout: posts
-title: "[Project] Blog Implementation - Spring Boot"
+title: "[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot"
 date: 2021-07-12 22:02:14 +0900
 categories:
-  - Project
+  - Backend
 tags:
   - Spring Boot
   - Oracle ATP Database

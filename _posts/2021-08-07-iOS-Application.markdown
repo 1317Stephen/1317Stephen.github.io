@@ -4,6 +4,7 @@ title: "[Swift Project] Smoking/Nonsmoking Area"
 date: 2021-08-07 15:28:33 +0900
 categories:
   - iOS
+  - Project
 tags:
   - iOS
   - Swift

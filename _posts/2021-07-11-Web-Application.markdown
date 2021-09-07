@@ -3,6 +3,8 @@
 title: "[SpringBoot/Vue.js Project] Blog"
 date: 2021-07-11 20:08:08 +0900
 categories:
+  - Backend
+  - Frontend
   - Project
 tags:
   - Spring Boot

@@ -41,10 +41,10 @@ var store = [{
         "url": "/ios/Swift-Basic/",
         "teaser": null
       },{
-        "title": "Web Application",
-        "excerpt":"Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js) 1. Requirements Project Objectives Develop an Web Application that works as a personal Blog. Specification Article, Category CRUD. Parent/Child relationships in categories. Show projects by year. Backend API -&gt; Frontend. Docker. 2. Structure Web Application Project...","categories": ["Project"],
+        "title": "[SpringBoot/Vue.js Project] Blog",
+        "excerpt":"Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js) 1. Requirements Project Objectives Develop an Web Application that works as a personal Blog. Specification Article, Category CRUD. Parent/Child relationships in categories. Show projects by year. Backend API -&gt; Frontend. Docker. 2. Structure Web Application Project...","categories": ["Backend","Frontend","Project"],
         "tags": ["Spring Boot","Vue.js","Node.js","Oracle ATP Database","Oracle Cloud","Backend","Frontend","Database"],
-        "url": "/project/Web-Application/",
+        "url": "/backend/frontend/project/Web-Application/",
         "teaser": null
       },{
         "title": "Web Application",
@@ -53,15 +53,15 @@ var store = [{
         "url": "/physics/Quantum-information/",
         "teaser": null
       },{
-        "title": "Web Application SpringBoot Implementation",
-        "excerpt":"Backend Setting application.properties server.port = 1111 spring.datasource.driver-class-name=oracle.jdbc.pool.OracleDataSource spring.datasource.url=YOUR_ORALCE_WALLET_TNSNAME_AND_DIRECTORY spring.datasource.username=YOUR_ID spring.datasource.password=YOUR_PASSWORD oracle.ucp.minPoolSize=5 oracle.ucp.maxPoolSize=50 spring.main.allow-bean-definition-overriding=true spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl logging.level.com.example.demo=debug Config Package MongoConfig Class : Embedded Database Setting (Mongo DB) @Profile(value = \"mongo\") @Configuration @Import(EmbeddedMongoAutoConfiguration.class) public class MongoConfig { } OracleConfig Class : External Database Setting (Oracle ATP DB) @Profile(value = \"oracle\") @Configuration public class...","categories": ["Project"],
+        "title": "[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot",
+        "excerpt":"Backend Setting application.properties server.port = 1111 spring.datasource.driver-class-name=oracle.jdbc.pool.OracleDataSource spring.datasource.url=YOUR_ORALCE_WALLET_TNSNAME_AND_DIRECTORY spring.datasource.username=YOUR_ID spring.datasource.password=YOUR_PASSWORD oracle.ucp.minPoolSize=5 oracle.ucp.maxPoolSize=50 spring.main.allow-bean-definition-overriding=true spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl logging.level.com.example.demo=debug Config Package MongoConfig Class : Embedded Database Setting (Mongo DB) @Profile(value = \"mongo\") @Configuration @Import(EmbeddedMongoAutoConfiguration.class) public class MongoConfig { } OracleConfig Class : External Database Setting (Oracle ATP DB) @Profile(value = \"oracle\") @Configuration public class...","categories": ["Backend"],
         "tags": ["Spring Boot","Oracle ATP Database","Oracle Cloud","Backend","Database"],
-        "url": "/project/Web-Application-SpringBoot-Impementation/",
+        "url": "/backend/Web-Application-SpringBoot-Impementation/",
         "teaser": null
       },{
-        "title": "[Project] Smoking/Nonsmoking Area",
-        "excerpt":"1. Requirements Project Objectives Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea. Specification version 1.0.0 Mark smoking areas in the map. (YongSan-Gu) Mark non-smoking areas in the map. The map screen can be zoomed. Can move to the current position...","categories": ["iOS"],
+        "title": "[Swift Project] Smoking/Nonsmoking Area",
+        "excerpt":"1. Requirements Project Objectives Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea. Specification version 1.0.0 Mark smoking areas in the map. (YongSan-Gu) Mark non-smoking areas in the map. The map screen can be zoomed. Can move to the current position...","categories": ["iOS","Project"],
         "tags": ["iOS","Swift","Public API","API"],
-        "url": "/ios/iOS-Application/",
+        "url": "/ios/project/iOS-Application/",
         "teaser": null
       }]
