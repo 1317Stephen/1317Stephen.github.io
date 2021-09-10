@@ -1,9 +1,9 @@
 ---
 # layout: posts
 title: "[Swift Project] Smoking/Nonsmoking Area"
-date: 2021-08-07 15:28:33 +0900
+date: 2021-09-05 15:28:33 +0900
 categories:
-  - iOS
+  - Swift
   - Project
 tags:
   - iOS
@@ -482,7 +482,7 @@ https://stackoverflow.com/questions/36666968/how-to-set-up-array-for-multi-annot
 <video height="900" controls="controls">
   <source src="/assets/images/smokingArea/smokingArea_v1_video.mp4" type="video/mp4">
 </video>
-
+- period: Aug 9, 2021 ~ Sep 5, 2021
 
 
 

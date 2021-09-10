@@ -36,9 +36,9 @@ var store = [{
         "teaser": null
       },{
         "title": "Swift Basic",
-        "excerpt":"1. Swift Collection Data Structure Array Initialization var arr = [Int]() var arr2 : [Int] = [] var arr3 : Array&lt;Int&gt; = [] Get size let n = arr.count Access arr[arr.startIndex] arr.first arr[arr.endIndex-1] arr.last Append/Insert arr.append(\"something\") arr.insert(\"something insert\", at:1) Remove/Pop/Drop arr.removeFirst() arr.popLast() arr.removeLast() arr.remove(at:3) arr.removeAll() let getArrExceptFirst = arr.dropFirst() let...","categories": ["iOS"],
+        "excerpt":"1. Swift Collection Data Structure Array Initialization var arr = [Int]() var arr2 : [Int] = [] var arr3 : Array&lt;Int&gt; = [] Get size let n = arr.count Access arr[arr.startIndex] arr.first arr[arr.endIndex-1] arr.last Append/Insert arr.append(\"something\") arr.insert(\"something insert\", at:1) Remove/Pop/Drop arr.removeFirst() arr.popLast() arr.removeLast() arr.remove(at:3) arr.removeAll() let getArrExceptFirst = arr.dropFirst() let...","categories": ["Swift"],
         "tags": ["Swift","iOS"],
-        "url": "/ios/Swift-Basic/",
+        "url": "/swift/Swift-Basic/",
         "teaser": null
       },{
         "title": "[SpringBoot/Vue.js Project] Blog",
@@ -60,8 +60,20 @@ var store = [{
         "teaser": null
       },{
         "title": "[Swift Project] Smoking/Nonsmoking Area",
-        "excerpt":"1. Requirements Project Objectives Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea. Specification version 1.0.0 Mark smoking areas in the map. (YongSan-Gu) Mark non-smoking areas in the map. The map screen can be zoomed. Can move to the current position...","categories": ["iOS","Project"],
+        "excerpt":"1. Requirements Project Objectives Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea. Specification version 1.0.0 Mark smoking areas in the map. (YongSan-Gu) Mark non-smoking areas in the map. The map screen can be zoomed. Can move to the current position...","categories": ["Swift","Project"],
         "tags": ["iOS","Swift","Public API","API"],
-        "url": "/ios/project/iOS-Application/",
+        "url": "/swift/project/iOS-Application/",
+        "teaser": null
+      },{
+        "title": "Swift Error Note",
+        "excerpt":"Type has no member Search: Swift - Type has no member Type has no member? Swift This problem usually occurs in the module import error: wrong variable name, etc… Cause: In my case, the problem is that the error is in the model class and I tried to use inside...","categories": ["Swift"],
+        "tags": ["Swift","iOS"],
+        "url": "/swift/Swift-Error-Note/",
+        "teaser": null
+      },{
+        "title": "Swift Basic: Only in Swift",
+        "excerpt":"Underscore: _     reference:            What is _: in Swift telling me?       Swift underscore(_)       Why do I need underscores in swift?              “ignore this”   Underscroe is used to define the parameter is not named.   In for-loop, “no index, just repeat.”    struct   ","categories": ["Swift"],
+        "tags": ["Swift","iOS"],
+        "url": "/swift/Swift-Basic(ONLY)/",
         "teaser": null
       }]

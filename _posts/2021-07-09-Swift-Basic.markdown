@@ -3,7 +3,7 @@
 title: "Swift Basic"
 date: 2021-07-09 09:32:40 +0900
 categories:
-  - iOS
+  - Swift
 tags:
   - Swift
   - iOS

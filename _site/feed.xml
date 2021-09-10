@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-07T19:49:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">[Swift Project] Smoking/Nonsmoking Area</title><link href="http://localhost:4000/ios/project/iOS-Application/" rel="alternate" type="text/html" title="[Swift Project] Smoking/Nonsmoking Area" /><published>2021-08-07T15:28:33+09:00</published><updated>2021-08-07T15:28:33+09:00</updated><id>http://localhost:4000/ios/project/iOS-Application</id><content type="html" xml:base="http://localhost:4000/ios/project/iOS-Application/">&lt;h1 id=&quot;1-requirements&quot;&gt;1. Requirements&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-10T20:52:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">Swift Basic: Only in Swift</title><link href="http://localhost:4000/swift/Swift-Basic(ONLY)/" rel="alternate" type="text/html" title="Swift Basic: Only in Swift" /><published>2021-09-09T16:18:40+09:00</published><updated>2021-09-09T16:18:40+09:00</updated><id>http://localhost:4000/swift/Swift-Basic(ONLY)</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Basic(ONLY)/">&lt;h2 id=&quot;underscore-_&quot;&gt;Underscore: _&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;reference:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/30876068/what-is-in-swift-telling-me&quot;&gt;What is _: in Swift telling me?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://medium.com/@codenamehong/swift-underscore-90dcbec5072f&quot;&gt;Swift underscore(_)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39627106/why-do-i-need-underscores-in-swift&quot;&gt;Why do I need underscores in swift?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“ignore this” &lt;br /&gt;
+Underscroe is used to define the parameter is not named. &lt;br /&gt;
+In for-loop, “no index, just repeat.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;struct&quot;&gt;struct&lt;/h2&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /></entry><entry><title type="html">Swift Error Note</title><link href="http://localhost:4000/swift/Swift-Error-Note/" rel="alternate" type="text/html" title="Swift Error Note" /><published>2021-09-09T10:44:40+09:00</published><updated>2021-09-09T10:44:40+09:00</updated><id>http://localhost:4000/swift/Swift-Error-Note</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Error-Note/">&lt;h2 id=&quot;type-has-no-member&quot;&gt;Type has no member&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Search:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/37355179/swift-type-has-no-member&quot;&gt;Swift - Type has no member&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/forums/thread/655666&quot;&gt;Type has no member? Swift&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;This problem usually occurs in the module import error: wrong variable name, etc…&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cause: In my case, the problem is that the error is in the model class and I tried to use inside variable.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Result: Fixed the error in the model class.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;similar-error&quot;&gt;Similar Error&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Error msg:
+    &lt;blockquote&gt;
+      &lt;p&gt;Value of type ‘UIViewController’ has no member ‘visibleViewContoller’&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Search:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/46039287/receiving-error-value-of-type-uiviewcontroller-has-no-member-openviewcontrol&quot;&gt;Receiving error: Value of type ‘UIViewController’ has no member ‘openViewControllerBasedOnIdentifier’&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/32815337/value-of-type-uiviewcontroller-has-no-member-topviewcontroller-after-xcode-7-upd&quot;&gt;Value of type UIViewController has no member topViewController after Xcode 7 update&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;forundefinedkey-nsunknownkeyexception&quot;&gt;forUndefinedKey, NSUnknownKeyException&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Error msg:
+    &lt;blockquote&gt;
+      &lt;p&gt;setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key f.”&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Search:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://m.blog.naver.com/akj61300/220063207476&quot;&gt;ios NSUnknownKeyException&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cause: Referenced the deleted IBOulet in Storyboard.&lt;/li&gt;
+  &lt;li&gt;Result: Implemented the IBOulet in source code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;crash-nsinvalidargumentexception&quot;&gt;Crash: NSInvalidArgumentException&lt;/h2&gt;
+&lt;details&gt;
+  &lt;summary&gt;Error message&lt;/summary&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;  2021-08-05 21:55:52.203428+0900 SmokingArea[8667:1145459] &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; Terminating app due to uncaught exception &lt;span class=&quot;s1&quot;&gt;'NSInvalidArgumentException'&lt;/span&gt;, reason: &lt;span class=&quot;s1&quot;&gt;'Invalid Region &amp;lt;center:+37.29994550, +126.89833000 span:+189.78684392, +130.01675267&amp;gt;'&lt;/span&gt;   
+&lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; First throw call stack:   
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;   
+	0   CoreFoundation                      0x00007fff2041daf2 __exceptionPreprocess + 242   
+	1   libobjc.A.dylib                     0x00007fff20177e78 objc_exception_throw + 48   
+	2   CoreFoundation                      0x00007fff2041d793 -[NSException init] + 0   
+	3   MapKit                              0x00007fff2f6efcc8 -[MKMapView setRegion:animated:] + 687   
+	4   SmokingArea                         0x0000000108c66fa8 &lt;span class=&quot;nv&quot;&gt;$s11SmokingArea14ViewControllerC15mapScaleStepperyySo9UIStepperCF&lt;/span&gt; + 1256   
+	5   SmokingArea                         0x0000000108c67034 &lt;span class=&quot;nv&quot;&gt;$s11SmokingArea14ViewControllerC15mapScaleStepperyySo9UIStepperCFTo&lt;/span&gt; + 68    
+	6   UIKitCore                           0x00007fff2467b62e -[UIApplication sendAction:to:from:forEvent:] + 83    
+	7   UIKitCore                           0x00007fff23fa496c -[UIControl sendAction:to:forEvent:] + 223    
+	8   UIKitCore                           0x00007fff23fa4c8f -[UIControl     _sendActionsForEvents:withEvent:] + 332   
+	9   UIKitCore                           0x00007fff24a68f0a -[UIStepperHorizontalVisualElement _updateCount:] + 367   
+	10  UIKitCore                           0x00007fff24a68be0 -[UIStepperHorizontalVisualElement endTrackingWithTouch:withEvent:] + 33   
+	11  UIKitCore                           0x00007fff23fd0750 -[UIStepper endTrackingWithTouch:withEvent:] + 95   
+	12  UIKitCore                           0x00007fff23fa3549 -[UIControl touchesEnded:withEvent:] + 453   
+	13  UIKitCore                           0x00007fff246b7d6a -[UIWindow _sendTouchesForEvent:] + 1287   
+	14  UIKitCore                           0x00007fff246b9be3 -[UIWindow sendEvent:] + 4774   
+	15  UIKitCore                           0x00007fff246938f6 -[UIApplication sendEvent:] + 633   
+	16  UIKitCore                           0x00007fff2472439c __processEventQueue + 13895   
+	17  UIKitCore                           0x00007fff2471ad0f __eventFetcherSourceCallback + 104   
+	18  CoreFoundation                      0x00007fff2038c37a __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17   
+	19  CoreFoundation                      0x00007fff2038c272 __CFRunLoopDoSource0 + 180   
+	20  CoreFoundation                      0x00007fff2038b754 __CFRunLoopDoSources0 + 248   
+	21  CoreFoundation                      0x00007fff20385f1f __CFRunLoopRun + 878   
+	22  CoreFoundation                      0x00007fff203856c6 CFRunLoopRunSpecific + 567   
+	23  GraphicsServices                    0x00007fff2b76adb3 GSEventRunModal + 139   
+	24  UIKitCore                           0x00007fff24675187 -[UIApplication _run] + 912   
+	25  UIKitCore                           0x00007fff2467a038 UIApplicationMain + 101   
+	26  libswiftUIKit.dylib                 0x00007fff541545f2 &lt;span class=&quot;nv&quot;&gt;$s5UIKit17UIApplicationMainys5Int32VAD_SpySpys4Int8VGGSgSSSgAJtF&lt;/span&gt; + 98   
+	27  SmokingArea                         0x0000000108c6c62a &lt;span class=&quot;nv&quot;&gt;$sSo21UIApplicationDelegateP5UIKitE4mainyyFZ&lt;/span&gt; + 122   
+	28  SmokingArea                         0x0000000108c6c59e &lt;span class=&quot;nv&quot;&gt;$s11SmokingArea11AppDelegateC5$mainyyFZ&lt;/span&gt; + 46   
+	29  SmokingArea                         0x0000000108c6c679 main + 41   
+	30  libdyld.dylib                       0x00007fff20256409 start + 1   
+	31  ???                                 0x0000000000000001 0x0 + 1   
+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;   
+libc++abi.dylib: terminating with uncaught exception of &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;NSException   
+&lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; Terminating app due to uncaught exception &lt;span class=&quot;s1&quot;&gt;'NSInvalidArgumentException'&lt;/span&gt;, reason: &lt;span class=&quot;s1&quot;&gt;'Invalid Region &amp;lt;center:+37.29994550, +126.89833000 span:+189.78684392, +130.01675267&amp;gt;'&lt;/span&gt;   
+terminating with uncaught exception of &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;NSException    
+CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;C3DAD0D5-84C9-4EA4-8E41-76B189B5C107&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; - Runtime: iOS 14.2 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;18B79&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; - DeviceType: iPhone 12 Pro Max    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;/details&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Search:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cause:&lt;/li&gt;
+  &lt;li&gt;Result:&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /><summary type="html">This note summarizes the errors that occurred during the development of Swift.</summary></entry><entry><title type="html">[Swift Project] Smoking/Nonsmoking Area</title><link href="http://localhost:4000/swift/project/iOS-Application/" rel="alternate" type="text/html" title="[Swift Project] Smoking/Nonsmoking Area" /><published>2021-09-05T15:28:33+09:00</published><updated>2021-09-05T15:28:33+09:00</updated><id>http://localhost:4000/swift/project/iOS-Application</id><content type="html" xml:base="http://localhost:4000/swift/project/iOS-Application/">&lt;h1 id=&quot;1-requirements&quot;&gt;1. Requirements&lt;/h1&gt;
 &lt;h2 id=&quot;project-objectives&quot;&gt;Project Objectives&lt;/h2&gt;
 &lt;p&gt;Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea.&lt;/p&gt;
 
@@ -436,7 +555,10 @@ https://stackoverflow.com/questions/36666968/how-to-set-up-array-for-multi-annot
 &lt;h2 id=&quot;version-100-3&quot;&gt;version 1.0.0&lt;/h2&gt;
 &lt;video height=&quot;900&quot; controls=&quot;controls&quot;&gt;
   &lt;source src=&quot;/assets/images/smokingArea/smokingArea_v1_video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;</content><author><name>Stephen</name></author><category term="iOS" /><category term="Project" /><category term="iOS" /><category term="Swift" /><category term="Public API" /><category term="API" /><summary type="html">Develop the iOS Application(Swift) that mark the Smoking/Non-smoking Areas in the map.</summary></entry><entry><title type="html">[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot</title><link href="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/" rel="alternate" type="text/html" title="[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot" /><published>2021-07-12T22:02:14+09:00</published><updated>2021-07-12T22:02:14+09:00</updated><id>http://localhost:4000/backend/Web-Application-SpringBoot-Impementation</id><content type="html" xml:base="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/">&lt;h2 id=&quot;backend-setting&quot;&gt;Backend Setting&lt;/h2&gt;
+&lt;/video&gt;
+&lt;ul&gt;
+  &lt;li&gt;period: Aug 9, 2021 ~ Sep 5, 2021&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Project" /><category term="iOS" /><category term="Swift" /><category term="Public API" /><category term="API" /><summary type="html">Develop the iOS Application(Swift) that mark the Smoking/Non-smoking Areas in the map.</summary></entry><entry><title type="html">[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot</title><link href="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/" rel="alternate" type="text/html" title="[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot" /><published>2021-07-12T22:02:14+09:00</published><updated>2021-07-12T22:02:14+09:00</updated><id>http://localhost:4000/backend/Web-Application-SpringBoot-Impementation</id><content type="html" xml:base="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/">&lt;h2 id=&quot;backend-setting&quot;&gt;Backend Setting&lt;/h2&gt;
 &lt;h3 id=&quot;applicationproperties&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;application.properties&lt;/code&gt;&lt;/h3&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1111&lt;/span&gt; 
@@ -1211,7 +1333,7 @@ one gets a clock which runs N times faster and therefore gains a factor of √N 
 
 &lt;blockquote&gt;
   &lt;p&gt;The above page is the acutually working, but Oracle Cloud does not support free domain services in my region, I can’t attach Blog URL.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Stephen</name></author><category term="Physics" /></entry><entry><title type="html">Swift Basic</title><link href="http://localhost:4000/ios/Swift-Basic/" rel="alternate" type="text/html" title="Swift Basic" /><published>2021-07-09T09:32:40+09:00</published><updated>2021-07-09T09:32:40+09:00</updated><id>http://localhost:4000/ios/Swift-Basic</id><content type="html" xml:base="http://localhost:4000/ios/Swift-Basic/">&lt;h2 id=&quot;1-swift-collection-data-structure&quot;&gt;1. Swift Collection Data Structure&lt;/h2&gt;
+&lt;/blockquote&gt;</content><author><name>Stephen</name></author><category term="Physics" /></entry><entry><title type="html">Swift Basic</title><link href="http://localhost:4000/swift/Swift-Basic/" rel="alternate" type="text/html" title="Swift Basic" /><published>2021-07-09T09:32:40+09:00</published><updated>2021-07-09T09:32:40+09:00</updated><id>http://localhost:4000/swift/Swift-Basic</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Basic/">&lt;h2 id=&quot;1-swift-collection-data-structure&quot;&gt;1. Swift Collection Data Structure&lt;/h2&gt;
 
 &lt;h3 id=&quot;array&quot;&gt;Array&lt;/h3&gt;
 &lt;ul&gt;
@@ -1429,7 +1551,7 @@ one gets a clock which runs N times faster and therefore gains a factor of √N 
       &lt;li&gt;&lt;a href=&quot;https://zeddios.tistory.com/16&quot;&gt;What is Optional&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="iOS" /><category term="Swift" /><category term="iOS" /><summary type="html">Swift Data Structure, Operator, Control Flow.</summary></entry><entry><title type="html">Webtoon Application(iOS)</title><link href="http://localhost:4000/ios/iOS-Application/" rel="alternate" type="text/html" title="Webtoon Application(iOS)" /><published>2021-07-01T11:12:34+09:00</published><updated>2021-07-01T11:12:34+09:00</updated><id>http://localhost:4000/ios/iOS-Application</id><content type="html" xml:base="http://localhost:4000/ios/iOS-Application/">&lt;h2 id=&quot;webtoon-market-research&quot;&gt;Webtoon Market Research&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /><summary type="html">Swift Data Structure, Operator, Control Flow.</summary></entry><entry><title type="html">Webtoon Application(iOS)</title><link href="http://localhost:4000/ios/iOS-Application/" rel="alternate" type="text/html" title="Webtoon Application(iOS)" /><published>2021-07-01T11:12:34+09:00</published><updated>2021-07-01T11:12:34+09:00</updated><id>http://localhost:4000/ios/iOS-Application</id><content type="html" xml:base="http://localhost:4000/ios/iOS-Application/">&lt;h2 id=&quot;webtoon-market-research&quot;&gt;Webtoon Market Research&lt;/h2&gt;
 
 &lt;!-- picture --&gt;
 

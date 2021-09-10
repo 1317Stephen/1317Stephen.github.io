@@ -25,7 +25,7 @@
 <lastmod>2021-07-01T11:12:34+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/ios/Swift-Basic/</loc>
+<loc>http://localhost:4000/swift/Swift-Basic/</loc>
 <lastmod>2021-07-09T09:32:40+09:00</lastmod>
 </url>
 <url>
@@ -41,8 +41,16 @@
 <lastmod>2021-07-12T22:02:14+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/ios/project/iOS-Application/</loc>
-<lastmod>2021-08-07T15:28:33+09:00</lastmod>
+<loc>http://localhost:4000/swift/project/iOS-Application/</loc>
+<lastmod>2021-09-05T15:28:33+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/swift/Swift-Error-Note/</loc>
+<lastmod>2021-09-09T10:44:40+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/swift/Swift-Basic(ONLY)/</loc>
+<lastmod>2021-09-09T16:18:40+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/_daily/2021-06-12/</loc>
