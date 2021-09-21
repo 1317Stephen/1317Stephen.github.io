@@ -10,6 +10,7 @@ tags:
   - Swift
   - Public API
   - API
+  - Alamofire
 
 excerpt: "Develop the iOS Application(Swift) that mark the Smoking/Non-smoking Areas in the map."
 toc: true
@@ -91,8 +92,7 @@ Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking
 - address model
 
 ## Next version
-- (main map) MVVC + (additional swipe window) MVC
-
+- Applying design patterns.
 
 <br />
 <br />
@@ -350,8 +350,10 @@ private func callJsonApi(urlStr: String, completion: @escaping ([Area])->()) {
 ### Further Improvement
 #### Refactoring
 - guard
-- error message (current: console)
-- Other ways to synchronize the API function.
+- log(current: print) → warning/error/info/debug
+- Other ways to syncßhronize the API function.
+- Unit Test
+- (UI Test?)
 
 #### Calling multiple APIs FAST without CPU, Momory overloading.
 : In version 1.0.0, the application is quite slow especially when calling API.
