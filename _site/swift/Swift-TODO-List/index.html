@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Swift Error Note - Blog</title>
-<meta name="description" content="This note summarizes the errors that occurred during the development of Swift.">
+<!-- begin _includes/seo.html --><title>Swift To Do List &amp; Loadmap - Blog</title>
+<meta name="description" content="To-do list &amp; Loadmap">
 
 
   <meta name="author" content="Stephen">
@@ -22,26 +22,26 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Blog">
-<meta property="og:title" content="Swift Error Note">
-<meta property="og:url" content="http://localhost:4000/swift/Swift-Error-Note/">
+<meta property="og:title" content="Swift To Do List &amp; Loadmap">
+<meta property="og:url" content="http://localhost:4000/swift/Swift-TODO-List/">
 
 
-  <meta property="og:description" content="This note summarizes the errors that occurred during the development of Swift.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-09-09T10:44:40+09:00">
+  <meta property="og:description" content="To-do list &amp; Loadmap">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/swift/Swift-Error-Note/">
+
+  <meta property="article:published_time" content="2021-09-15T21:42:34+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/swift/Swift-TODO-List/">
 
 
 
@@ -270,15 +270,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Swift Error Note">
-    <meta itemprop="description" content="This note summarizes the errors that occurred during the development of Swift.">
-    <meta itemprop="datePublished" content="2021-09-09T10:44:40+09:00">
+    <meta itemprop="headline" content="Swift To Do List &amp; Loadmap">
+    <meta itemprop="description" content="To-do list &amp; Loadmap">
+    <meta itemprop="datePublished" content="2021-09-15T21:42:34+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Swift Error Note
+          <h1 id="page-title" class="page__title" itemprop="headline">Swift To Do List &amp; Loadmap
 </h1>
           
 
@@ -288,7 +288,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2021-09-09T10:44:40+09:00">September 9, 2021</time>
+        <time datetime="2021-09-15T21:42:34+09:00">September 15, 2021</time>
       </span>
     
 
@@ -301,7 +301,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          less than 1 minute read
         
       </span>
     
@@ -316,142 +316,29 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#type-has-no-member">Type has no member</a><ul><li><a href="#similar-error">Similar Error</a></li></ul></li><li><a href="#forundefinedkey-nsunknownkeyexception">forUndefinedKey, NSUnknownKeyException</a></li><li><a href="#git-fail-to-commit-files-newfolder-didnot-match-any-filess-known-to-git">git fail to commit files: ‘/newfolder’ didnot match any files(s) known to git</a></li><li><a href="#crash-nsinvalidargumentexception">Crash: NSInvalidArgumentException</a></li></ul>
+              <ul class="toc__menu"><li><a href="#to-do-list">To Do List</a><ul><li><a href="#error-msg">Error MSG</a></li><li><a href="#design-pattern">Design Pattern</a></li><li><a href="#autolayout">Autolayout</a></li><li><a href="#async">Async</a></li><li><a href="#public-api">public API</a></li><li><a href="#map-open-api">Map Open API</a></li></ul></li><li><a href="#swift-blogs">Swift Blogs</a></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="type-has-no-member">Type has no member</h2>
+        <h2 id="to-do-list">To Do List</h2>
+<h3 id="error-msg">Error MSG</h3>
+
+<h3 id="design-pattern">Design Pattern</h3>
+
+<h3 id="autolayout">Autolayout</h3>
+
+<h3 id="async">Async</h3>
+<p>concurrency?
+rxswift / combine</p>
+
+<h3 id="public-api">public API</h3>
+
+<h3 id="map-open-api">Map Open API</h3>
+
+<h2 id="swift-blogs">Swift Blogs</h2>
 <ul>
-  <li>Search:
-    <ul>
-      <li><a href="https://stackoverflow.com/questions/37355179/swift-type-has-no-member">Swift - Type has no member</a></li>
-      <li><a href="https://developer.apple.com/forums/thread/655666">Type has no member? Swift</a></li>
-    </ul>
-
-    <blockquote>
-      <p>This problem usually occurs in the module import error: wrong variable name, etc…</p>
-    </blockquote>
-  </li>
-  <li>
-    <p>Cause: In my case, the problem is that the error is in the model class and I tried to use inside variable.</p>
-  </li>
-  <li>Result: Fixed the error in the model class.</li>
-</ul>
-
-<h3 id="similar-error">Similar Error</h3>
-<ul>
-  <li>Error msg:
-    <blockquote>
-      <p>Value of type ‘UIViewController’ has no member ‘visibleViewContoller’</p>
-    </blockquote>
-  </li>
-  <li>Search:
-    <ul>
-      <li><a href="https://stackoverflow.com/questions/46039287/receiving-error-value-of-type-uiviewcontroller-has-no-member-openviewcontrol">Receiving error: Value of type ‘UIViewController’ has no member ‘openViewControllerBasedOnIdentifier’</a></li>
-      <li><a href="https://stackoverflow.com/questions/32815337/value-of-type-uiviewcontroller-has-no-member-topviewcontroller-after-xcode-7-upd">Value of type UIViewController has no member topViewController after Xcode 7 update</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="forundefinedkey-nsunknownkeyexception">forUndefinedKey, NSUnknownKeyException</h2>
-<ul>
-  <li>Error msg:
-    <blockquote>
-      <p>setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key f.”</p>
-    </blockquote>
-  </li>
-  <li>Search:
-    <ul>
-      <li><a href="https://m.blog.naver.com/akj61300/220063207476">ios NSUnknownKeyException</a></li>
-    </ul>
-  </li>
-  <li>Cause: Referenced the deleted IBOulet in Storyboard.</li>
-  <li>Result: Implemented the IBOulet in source code.</li>
-</ul>
-
-<h2 id="git-fail-to-commit-files-newfolder-didnot-match-any-filess-known-to-git">git fail to commit files: ‘/newfolder’ didnot match any files(s) known to git</h2>
-<ul>
-  <li>Error msg:
-    <blockquote>
-      <p>git fail to commit files. <br />
-error: did not match any file(s) known to…</p>
-    </blockquote>
-  </li>
-  <li>Search:
-    <ul>
-      <li><a href="https://rrecoder.tistory.com/88">git push 오류 error: pathspec ‘’ did not match any file(s) known to git</a></li>
-      <li><a href="https://fomaios.tistory.com/entry/해결법-error-pathspec-did-not-match-any-files-known-to-git?category=857760">error: pathspec did not match any file(s) known to git</a></li>
-      <li><a href="https://stackoverflow.com/questions/27325747/xcode-error-pathspec-did-not-match-any-files-known-to-git">Xcode - error: pathspec ‘…’ did not match any file(s) known to git
-</a></li>
-    </ul>
-  </li>
-  <li>Cause: Mackbook/OSX cannot commit the chaning of foldername.</li>
-  <li>Result: Git commit with console.</li>
-</ul>
-
-<p>##</p>
-<ul>
-  <li>Error msg:
-    <blockquote>
-      <p>‘self’ used before all stored properties are initialized</p>
-    </blockquote>
-  </li>
-</ul>
-
-<h2 id="crash-nsinvalidargumentexception">Crash: NSInvalidArgumentException</h2>
-<details>
-  <summary>Error message</summary>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">  2021-08-05 21:55:52.203428+0900 SmokingArea[8667:1145459] <span class="k">***</span> Terminating app due to uncaught exception <span class="s1">'NSInvalidArgumentException'</span>, reason: <span class="s1">'Invalid Region &lt;center:+37.29994550, +126.89833000 span:+189.78684392, +130.01675267&gt;'</span>   
-<span class="k">***</span> First throw call stack:   
-<span class="o">(</span>   
-	0   CoreFoundation                      0x00007fff2041daf2 __exceptionPreprocess + 242   
-	1   libobjc.A.dylib                     0x00007fff20177e78 objc_exception_throw + 48   
-	2   CoreFoundation                      0x00007fff2041d793 -[NSException init] + 0   
-	3   MapKit                              0x00007fff2f6efcc8 -[MKMapView setRegion:animated:] + 687   
-	4   SmokingArea                         0x0000000108c66fa8 <span class="nv">$s11SmokingArea14ViewControllerC15mapScaleStepperyySo9UIStepperCF</span> + 1256   
-	5   SmokingArea                         0x0000000108c67034 <span class="nv">$s11SmokingArea14ViewControllerC15mapScaleStepperyySo9UIStepperCFTo</span> + 68    
-	6   UIKitCore                           0x00007fff2467b62e -[UIApplication sendAction:to:from:forEvent:] + 83    
-	7   UIKitCore                           0x00007fff23fa496c -[UIControl sendAction:to:forEvent:] + 223    
-	8   UIKitCore                           0x00007fff23fa4c8f -[UIControl     _sendActionsForEvents:withEvent:] + 332   
-	9   UIKitCore                           0x00007fff24a68f0a -[UIStepperHorizontalVisualElement _updateCount:] + 367   
-	10  UIKitCore                           0x00007fff24a68be0 -[UIStepperHorizontalVisualElement endTrackingWithTouch:withEvent:] + 33   
-	11  UIKitCore                           0x00007fff23fd0750 -[UIStepper endTrackingWithTouch:withEvent:] + 95   
-	12  UIKitCore                           0x00007fff23fa3549 -[UIControl touchesEnded:withEvent:] + 453   
-	13  UIKitCore                           0x00007fff246b7d6a -[UIWindow _sendTouchesForEvent:] + 1287   
-	14  UIKitCore                           0x00007fff246b9be3 -[UIWindow sendEvent:] + 4774   
-	15  UIKitCore                           0x00007fff246938f6 -[UIApplication sendEvent:] + 633   
-	16  UIKitCore                           0x00007fff2472439c __processEventQueue + 13895   
-	17  UIKitCore                           0x00007fff2471ad0f __eventFetcherSourceCallback + 104   
-	18  CoreFoundation                      0x00007fff2038c37a __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17   
-	19  CoreFoundation                      0x00007fff2038c272 __CFRunLoopDoSource0 + 180   
-	20  CoreFoundation                      0x00007fff2038b754 __CFRunLoopDoSources0 + 248   
-	21  CoreFoundation                      0x00007fff20385f1f __CFRunLoopRun + 878   
-	22  CoreFoundation                      0x00007fff203856c6 CFRunLoopRunSpecific + 567   
-	23  GraphicsServices                    0x00007fff2b76adb3 GSEventRunModal + 139   
-	24  UIKitCore                           0x00007fff24675187 -[UIApplication _run] + 912   
-	25  UIKitCore                           0x00007fff2467a038 UIApplicationMain + 101   
-	26  libswiftUIKit.dylib                 0x00007fff541545f2 <span class="nv">$s5UIKit17UIApplicationMainys5Int32VAD_SpySpys4Int8VGGSgSSSgAJtF</span> + 98   
-	27  SmokingArea                         0x0000000108c6c62a <span class="nv">$sSo21UIApplicationDelegateP5UIKitE4mainyyFZ</span> + 122   
-	28  SmokingArea                         0x0000000108c6c59e <span class="nv">$s11SmokingArea11AppDelegateC5$mainyyFZ</span> + 46   
-	29  SmokingArea                         0x0000000108c6c679 main + 41   
-	30  libdyld.dylib                       0x00007fff20256409 start + 1   
-	31  ???                                 0x0000000000000001 0x0 + 1   
-<span class="o">)</span>   
-libc++abi.dylib: terminating with uncaught exception of <span class="nb">type </span>NSException   
-<span class="k">***</span> Terminating app due to uncaught exception <span class="s1">'NSInvalidArgumentException'</span>, reason: <span class="s1">'Invalid Region &lt;center:+37.29994550, +126.89833000 span:+189.78684392, +130.01675267&gt;'</span>   
-terminating with uncaught exception of <span class="nb">type </span>NSException    
-CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max <span class="o">(</span>C3DAD0D5-84C9-4EA4-8E41-76B189B5C107<span class="o">)</span> - Runtime: iOS 14.2 <span class="o">(</span>18B79<span class="o">)</span> - DeviceType: iPhone 12 Pro Max    </code></pre></figure>
-
-</details>
-
-<ul>
-  <li>
-    <p>Search:</p>
-  </li>
-  <li>Cause:</li>
-  <li>Result:</li>
+  <li></li>
 </ul>
 
         
@@ -496,7 +383,7 @@ CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max <span class="o">(</span>C3D
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-09-09T10:44:40+09:00">September 9, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-09-15T21:42:34+09:00">September 15, 2021</time></p>
 
 
       </footer>
@@ -504,22 +391,22 @@ CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max <span class="o">(</span>C3D
       <!-- <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Swift+Error+Note%20http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Error-Note%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Swift+To+Do+List+%26+Loadmap%20http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-TODO-List%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Error-Note%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-TODO-List%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Error-Note%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-TODO-List%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section> -->
 
 
       
   <nav class="pagination">
     
-      <a href="/swift/project/iOS-Application/" class="pagination--pager" title="[Swift Project] Smoking/Nonsmoking Area
+      <a href="/test/QA-TODO-List/" class="pagination--pager" title="QA TO-DO List
 ">Previous</a>
     
     
-      <a href="/swift/Swift-Basic(ONLY)/" class="pagination--pager" title="Swift Basic: Only in Swift
+      <a href="/swift/Swift-Architecture-Pattern/" class="pagination--pager" title="Applying Architecture Patterns
 ">Next</a>
     
   </nav>
@@ -577,53 +464,6 @@ CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max <span class="o">(</span>C3D
 
 
     <p class="archive__item-excerpt" itemprop="description">Applying Architecture Patterns to iOS Project Smoking Area
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/swift/Swift-TODO-List/" rel="permalink">Swift To Do List &amp; Loadmap
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2021-09-15T21:42:34+09:00">September 15, 2021</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">To-do list &amp; Loadmap
 </p>
   </article>
 </div>
@@ -718,6 +558,53 @@ CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max <span class="o">(</span>C3D
 
 
     <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/swift/Swift-Error-Note/" rel="permalink">Swift Error Note
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-09-09T10:44:40+09:00">September 9, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This note summarizes the errors that occurred during the development of Swift.
 </p>
   </article>
 </div>

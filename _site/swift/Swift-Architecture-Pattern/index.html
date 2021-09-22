@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Swift Basic: Only in Swift - Blog</title>
-<meta name="description" content="https://1317stephen.github.io">
+<!-- begin _includes/seo.html --><title>Applying Architecture Patterns - Blog</title>
+<meta name="description" content="Applying Architecture Patterns to iOS Project Smoking Area">
 
 
   <meta name="author" content="Stephen">
@@ -22,26 +22,26 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Blog">
-<meta property="og:title" content="Swift Basic: Only in Swift">
-<meta property="og:url" content="http://localhost:4000/swift/Swift-Basic(ONLY)/">
+<meta property="og:title" content="Applying Architecture Patterns">
+<meta property="og:url" content="http://localhost:4000/swift/Swift-Architecture-Pattern/">
 
 
-  <meta property="og:description" content="https://1317stephen.github.io">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-09-09T16:18:40+09:00">
+  <meta property="og:description" content="Applying Architecture Patterns to iOS Project Smoking Area">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/swift/Swift-Basic(ONLY)/">
+
+  <meta property="article:published_time" content="2021-09-15T22:08:38+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/swift/Swift-Architecture-Pattern/">
 
 
 
@@ -270,15 +270,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Swift Basic: Only in Swift">
-    <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2021-09-09T16:18:40+09:00">
+    <meta itemprop="headline" content="Applying Architecture Patterns">
+    <meta itemprop="description" content="Applying Architecture Patterns to iOS Project Smoking Area">
+    <meta itemprop="datePublished" content="2021-09-15T22:08:38+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Swift Basic: Only in Swift
+          <h1 id="page-title" class="page__title" itemprop="headline">Applying Architecture Patterns
 </h1>
           
 
@@ -288,7 +288,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2021-09-09T16:18:40+09:00">September 9, 2021</time>
+        <time datetime="2021-09-15T22:08:38+09:00">September 15, 2021</time>
       </span>
     
 
@@ -316,30 +316,48 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#underscore-_">Underscore: _</a></li><li><a href="#struct">struct</a></li></ul>
+              <ul class="toc__menu"><li><a href="#smoking-area-v100-mvc">Smoking Area v1.0.0: MVC</a></li><li><a href="#mvp">MVP</a></li><li><a href="#mvvm">MVVM</a></li><li><a href="#viper">VIPER</a></li><li><a href="#vip">VIP</a></li><li><a href="#references">references</a></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="underscore-_">Underscore: _</h2>
+        <p>: In this page, I will apply the architecture patterns to <a href="https://1317stephen.github.io/swift/project/iOS-Application/">Project Smoking Area</a> version 1.0.0.</p>
+
+<h3 id="smoking-area-v100-mvc">Smoking Area v1.0.0: MVC</h3>
 <ul>
-  <li>reference:
-    <ul>
-      <li><a href="https://stackoverflow.com/questions/30876068/what-is-in-swift-telling-me">What is _: in Swift telling me?</a></li>
-      <li><a href="https://medium.com/@codenamehong/swift-underscore-90dcbec5072f">Swift underscore(_)</a></li>
-      <li><a href="https://stackoverflow.com/questions/39627106/why-do-i-need-underscores-in-swift">Why do I need underscores in swift?</a></li>
-    </ul>
-  </li>
+  <li><code class="language-plaintext highlighter-rouge">Models.swift</code>: All models are in a file. (104 lines)</li>
+  <li><code class="language-plaintext highlighter-rouge">ViewController.swift</code>: No separation of builder, adapter.. (224 lines)</li>
+  <li><code class="language-plaintext highlighter-rouge">Main.storyboard</code></li>
 </ul>
 
-<blockquote>
-  <p>“ignore this” <br />
-Underscroe is used to define the parameter is not named. <br />
-In for-loop, “no index, just repeat.”</p>
-</blockquote>
+<figure class=" ">
+  
+    
+      <a href="/assets/images/smokingArea/smokingArea_v1_files.png">
+          <img src="/assets/images/smokingArea/smokingArea_v1_files.png" alt="v1.0.0 files" />
+      </a>
+    
+  
+  
+    <figcaption>Smoking Area v1.0.0 files
+</figcaption>
+  
+</figure>
 
-<h2 id="struct">struct</h2>
+<h3 id="mvp">MVP</h3>
+<p>: remove the dependency between View and Model.</p>
 
+<h3 id="mvvm">MVVM</h3>
+
+<h3 id="viper">VIPER</h3>
+
+<h3 id="vip">VIP</h3>
+
+<h3 id="references">references</h3>
+<ul>
+  <li><a href="https://ios-development.tistory.com/75">MVC, MVP, MVVM</a></li>
+  <li><a href="https://dev-leeyang.tistory.com/21">MVC, MVVM, MVP, VIPER, VIP</a></li>
+</ul>
 
         
       </section>
@@ -383,7 +401,7 @@ In for-loop, “no index, just repeat.”</p>
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-09-09T16:18:40+09:00">September 9, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-09-15T22:08:38+09:00">September 15, 2021</time></p>
 
 
       </footer>
@@ -391,23 +409,22 @@ In for-loop, “no index, just repeat.”</p>
       <!-- <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Swift+Basic%3A+Only+in+Swift%20http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Basic%28ONLY%29%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Applying+Architecture+Patterns%20http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Architecture-Pattern%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Basic%28ONLY%29%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Architecture-Pattern%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Basic%28ONLY%29%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fswift%2FSwift-Architecture-Pattern%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section> -->
 
 
       
   <nav class="pagination">
     
-      <a href="/swift/Swift-Error-Note/" class="pagination--pager" title="Swift Error Note
+      <a href="/swift/Swift-TODO-List/" class="pagination--pager" title="Swift To Do List &amp; Loadmap
 ">Previous</a>
     
     
-      <a href="/test/QA-TODO-List/" class="pagination--pager" title="QA TO-DO List
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -421,53 +438,6 @@ In for-loop, “no index, just repeat.”</p>
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/swift/Swift-Architecture-Pattern/" rel="permalink">Applying Architecture Patterns
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2021-09-15T22:08:38+09:00">September 15, 2021</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Applying Architecture Patterns to iOS Project Smoking Area
-</p>
-  </article>
-</div>
-
         
           
 
@@ -538,6 +508,53 @@ In for-loop, “no index, just repeat.”</p>
         <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
         <time datetime="2021-09-15T21:42:34+09:00">September 15, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/swift/Swift-Basic(ONLY)/" rel="permalink">Swift Basic: Only in Swift
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-09-09T16:18:40+09:00">September 9, 2021</time>
       </span>
     
 

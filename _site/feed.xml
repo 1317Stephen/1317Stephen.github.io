@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-10T20:52:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">Swift Basic: Only in Swift</title><link href="http://localhost:4000/swift/Swift-Basic(ONLY)/" rel="alternate" type="text/html" title="Swift Basic: Only in Swift" /><published>2021-09-09T16:18:40+09:00</published><updated>2021-09-09T16:18:40+09:00</updated><id>http://localhost:4000/swift/Swift-Basic(ONLY)</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Basic(ONLY)/">&lt;h2 id=&quot;underscore-_&quot;&gt;Underscore: _&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-20T21:41:08+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">Applying Architecture Patterns</title><link href="http://localhost:4000/swift/Swift-Architecture-Pattern/" rel="alternate" type="text/html" title="Applying Architecture Patterns" /><published>2021-09-15T22:08:38+09:00</published><updated>2021-09-15T22:08:38+09:00</updated><id>http://localhost:4000/swift/Swift-Architecture-Pattern</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Architecture-Pattern/">&lt;p&gt;: In this page, I will apply the architecture patterns to &lt;a href=&quot;https://1317stephen.github.io/swift/project/iOS-Application/&quot;&gt;Project Smoking Area&lt;/a&gt; version 1.0.0.&lt;/p&gt;
+
+&lt;h3 id=&quot;smoking-area-v100-mvc&quot;&gt;Smoking Area v1.0.0: MVC&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Models.swift&lt;/code&gt;: All models are in a file. (104 lines)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewController.swift&lt;/code&gt;: No separation of builder, adapter.. (224 lines)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main.storyboard&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/smokingArea/smokingArea_v1_files.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/smokingArea/smokingArea_v1_files.png&quot; alt=&quot;v1.0.0 files&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Smoking Area v1.0.0 files
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;mvp&quot;&gt;MVP&lt;/h3&gt;
+&lt;p&gt;: remove the dependency between View and Model.&lt;/p&gt;
+
+&lt;h3 id=&quot;mvvm&quot;&gt;MVVM&lt;/h3&gt;
+
+&lt;h3 id=&quot;viper&quot;&gt;VIPER&lt;/h3&gt;
+
+&lt;h3 id=&quot;vip&quot;&gt;VIP&lt;/h3&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;references&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ios-development.tistory.com/75&quot;&gt;MVC, MVP, MVVM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev-leeyang.tistory.com/21&quot;&gt;MVC, MVVM, MVP, VIPER, VIP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /><summary type="html">Applying Architecture Patterns to iOS Project `Smoking Area`</summary></entry><entry><title type="html">Swift To Do List &amp;amp; Loadmap</title><link href="http://localhost:4000/swift/Swift-TODO-List/" rel="alternate" type="text/html" title="Swift To Do List &amp;amp; Loadmap" /><published>2021-09-15T21:42:34+09:00</published><updated>2021-09-15T21:42:34+09:00</updated><id>http://localhost:4000/swift/Swift-TODO-List</id><content type="html" xml:base="http://localhost:4000/swift/Swift-TODO-List/">&lt;h2 id=&quot;to-do-list&quot;&gt;To Do List&lt;/h2&gt;
+&lt;h3 id=&quot;error-msg&quot;&gt;Error MSG&lt;/h3&gt;
+
+&lt;h3 id=&quot;design-pattern&quot;&gt;Design Pattern&lt;/h3&gt;
+
+&lt;h3 id=&quot;autolayout&quot;&gt;Autolayout&lt;/h3&gt;
+
+&lt;h3 id=&quot;async&quot;&gt;Async&lt;/h3&gt;
+&lt;p&gt;concurrency?
+rxswift / combine&lt;/p&gt;
+
+&lt;h3 id=&quot;public-api&quot;&gt;public API&lt;/h3&gt;
+
+&lt;h3 id=&quot;map-open-api&quot;&gt;Map Open API&lt;/h3&gt;
+
+&lt;h2 id=&quot;swift-blogs&quot;&gt;Swift Blogs&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /><summary type="html">To-do list &amp; Loadmap</summary></entry><entry><title type="html">QA TO-DO List</title><link href="http://localhost:4000/test/QA-TODO-List/" rel="alternate" type="text/html" title="QA TO-DO List" /><published>2021-09-15T21:42:34+09:00</published><updated>2021-09-15T21:42:34+09:00</updated><id>http://localhost:4000/test/QA-TODO-List</id><content type="html" xml:base="http://localhost:4000/test/QA-TODO-List/"></content><author><name>Stephen</name></author><category term="Test" /><category term="QA" /><category term="Test" /></entry><entry><title type="html">Swift Basic: Only in Swift</title><link href="http://localhost:4000/swift/Swift-Basic(ONLY)/" rel="alternate" type="text/html" title="Swift Basic: Only in Swift" /><published>2021-09-09T16:18:40+09:00</published><updated>2021-09-09T16:18:40+09:00</updated><id>http://localhost:4000/swift/Swift-Basic(ONLY)</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Basic(ONLY)/">&lt;h2 id=&quot;underscore-_&quot;&gt;Underscore: _&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;reference:
     &lt;ul&gt;
@@ -62,6 +116,35 @@ In for-loop, “no index, just repeat.”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Cause: Referenced the deleted IBOulet in Storyboard.&lt;/li&gt;
   &lt;li&gt;Result: Implemented the IBOulet in source code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git-fail-to-commit-files-newfolder-didnot-match-any-filess-known-to-git&quot;&gt;git fail to commit files: ‘/newfolder’ didnot match any files(s) known to git&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Error msg:
+    &lt;blockquote&gt;
+      &lt;p&gt;git fail to commit files. &lt;br /&gt;
+error: did not match any file(s) known to…&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Search:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://rrecoder.tistory.com/88&quot;&gt;git push 오류 error: pathspec ‘’ did not match any file(s) known to git&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://fomaios.tistory.com/entry/해결법-error-pathspec-did-not-match-any-files-known-to-git?category=857760&quot;&gt;error: pathspec did not match any file(s) known to git&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/27325747/xcode-error-pathspec-did-not-match-any-files-known-to-git&quot;&gt;Xcode - error: pathspec ‘…’ did not match any file(s) known to git
+&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cause: Mackbook/OSX cannot commit the chaning of foldername.&lt;/li&gt;
+  &lt;li&gt;Result: Git commit with console.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Error msg:
+    &lt;blockquote&gt;
+      &lt;p&gt;‘self’ used before all stored properties are initialized&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;crash-nsinvalidargumentexception&quot;&gt;Crash: NSInvalidArgumentException&lt;/h2&gt;
@@ -189,7 +272,7 @@ CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max &lt;span class=&quot;o&quot
 
 &lt;h2 id=&quot;next-version-1&quot;&gt;Next version&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;(main map) MVVC + (additional swipe window) MVC&lt;/li&gt;
+  &lt;li&gt;Applying design patterns.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;
@@ -426,8 +509,10 @@ CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max &lt;span class=&quot;o&quot
 &lt;h4 id=&quot;refactoring&quot;&gt;Refactoring&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;guard&lt;/li&gt;
-  &lt;li&gt;error message (current: console)&lt;/li&gt;
-  &lt;li&gt;Other ways to synchronize the API function.&lt;/li&gt;
+  &lt;li&gt;log(current: print) → warning/error/info/debug&lt;/li&gt;
+  &lt;li&gt;Other ways to syncßhronize the API function.&lt;/li&gt;
+  &lt;li&gt;Unit Test&lt;/li&gt;
+  &lt;li&gt;(UI Test?)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;calling-multiple-apis-fast-without-cpu-momory-overloading&quot;&gt;Calling multiple APIs FAST without CPU, Momory overloading.&lt;/h4&gt;
@@ -558,7 +643,7 @@ https://stackoverflow.com/questions/36666968/how-to-set-up-array-for-multi-annot
 &lt;/video&gt;
 &lt;ul&gt;
   &lt;li&gt;period: Aug 9, 2021 ~ Sep 5, 2021&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Project" /><category term="iOS" /><category term="Swift" /><category term="Public API" /><category term="API" /><summary type="html">Develop the iOS Application(Swift) that mark the Smoking/Non-smoking Areas in the map.</summary></entry><entry><title type="html">[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot</title><link href="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/" rel="alternate" type="text/html" title="[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot" /><published>2021-07-12T22:02:14+09:00</published><updated>2021-07-12T22:02:14+09:00</updated><id>http://localhost:4000/backend/Web-Application-SpringBoot-Impementation</id><content type="html" xml:base="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/">&lt;h2 id=&quot;backend-setting&quot;&gt;Backend Setting&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Project" /><category term="iOS" /><category term="Swift" /><category term="Public API" /><category term="API" /><category term="Alamofire" /><summary type="html">Develop the iOS Application(Swift) that mark the Smoking/Non-smoking Areas in the map.</summary></entry><entry><title type="html">[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot</title><link href="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/" rel="alternate" type="text/html" title="[SpringBoot/Vue.js Project] Blog Implementation - Spring Boot" /><published>2021-07-12T22:02:14+09:00</published><updated>2021-07-12T22:02:14+09:00</updated><id>http://localhost:4000/backend/Web-Application-SpringBoot-Impementation</id><content type="html" xml:base="http://localhost:4000/backend/Web-Application-SpringBoot-Impementation/">&lt;h2 id=&quot;backend-setting&quot;&gt;Backend Setting&lt;/h2&gt;
 &lt;h3 id=&quot;applicationproperties&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;application.properties&lt;/code&gt;&lt;/h3&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1111&lt;/span&gt; 
@@ -858,211 +943,7 @@ https://stackoverflow.com/questions/36666968/how-to-set-up-array-for-multi-annot
     &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LocalDateTime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;created_at&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LocalDateTime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modified_at&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;menu_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Stephen</name></author><category term="Backend" /><category term="Spring Boot" /><category term="Oracle ATP Database" /><category term="Oracle Cloud" /><category term="Backend" /><category term="Database" /><summary type="html">Blog Web Application implementation of Backend(SpringBoot).</summary></entry><entry><title type="html">[SpringBoot/Vue.js Project] Blog</title><link href="http://localhost:4000/backend/frontend/project/Web-Application/" rel="alternate" type="text/html" title="[SpringBoot/Vue.js Project] Blog" /><published>2021-07-11T20:08:08+09:00</published><updated>2021-07-11T20:08:08+09:00</updated><id>http://localhost:4000/backend/frontend/project/Web-Application</id><content type="html" xml:base="http://localhost:4000/backend/frontend/project/Web-Application/">&lt;p&gt;Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)&lt;/p&gt;
-
-&lt;h1 id=&quot;1-requirements&quot;&gt;1. Requirements&lt;/h1&gt;
-&lt;h2 id=&quot;project-objectives&quot;&gt;Project Objectives&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Develop an Web Application that works as a personal Blog.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;specification&quot;&gt;Specification&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Article, Category CRUD.&lt;/li&gt;
-  &lt;li&gt;Parent/Child relationships in categories.&lt;/li&gt;
-  &lt;li&gt;Show projects by year.&lt;/li&gt;
-  &lt;li&gt;Backend API -&amp;gt; Frontend.&lt;/li&gt;
-  &lt;li&gt;Docker.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-structure&quot;&gt;2. Structure&lt;/h1&gt;
-
-&lt;figure class=&quot; &quot;&gt;
-  
-    
-      &lt;a href=&quot;/assets/images/structure-white-background.png&quot;&gt;
-          &lt;img src=&quot;/assets/images/structure-white-background.png&quot; alt=&quot;project structure&quot; /&gt;
-      &lt;/a&gt;
-    
-  
-  
-    &lt;figcaption&gt;Web Application Project stucture.
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Database: Oracle ATP Database, (Partial) Mongo DB&lt;/li&gt;
-  &lt;li&gt;Backend: SpringBoot&lt;/li&gt;
-  &lt;li&gt;Frontend: Node.js, Vue.js&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;3-function&quot;&gt;3. Function&lt;/h1&gt;
-&lt;h2 id=&quot;backend&quot;&gt;Backend&lt;/h2&gt;
-&lt;p&gt;: There are three APIs that hand over data from ATP Database to frontend.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Menu&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;One &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Menu&lt;/code&gt; is consisted of several(or one) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Article&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Menu&lt;/code&gt; has Parent/Child relationship. (ex. Computer Science Menu - iOS/Android Menu)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Article&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;One &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Article&lt;/code&gt; is a page of writing.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Project is the has information(ex. started date, ended date, project title…) about previously conducted projects.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project&lt;/code&gt; API is mainly used on the homepage.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;frontend&quot;&gt;Frontend&lt;/h2&gt;
-&lt;p&gt;: There are five main pages. (+ one sidebar)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Main features and design were implemented using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bootstrap-vue&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Axios used to call Springboot APIs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot; &quot;&gt;
-  
-    
-      &lt;a href=&quot;/assets/images/fronted-draft.png&quot;&gt;
-          &lt;img src=&quot;/assets/images/fronted-draft.png&quot; alt=&quot;Frontend plan draft&quot; /&gt;
-      &lt;/a&gt;
-    
-  
-  
-    &lt;figcaption&gt;Frontend Vue.js plan draft.
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;h1 id=&quot;4-implementation&quot;&gt;4. Implementation&lt;/h1&gt;
-&lt;h2 id=&quot;backend-1&quot;&gt;Backend&lt;/h2&gt;
-&lt;h3 id=&quot;implemented&quot;&gt;Implemented&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Basic Settings
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;application.properties&lt;/code&gt; file: &lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#applicationproperties&quot;&gt;See Code…&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Packages
-    &lt;ul&gt;
-      &lt;li&gt;5 packages for basic functions have been developed.
-        &lt;ul&gt;
-          &lt;li&gt;Two packages are for setting: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiResponse&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt;.&lt;/li&gt;
-          &lt;li&gt;The other packages are for API: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ArticleItem&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ProjectItem&lt;/code&gt;.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Except &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiResponse&lt;/code&gt; package, one package consists of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Adapter&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Controller&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repository&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Request&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Response&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service&lt;/code&gt;.&lt;/p&gt;
-
-        &lt;p&gt;&lt;img src=&quot;/assets/images/backend-package.png&quot; alt=&quot;One package&quot; /&gt;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt; package&lt;/dt&gt;
-      &lt;dd&gt;This package is for the Database, Frontend and (+Security) connection settings.&lt;/dd&gt;
-    &lt;/dl&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Class: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MongoConfig&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OracleConfig&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WebConfig&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Detailed implementation of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt; package: &lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#config-package&quot;&gt;See Code…&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiReseponse&lt;/code&gt; package
-    &lt;ul&gt;
-      &lt;li&gt;This class is for the abstract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiResponse&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;API Response classes in other main three packages’ API Response classes are inherited from this Abstract.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiReseponse&lt;/code&gt; Abstart: &lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#apiresponse-package&quot;&gt;See Code..&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ArticleItem&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ProjectItem&lt;/code&gt; packages
-    &lt;ul&gt;
-      &lt;li&gt;One package consists of 6 classes and 1 interface: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repository&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Adapter&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Controller&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Request&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Response&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt; Class: Model class.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Adapter&lt;/code&gt; Class: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ItemRespoense&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt; methods exist to build object.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repository&lt;/code&gt; Interface: Send queries to Database.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service&lt;/code&gt; Class: Send &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt; to browser. (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getAll&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;delete&lt;/code&gt; methods)&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Controller&lt;/code&gt; Class: URL resolution.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Response&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Request&lt;/code&gt; Class&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#main-api-packages&quot;&gt;See Code…&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;to-do--ongoing&quot;&gt;To Do / Ongoing&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Membership related parts: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Security&lt;/code&gt; package, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SecurityConfig&lt;/code&gt; Class.&lt;/li&gt;
-  &lt;li&gt;CI/CD with Docker!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;frontend-1&quot;&gt;Frontend&lt;/h2&gt;
-&lt;h3 id=&quot;implemented-1&quot;&gt;Implemented&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Main three Pages implemented. Screenshots of the pages are at the below.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Home.vue&lt;/code&gt;: Projects and Articles.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Posts.vue&lt;/code&gt;: Entire articles with Menu(ex. Physics, Computer Science).&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Aricle.vue&lt;/code&gt;: Descriptions.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;to-do--ongoing-1&quot;&gt;To Do / Ongoing&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Admin&lt;/code&gt; page for the Blog. (This shoud be linked with the articleEdit, menuEdit pages.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;5-result&quot;&gt;5. Result&lt;/h1&gt;
-&lt;h2 id=&quot;v100&quot;&gt;v1.0.0&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Backend: Finish CRUD APIs for the Blog’s Article, Menu and Project.&lt;/li&gt;
-  &lt;li&gt;Frontend: Development of pages for visitor completed.(include edit article/menu which is not below screenshots.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;third &quot;&gt;
-  
-    
-      &lt;a href=&quot;/assets/images/Home_page.png&quot;&gt;
-          &lt;img src=&quot;/assets/images/Home_page.png&quot; alt=&quot;Home page&quot; /&gt;
-      &lt;/a&gt;
-    
-  
-    
-      &lt;a href=&quot;/assets/images/Home_page_with_sidebar_open.png&quot;&gt;
-          &lt;img src=&quot;/assets/images/Home_page_with_sidebar_open.png&quot; alt=&quot;Home page with sidebar&quot; /&gt;
-      &lt;/a&gt;
-    
-  
-    
-      &lt;a href=&quot;/assets/images/Post_page.png&quot;&gt;
-          &lt;img src=&quot;/assets/images/Post_page.png&quot; alt=&quot;Post page&quot; /&gt;
-      &lt;/a&gt;
-    
-  
-    
-      &lt;a href=&quot;/assets/images/Article_page.png&quot;&gt;
-          &lt;img src=&quot;/assets/images/Article_page.png&quot; alt=&quot;Article page&quot; /&gt;
-      &lt;/a&gt;
-    
-  
-  
-    &lt;figcaption&gt;Blog v1.0.0 Homepage, Homepage with sidebar, Post page, Article page
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The above page is the acutually working, but Oracle Cloud does not support free domain services in my region, I can’t attach Blog URL.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Stephen</name></author><category term="Backend" /><category term="Frontend" /><category term="Project" /><category term="Spring Boot" /><category term="Vue.js" /><category term="Node.js" /><category term="Oracle ATP Database" /><category term="Oracle Cloud" /><category term="Backend" /><category term="Frontend" /><category term="Database" /><summary type="html">Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)</summary></entry><entry><title type="html">Web Application</title><link href="http://localhost:4000/physics/Quantum-information/" rel="alternate" type="text/html" title="Web Application" /><published>2021-07-11T20:08:08+09:00</published><updated>2021-07-11T20:08:08+09:00</updated><id>http://localhost:4000/physics/Quantum-information</id><content type="html" xml:base="http://localhost:4000/physics/Quantum-information/">&lt;h2 id=&quot;quantum-information&quot;&gt;Quantum information&lt;/h2&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Stephen</name></author><category term="Backend" /><category term="Spring Boot" /><category term="Oracle ATP Database" /><category term="Oracle Cloud" /><category term="Backend" /><category term="Database" /><summary type="html">Blog Web Application implementation of Backend(SpringBoot).</summary></entry><entry><title type="html">Web Application</title><link href="http://localhost:4000/physics/Quantum-information/" rel="alternate" type="text/html" title="Web Application" /><published>2021-07-11T20:08:08+09:00</published><updated>2021-07-11T20:08:08+09:00</updated><id>http://localhost:4000/physics/Quantum-information</id><content type="html" xml:base="http://localhost:4000/physics/Quantum-information/">&lt;h2 id=&quot;quantum-information&quot;&gt;Quantum information&lt;/h2&gt;
 
 &lt;p&gt;Basic Concepts in Quantum Information, Steven M. Girvin…
 양자 정보의 기본적 개념&lt;/p&gt;
@@ -1333,7 +1214,211 @@ one gets a clock which runs N times faster and therefore gains a factor of √N 
 
 &lt;blockquote&gt;
   &lt;p&gt;The above page is the acutually working, but Oracle Cloud does not support free domain services in my region, I can’t attach Blog URL.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Stephen</name></author><category term="Physics" /></entry><entry><title type="html">Swift Basic</title><link href="http://localhost:4000/swift/Swift-Basic/" rel="alternate" type="text/html" title="Swift Basic" /><published>2021-07-09T09:32:40+09:00</published><updated>2021-07-09T09:32:40+09:00</updated><id>http://localhost:4000/swift/Swift-Basic</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Basic/">&lt;h2 id=&quot;1-swift-collection-data-structure&quot;&gt;1. Swift Collection Data Structure&lt;/h2&gt;
+&lt;/blockquote&gt;</content><author><name>Stephen</name></author><category term="Physics" /></entry><entry><title type="html">[SpringBoot/Vue.js Project] Blog</title><link href="http://localhost:4000/backend/frontend/project/Web-Application/" rel="alternate" type="text/html" title="[SpringBoot/Vue.js Project] Blog" /><published>2021-07-11T20:08:08+09:00</published><updated>2021-07-11T20:08:08+09:00</updated><id>http://localhost:4000/backend/frontend/project/Web-Application</id><content type="html" xml:base="http://localhost:4000/backend/frontend/project/Web-Application/">&lt;p&gt;Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)&lt;/p&gt;
+
+&lt;h1 id=&quot;1-requirements&quot;&gt;1. Requirements&lt;/h1&gt;
+&lt;h2 id=&quot;project-objectives&quot;&gt;Project Objectives&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Develop an Web Application that works as a personal Blog.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;specification&quot;&gt;Specification&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Article, Category CRUD.&lt;/li&gt;
+  &lt;li&gt;Parent/Child relationships in categories.&lt;/li&gt;
+  &lt;li&gt;Show projects by year.&lt;/li&gt;
+  &lt;li&gt;Backend API -&amp;gt; Frontend.&lt;/li&gt;
+  &lt;li&gt;Docker.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-structure&quot;&gt;2. Structure&lt;/h1&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/structure-white-background.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/structure-white-background.png&quot; alt=&quot;project structure&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Web Application Project stucture.
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Database: Oracle ATP Database, (Partial) Mongo DB&lt;/li&gt;
+  &lt;li&gt;Backend: SpringBoot&lt;/li&gt;
+  &lt;li&gt;Frontend: Node.js, Vue.js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;3-function&quot;&gt;3. Function&lt;/h1&gt;
+&lt;h2 id=&quot;backend&quot;&gt;Backend&lt;/h2&gt;
+&lt;p&gt;: There are three APIs that hand over data from ATP Database to frontend.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Menu&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;One &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Menu&lt;/code&gt; is consisted of several(or one) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Article&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Menu&lt;/code&gt; has Parent/Child relationship. (ex. Computer Science Menu - iOS/Android Menu)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Article&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;One &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Article&lt;/code&gt; is a page of writing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Project is the has information(ex. started date, ended date, project title…) about previously conducted projects.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project&lt;/code&gt; API is mainly used on the homepage.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;frontend&quot;&gt;Frontend&lt;/h2&gt;
+&lt;p&gt;: There are five main pages. (+ one sidebar)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Main features and design were implemented using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bootstrap-vue&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Axios used to call Springboot APIs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/fronted-draft.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/fronted-draft.png&quot; alt=&quot;Frontend plan draft&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Frontend Vue.js plan draft.
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;4-implementation&quot;&gt;4. Implementation&lt;/h1&gt;
+&lt;h2 id=&quot;backend-1&quot;&gt;Backend&lt;/h2&gt;
+&lt;h3 id=&quot;implemented&quot;&gt;Implemented&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Basic Settings
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;application.properties&lt;/code&gt; file: &lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#applicationproperties&quot;&gt;See Code…&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Packages
+    &lt;ul&gt;
+      &lt;li&gt;5 packages for basic functions have been developed.
+        &lt;ul&gt;
+          &lt;li&gt;Two packages are for setting: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiResponse&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt;.&lt;/li&gt;
+          &lt;li&gt;The other packages are for API: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ArticleItem&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ProjectItem&lt;/code&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Except &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiResponse&lt;/code&gt; package, one package consists of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Adapter&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Controller&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repository&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Request&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Response&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service&lt;/code&gt;.&lt;/p&gt;
+
+        &lt;p&gt;&lt;img src=&quot;/assets/images/backend-package.png&quot; alt=&quot;One package&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt; package&lt;/dt&gt;
+      &lt;dd&gt;This package is for the Database, Frontend and (+Security) connection settings.&lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Class: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MongoConfig&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OracleConfig&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WebConfig&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Detailed implementation of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Config&lt;/code&gt; package: &lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#config-package&quot;&gt;See Code…&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiReseponse&lt;/code&gt; package
+    &lt;ul&gt;
+      &lt;li&gt;This class is for the abstract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiResponse&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;API Response classes in other main three packages’ API Response classes are inherited from this Abstract.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ApiReseponse&lt;/code&gt; Abstart: &lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#apiresponse-package&quot;&gt;See Code..&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ArticleItem&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ProjectItem&lt;/code&gt; packages
+    &lt;ul&gt;
+      &lt;li&gt;One package consists of 6 classes and 1 interface: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repository&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Adapter&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Controller&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Request&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Response&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt; Class: Model class.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Adapter&lt;/code&gt; Class: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ItemRespoense&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt; methods exist to build object.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repository&lt;/code&gt; Interface: Send queries to Database.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service&lt;/code&gt; Class: Send &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt; to browser. (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getAll&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;delete&lt;/code&gt; methods)&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Controller&lt;/code&gt; Class: URL resolution.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Response&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Request&lt;/code&gt; Class&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/project/Web-Application-SpringBoot-Impementation/#main-api-packages&quot;&gt;See Code…&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;to-do--ongoing&quot;&gt;To Do / Ongoing&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Membership related parts: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Security&lt;/code&gt; package, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SecurityConfig&lt;/code&gt; Class.&lt;/li&gt;
+  &lt;li&gt;CI/CD with Docker!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;frontend-1&quot;&gt;Frontend&lt;/h2&gt;
+&lt;h3 id=&quot;implemented-1&quot;&gt;Implemented&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Main three Pages implemented. Screenshots of the pages are at the below.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Home.vue&lt;/code&gt;: Projects and Articles.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Posts.vue&lt;/code&gt;: Entire articles with Menu(ex. Physics, Computer Science).&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Aricle.vue&lt;/code&gt;: Descriptions.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;to-do--ongoing-1&quot;&gt;To Do / Ongoing&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Admin&lt;/code&gt; page for the Blog. (This shoud be linked with the articleEdit, menuEdit pages.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;5-result&quot;&gt;5. Result&lt;/h1&gt;
+&lt;h2 id=&quot;v100&quot;&gt;v1.0.0&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Backend: Finish CRUD APIs for the Blog’s Article, Menu and Project.&lt;/li&gt;
+  &lt;li&gt;Frontend: Development of pages for visitor completed.(include edit article/menu which is not below screenshots.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/Home_page.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/Home_page.png&quot; alt=&quot;Home page&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/Home_page_with_sidebar_open.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/Home_page_with_sidebar_open.png&quot; alt=&quot;Home page with sidebar&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/Post_page.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/Post_page.png&quot; alt=&quot;Post page&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/Article_page.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/Article_page.png&quot; alt=&quot;Article page&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Blog v1.0.0 Homepage, Homepage with sidebar, Post page, Article page
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The above page is the acutually working, but Oracle Cloud does not support free domain services in my region, I can’t attach Blog URL.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Stephen</name></author><category term="Backend" /><category term="Frontend" /><category term="Project" /><category term="Spring Boot" /><category term="Vue.js" /><category term="Node.js" /><category term="Oracle ATP Database" /><category term="Oracle Cloud" /><category term="Backend" /><category term="Frontend" /><category term="Database" /><summary type="html">Develop an Web Application from start to finish! (with Oracle Cloud, Spring Boot, Vue.js)</summary></entry><entry><title type="html">Swift Basic</title><link href="http://localhost:4000/swift/Swift-Basic/" rel="alternate" type="text/html" title="Swift Basic" /><published>2021-07-09T09:32:40+09:00</published><updated>2021-07-09T09:32:40+09:00</updated><id>http://localhost:4000/swift/Swift-Basic</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Basic/">&lt;h2 id=&quot;1-swift-collection-data-structure&quot;&gt;1. Swift Collection Data Structure&lt;/h2&gt;
 
 &lt;h3 id=&quot;array&quot;&gt;Array&lt;/h3&gt;
 &lt;ul&gt;
@@ -1551,50 +1636,4 @@ one gets a clock which runs N times faster and therefore gains a factor of √N 
       &lt;li&gt;&lt;a href=&quot;https://zeddios.tistory.com/16&quot;&gt;What is Optional&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /><summary type="html">Swift Data Structure, Operator, Control Flow.</summary></entry><entry><title type="html">Webtoon Application(iOS)</title><link href="http://localhost:4000/ios/iOS-Application/" rel="alternate" type="text/html" title="Webtoon Application(iOS)" /><published>2021-07-01T11:12:34+09:00</published><updated>2021-07-01T11:12:34+09:00</updated><id>http://localhost:4000/ios/iOS-Application</id><content type="html" xml:base="http://localhost:4000/ios/iOS-Application/">&lt;h2 id=&quot;webtoon-market-research&quot;&gt;Webtoon Market Research&lt;/h2&gt;
-
-&lt;!-- picture --&gt;
-
-&lt;p&gt;reference: &lt;a href=&quot;https://platum.kr/archives/155134&quot;&gt;Webtoon market share (Android)&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Naver Webtoon (5,521,674 users)&lt;/li&gt;
-  &lt;li&gt;KakaoPage (2,411,481 users)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;common-features&quot;&gt;Common Features&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Bottom Navigation Bar&lt;/li&gt;
-  &lt;li&gt;Main Page: Weekly Webtoons (+ Novels…)&lt;/li&gt;
-  &lt;li&gt;My Page: Webtoons I’ve seen.&lt;/li&gt;
-  &lt;li&gt;View More: Setting, Cookie/Cash, Notice…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;naver-webtoon-vs-kakaopage&quot;&gt;Naver Webtoon vs KakaoPage&lt;/h2&gt;
-
-&lt;h2 id=&quot;ios-application-development&quot;&gt;iOS Application Development&lt;/h2&gt;
-
-&lt;h3 id=&quot;interface-sketch&quot;&gt;Interface: Sketch&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;reference: https://www.sketch.com/docs/&lt;/li&gt;
-  &lt;li&gt;blogs
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://uidesignguides.com/gui_design_tools/&quot;&gt;GUI Introduction Blog&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://designcompass.org/2020/11/16/02-인터페이스-화면을-살펴보자/&quot;&gt;Sketch Blog - Start!&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;!--
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
- --&gt;</content><author><name>Stephen</name></author><category term="iOS" /><category term="iOS Application" /><summary type="html">Based on existing webtoons applications, produce an iOS sample webtoon application as a test.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /><summary type="html">Swift Data Structure, Operator, Control Flow.</summary></entry></feed>

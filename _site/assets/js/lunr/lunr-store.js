@@ -61,7 +61,7 @@ var store = [{
       },{
         "title": "[Swift Project] Smoking/Nonsmoking Area",
         "excerpt":"1. Requirements Project Objectives Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea. Specification version 1.0.0 Mark smoking areas in the map. (YongSan-Gu) Mark non-smoking areas in the map. The map screen can be zoomed. Can move to the current position...","categories": ["Swift","Project"],
-        "tags": ["iOS","Swift","Public API","API"],
+        "tags": ["iOS","Swift","Public API","API","Alamofire"],
         "url": "/swift/project/iOS-Application/",
         "teaser": null
       },{
@@ -75,5 +75,23 @@ var store = [{
         "excerpt":"Underscore: _     reference:            What is _: in Swift telling me?       Swift underscore(_)       Why do I need underscores in swift?              “ignore this”   Underscroe is used to define the parameter is not named.   In for-loop, “no index, just repeat.”    struct   ","categories": ["Swift"],
         "tags": ["Swift","iOS"],
         "url": "/swift/Swift-Basic(ONLY)/",
+        "teaser": null
+      },{
+        "title": "QA TO-DO List",
+        "excerpt":" ","categories": ["Test"],
+        "tags": ["QA","Test"],
+        "url": "/test/QA-TODO-List/",
+        "teaser": null
+      },{
+        "title": "Swift To Do List & Loadmap",
+        "excerpt":"To Do List  Error MSG   Design Pattern   Autolayout   Async  concurrency? rxswift / combine   public API   Map Open API   Swift Blogs       ","categories": ["Swift"],
+        "tags": ["Swift","iOS"],
+        "url": "/swift/Swift-TODO-List/",
+        "teaser": null
+      },{
+        "title": "Applying Architecture Patterns",
+        "excerpt":": In this page, I will apply the architecture patterns to Project Smoking Area version 1.0.0. Smoking Area v1.0.0: MVC Models.swift: All models are in a file. (104 lines) ViewController.swift: No separation of builder, adapter.. (224 lines) Main.storyboard Smoking Area v1.0.0 files MVP : remove the dependency between View and...","categories": ["Swift"],
+        "tags": ["Swift","iOS"],
+        "url": "/swift/Swift-Architecture-Pattern/",
         "teaser": null
       }]
