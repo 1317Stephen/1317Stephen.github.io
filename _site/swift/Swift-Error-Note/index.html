@@ -316,7 +316,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#type-has-no-member">Type has no member</a><ul><li><a href="#similar-error">Similar Error</a></li></ul></li><li><a href="#forundefinedkey-nsunknownkeyexception">forUndefinedKey, NSUnknownKeyException</a></li><li><a href="#git-fail-to-commit-files-newfolder-didnot-match-any-filess-known-to-git">git fail to commit files: ‘/newfolder’ didnot match any files(s) known to git</a></li><li><a href="#crash-nsinvalidargumentexception">Crash: NSInvalidArgumentException</a></li></ul>
+              <ul class="toc__menu"><li><a href="#type-has-no-member">Type has no member</a><ul><li><a href="#similar-error">Similar Error</a></li></ul></li><li><a href="#forundefinedkey-nsunknownkeyexception">forUndefinedKey, NSUnknownKeyException</a></li><li><a href="#git-fail-to-commit-files-newfolder-didnot-match-any-filess-known-to-git">git fail to commit files: ‘/newfolder’ didnot match any files(s) known to git</a></li><li><a href="#self-parameter-inside-struct-init">‘self’ parameter (inside struct init)</a></li><li><a href="#crash-nsinvalidargumentexception">Crash: NSInvalidArgumentException</a></li></ul>
 
             </nav>
           </aside>
@@ -390,13 +390,41 @@ error: did not match any file(s) known to…</p>
   <li>Result: Git commit with console.</li>
 </ul>
 
-<p>##</p>
+<h2 id="self-parameter-inside-struct-init">‘self’ parameter (inside struct init)</h2>
 <ul>
   <li>Error msg:
     <blockquote>
-      <p>‘self’ used before all stored properties are initialized</p>
+      <ol>
+        <li>Escaping closure captures mutating ‘self’ parameter</li>
+        <li>‘self’ used before all stored properties are initialized</li>
+      </ol>
     </blockquote>
   </li>
+</ul>
+
+<figure class=" ">
+  
+    
+      <a href="/assets/images/swift-error/error_init.png">
+          <img src="/assets/images/swift-error/error_init.png" alt="init_error" />
+      </a>
+    
+  
+  
+    <figcaption>error in init method
+</figcaption>
+  
+</figure>
+
+<ul>
+  <li>Search:
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/58327013/swift-5-whats-escaping-closure-captures-mutating-self-parameter-and-how-t">Swift 5 : What’s ‘Escaping closure captures mutating ‘self’ parameter’ and how to fix it
+</a></li>
+    </ul>
+  </li>
+  <li>Cuase: Trying to pass to the value type(structure).</li>
+  <li>Result: Separate the <code class="language-plaintext highlighter-rouge">Model</code> and <code class="language-plaintext highlighter-rouge">View</code>.</li>
 </ul>
 
 <h2 id="crash-nsinvalidargumentexception">Crash: NSInvalidArgumentException</h2>
@@ -710,7 +738,7 @@ CoreSimulator 732.18.0.2 - Device: iPhone 12 Pro Max <span class="o">(</span>C3D
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     

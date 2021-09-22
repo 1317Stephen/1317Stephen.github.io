@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-20T21:41:08+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">Applying Architecture Patterns</title><link href="http://localhost:4000/swift/Swift-Architecture-Pattern/" rel="alternate" type="text/html" title="Applying Architecture Patterns" /><published>2021-09-15T22:08:38+09:00</published><updated>2021-09-15T22:08:38+09:00</updated><id>http://localhost:4000/swift/Swift-Architecture-Pattern</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Architecture-Pattern/">&lt;p&gt;: In this page, I will apply the architecture patterns to &lt;a href=&quot;https://1317stephen.github.io/swift/project/iOS-Application/&quot;&gt;Project Smoking Area&lt;/a&gt; version 1.0.0.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-22T14:50:10+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">Applying Architecture Patterns</title><link href="http://localhost:4000/swift/Swift-Architecture-Pattern/" rel="alternate" type="text/html" title="Applying Architecture Patterns" /><published>2021-09-15T22:08:38+09:00</published><updated>2021-09-15T22:08:38+09:00</updated><id>http://localhost:4000/swift/Swift-Architecture-Pattern</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Architecture-Pattern/">&lt;p&gt;: In this page, I will apply the architecture patterns to &lt;a href=&quot;https://1317stephen.github.io/swift/project/iOS-Application/&quot;&gt;Project Smoking Area&lt;/a&gt; version 1.0.0.&lt;/p&gt;
 
 &lt;h3 id=&quot;smoking-area-v100-mvc&quot;&gt;Smoking Area v1.0.0: MVC&lt;/h3&gt;
 &lt;ul&gt;
@@ -69,7 +69,54 @@ Underscroe is used to define the parameter is not named. &lt;br /&gt;
 In for-loop, “no index, just repeat.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;struct&quot;&gt;struct&lt;/h2&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /></entry><entry><title type="html">Swift Error Note</title><link href="http://localhost:4000/swift/Swift-Error-Note/" rel="alternate" type="text/html" title="Swift Error Note" /><published>2021-09-09T10:44:40+09:00</published><updated>2021-09-09T10:44:40+09:00</updated><id>http://localhost:4000/swift/Swift-Error-Note</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Error-Note/">&lt;h2 id=&quot;type-has-no-member&quot;&gt;Type has no member&lt;/h2&gt;
+&lt;h2 id=&quot;struct-vs-class&quot;&gt;Struct vs Class&lt;/h2&gt;
+&lt;p&gt;: In Swift, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt; have a lot in common.&lt;br /&gt;
+-&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then, when should I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt;? 
+I learned this from the example below.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In my project &lt;a href=&quot;https://1317stephen.github.io/swift/project/iOS-Application/&quot;&gt;Somking Area v1.0.0&lt;/a&gt;, there are 2 variables and 1 function related to loaction.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Address&lt;/code&gt; struct: has the information about locality and administrative area name.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CLLocationCoordinate2D&lt;/code&gt;: store the latitude &amp;amp; longitude of the location.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getCoordinateToAddress(coordinate: CLLocationCoordinate2D)&lt;/code&gt;: get locality and adminitrative area name from the coordinate.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Therefore, I decided to combine the above three things as a single data structure. Location information is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Model&lt;/code&gt; in the project, so I tried to implement these as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Location&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;internal&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coordinate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CLLocationCoordinate2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;administrativeArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;locality&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coordinate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordinate&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;administrativeArea&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;administrativeArea&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;locality&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;locality&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coordinate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CLLocationCoordinate2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coordinate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordinate&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;administrativeArea&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;locality&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+        
+        &lt;span class=&quot;nf&quot;&gt;exchangeCoordinateToAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coordinate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordinate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;administrativeArea&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;administrativeArea&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;locality&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;locality&lt;/span&gt;   
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;coordinate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CLLocationCoordinate2D&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;administrativeArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;locality&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;exchangeCoordinateToAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coordinate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CLLocationCoordinate2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;......&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /></entry><entry><title type="html">Swift Error Note</title><link href="http://localhost:4000/swift/Swift-Error-Note/" rel="alternate" type="text/html" title="Swift Error Note" /><published>2021-09-09T10:44:40+09:00</published><updated>2021-09-09T10:44:40+09:00</updated><id>http://localhost:4000/swift/Swift-Error-Note</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Error-Note/">&lt;h2 id=&quot;type-has-no-member&quot;&gt;Type has no member&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Search:
     &lt;ul&gt;
@@ -138,13 +185,41 @@ error: did not match any file(s) known to…&lt;/p&gt;
   &lt;li&gt;Result: Git commit with console.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##&lt;/p&gt;
+&lt;h2 id=&quot;self-parameter-inside-struct-init&quot;&gt;‘self’ parameter (inside struct init)&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Error msg:
     &lt;blockquote&gt;
-      &lt;p&gt;‘self’ used before all stored properties are initialized&lt;/p&gt;
+      &lt;ol&gt;
+        &lt;li&gt;Escaping closure captures mutating ‘self’ parameter&lt;/li&gt;
+        &lt;li&gt;‘self’ used before all stored properties are initialized&lt;/li&gt;
+      &lt;/ol&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/swift-error/error_init.png&quot;&gt;
+          &lt;img src=&quot;/assets/images/swift-error/error_init.png&quot; alt=&quot;init_error&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;error in init method
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Search:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/58327013/swift-5-whats-escaping-closure-captures-mutating-self-parameter-and-how-t&quot;&gt;Swift 5 : What’s ‘Escaping closure captures mutating ‘self’ parameter’ and how to fix it
+&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cuase: Trying to pass to the value type(structure).&lt;/li&gt;
+  &lt;li&gt;Result: Separate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Model&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;crash-nsinvalidargumentexception&quot;&gt;Crash: NSInvalidArgumentException&lt;/h2&gt;

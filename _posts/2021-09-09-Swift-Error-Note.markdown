@@ -9,6 +9,12 @@ tags:
   - iOS
 excerpt: "This note summarizes the errors that occurred during the development of Swift."
 toc: true
+
+init_error:
+  - url: /assets/images/swift-error/error_init.png
+    image_path: assets/images/swift-error/error_init.png
+    alt: "init_error"
+
 ---
 
 ## Type has no member
@@ -40,6 +46,32 @@ toc: true
   - [ios NSUnknownKeyException](https://m.blog.naver.com/akj61300/220063207476)
 - Cause: Referenced the deleted IBOulet in Storyboard.
 - Result: Implemented the IBOulet in source code.
+
+## git fail to commit files: '/newfolder' didnot match any files(s) known to git
+- Error msg:
+> git fail to commit files.   
+> error: did not match any file(s) known to...
+
+- Search:
+	- [git push 오류 error: pathspec '' did not match any file(s) known to git](https://rrecoder.tistory.com/88)
+	- [error: pathspec did not match any file(s) known to git](https://fomaios.tistory.com/entry/해결법-error-pathspec-did-not-match-any-files-known-to-git?category=857760)
+	- [Xcode - error: pathspec '...' did not match any file(s) known to git
+](https://stackoverflow.com/questions/27325747/xcode-error-pathspec-did-not-match-any-files-known-to-git)
+
+- Cause: Mackbook/OSX cannot commit the chaning of foldername.
+- Result: Git commit with console.
+
+## 'self' parameter (inside struct init)
+- Error msg: 
+> 1. Escaping closure captures mutating 'self' parameter   
+> 2. 'self' used before all stored properties are initialized   
+{% include gallery id="init_error" caption="error in init method" %}
+
+- Search: 
+	- [Swift 5 : What's 'Escaping closure captures mutating 'self' parameter' and how to fix it
+](https://stackoverflow.com/questions/58327013/swift-5-whats-escaping-closure-captures-mutating-self-parameter-and-how-t)
+- Cuase: Trying to pass to the value type(structure).
+- Result: Separate the `Model` and `View`.
 
 
 ## Crash: NSInvalidArgumentException

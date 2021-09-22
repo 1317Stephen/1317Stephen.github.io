@@ -301,7 +301,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -316,7 +316,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#underscore-_">Underscore: _</a></li><li><a href="#struct">struct</a></li></ul>
+              <ul class="toc__menu"><li><a href="#underscore-_">Underscore: _</a></li><li><a href="#struct-vs-class">Struct vs Class</a></li></ul>
 
             </nav>
           </aside>
@@ -338,7 +338,54 @@ Underscroe is used to define the parameter is not named. <br />
 In for-loop, “no index, just repeat.”</p>
 </blockquote>
 
-<h2 id="struct">struct</h2>
+<h2 id="struct-vs-class">Struct vs Class</h2>
+<p>: In Swift, <code class="language-plaintext highlighter-rouge">struct</code> and <code class="language-plaintext highlighter-rouge">class</code> have a lot in common.<br />
+-</p>
+<ul>
+  <li></li>
+</ul>
+
+<p>Then, when should I use <code class="language-plaintext highlighter-rouge">struct</code> or <code class="language-plaintext highlighter-rouge">class</code>? 
+I learned this from the example below.</p>
+
+<ul>
+  <li>In my project <a href="https://1317stephen.github.io/swift/project/iOS-Application/">Somking Area v1.0.0</a>, there are 2 variables and 1 function related to loaction.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Address</code> struct: has the information about locality and administrative area name.</li>
+      <li><code class="language-plaintext highlighter-rouge">CLLocationCoordinate2D</code>: store the latitude &amp; longitude of the location.</li>
+      <li><code class="language-plaintext highlighter-rouge">getCoordinateToAddress(coordinate: CLLocationCoordinate2D)</code>: get locality and adminitrative area name from the coordinate.</li>
+    </ul>
+
+    <p>Therefore, I decided to combine the above three things as a single data structure. Location information is the <code class="language-plaintext highlighter-rouge">Model</code> in the project, so I tried to implement these as a <code class="language-plaintext highlighter-rouge">struct</code>.</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">struct</span> <span class="kt">Location</span> <span class="p">{</span>
+    <span class="kd">internal</span> <span class="nf">init</span><span class="p">(</span><span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">administrativeArea</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">locality</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">coordinate</span> <span class="o">=</span> <span class="n">coordinate</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">administrativeArea</span> <span class="o">=</span> <span class="n">administrativeArea</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">locality</span> <span class="o">=</span> <span class="n">locality</span>
+    <span class="p">}</span>
+    <span class="nf">init</span><span class="p">(</span><span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">coordinate</span> <span class="o">=</span> <span class="n">coordinate</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">administrativeArea</span> <span class="o">=</span> <span class="s">""</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">locality</span> <span class="o">=</span> <span class="s">""</span>
+        
+        <span class="nf">exchangeCoordinateToAddress</span><span class="p">(</span><span class="nv">coordinate</span><span class="p">:</span> <span class="n">coordinate</span><span class="p">)</span> <span class="p">{</span>
+          <span class="p">(</span><span class="n">address</span><span class="p">)</span> <span class="k">in</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">administrativeArea</span> <span class="o">=</span> <span class="n">address</span><span class="o">.</span><span class="n">administrativeArea</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">locality</span> <span class="o">=</span> <span class="n">address</span><span class="o">.</span><span class="n">locality</span>   
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span>
+    <span class="k">var</span> <span class="nv">administrativeArea</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="k">var</span> <span class="nv">locality</span><span class="p">:</span> <span class="kt">String</span>
+    
+    <span class="kd">func</span> <span class="nf">exchangeCoordinateToAddress</span><span class="p">(</span><span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Address</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">()))</span>  <span class="p">{</span>
+      <span class="o">......</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
 
 
         
