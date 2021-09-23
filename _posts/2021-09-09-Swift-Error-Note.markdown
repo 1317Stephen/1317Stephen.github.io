@@ -71,7 +71,7 @@ init_error:
 	- [Swift 5 : What's 'Escaping closure captures mutating 'self' parameter' and how to fix it
 ](https://stackoverflow.com/questions/58327013/swift-5-whats-escaping-closure-captures-mutating-self-parameter-and-how-t)
 - Cuase: Trying to pass to the value type(structure).
-- Result: Separate the `Model` and `View`.
+- Result: Change the struct to the class or separate the method.
 
 
 ## Crash: NSInvalidArgumentException

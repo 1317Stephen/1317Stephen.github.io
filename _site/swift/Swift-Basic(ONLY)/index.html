@@ -316,21 +316,12 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#underscore-_">Underscore: _</a></li><li><a href="#struct-vs-class">Struct vs Class</a></li></ul>
+              <ul class="toc__menu"><li><a href="#underscore-_">Underscore: _</a><ul><li><a href="#reference">reference</a></li></ul></li><li><a href="#struct-vs-class">Struct vs Class</a><ul><li><a href="#reference-1">reference</a></li></ul></li></ul>
 
             </nav>
           </aside>
         
         <h2 id="underscore-_">Underscore: _</h2>
-<ul>
-  <li>reference:
-    <ul>
-      <li><a href="https://stackoverflow.com/questions/30876068/what-is-in-swift-telling-me">What is _: in Swift telling me?</a></li>
-      <li><a href="https://medium.com/@codenamehong/swift-underscore-90dcbec5072f">Swift underscore(_)</a></li>
-      <li><a href="https://stackoverflow.com/questions/39627106/why-do-i-need-underscores-in-swift">Why do I need underscores in swift?</a></li>
-    </ul>
-  </li>
-</ul>
 
 <blockquote>
   <p>“ignore this” <br />
@@ -338,11 +329,21 @@ Underscroe is used to define the parameter is not named. <br />
 In for-loop, “no index, just repeat.”</p>
 </blockquote>
 
-<h2 id="struct-vs-class">Struct vs Class</h2>
-<p>: In Swift, <code class="language-plaintext highlighter-rouge">struct</code> and <code class="language-plaintext highlighter-rouge">class</code> have a lot in common.<br />
--</p>
+<h3 id="reference">reference</h3>
 <ul>
-  <li></li>
+  <li><a href="https://stackoverflow.com/questions/30876068/what-is-in-swift-telling-me">What is _: in Swift telling me?</a></li>
+  <li><a href="https://medium.com/@codenamehong/swift-underscore-90dcbec5072f">Swift underscore(_)</a></li>
+  <li><a href="https://stackoverflow.com/questions/39627106/why-do-i-need-underscores-in-swift">Why do I need underscores in swift?</a></li>
+</ul>
+
+<h2 id="struct-vs-class">Struct vs Class</h2>
+<p>: In Swift, <code class="language-plaintext highlighter-rouge">struct</code> and <code class="language-plaintext highlighter-rouge">class</code> have a lot in common.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">init()</code></li>
+  <li>extension</li>
+  <li>protocol</li>
+  <li>subscript</li>
+  <li>property &amp; method</li>
 </ul>
 
 <p>Then, when should I use <code class="language-plaintext highlighter-rouge">struct</code> or <code class="language-plaintext highlighter-rouge">class</code>? 
@@ -387,6 +388,21 @@ I learned this from the example below.</p>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 
+<p>Above code did not work(<a href="https://1317stephen.github.io/swift/Swift-Error-Note/#self-parameter-inside-struct-init">Swift Error Note</a>) because the <code class="language-plaintext highlighter-rouge">struct</code> is the value type, so <code class="language-plaintext highlighter-rouge">exchangeCoordinateToAddress()</code> method called in <code class="language-plaintext highlighter-rouge">init()</code> did not work.</p>
+
+<p>So, <code class="language-plaintext highlighter-rouge">class</code> should be used in these cases,</p>
+<ul>
+  <li>When you want to change the value. (call by reference)</li>
+  <li>inheritance</li>
+  <li>type casting</li>
+</ul>
+
+<p>Most of other cases, there would be no problem to use <code class="language-plaintext highlighter-rouge">struct</code>.</p>
+
+<h3 id="reference-1">reference</h3>
+<ul>
+  <li><a href="https://medium.com/@jgj455/오늘의-swift-상식-struct-class-60fa5fd2218d">Struct, Class</a></li>
+</ul>
 
         
       </section>

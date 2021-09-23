@@ -72,7 +72,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Swift Basic: Only in Swift",
-        "excerpt":"Underscore: _ reference: What is _: in Swift telling me? Swift underscore(_) Why do I need underscores in swift? “ignore this” Underscroe is used to define the parameter is not named. In for-loop, “no index, just repeat.” Struct vs Class : In Swift, struct and class have a lot in...","categories": ["Swift"],
+        "excerpt":"Underscore: _ “ignore this” Underscroe is used to define the parameter is not named. In for-loop, “no index, just repeat.” reference What is _: in Swift telling me? Swift underscore(_) Why do I need underscores in swift? Struct vs Class : In Swift, struct and class have a lot in...","categories": ["Swift"],
         "tags": ["Swift","iOS"],
         "url": "/swift/Swift-Basic(ONLY)/",
         "teaser": null

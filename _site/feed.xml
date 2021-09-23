@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-22T14:50:10+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">Applying Architecture Patterns</title><link href="http://localhost:4000/swift/Swift-Architecture-Pattern/" rel="alternate" type="text/html" title="Applying Architecture Patterns" /><published>2021-09-15T22:08:38+09:00</published><updated>2021-09-15T22:08:38+09:00</updated><id>http://localhost:4000/swift/Swift-Architecture-Pattern</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Architecture-Pattern/">&lt;p&gt;: In this page, I will apply the architecture patterns to &lt;a href=&quot;https://1317stephen.github.io/swift/project/iOS-Application/&quot;&gt;Project Smoking Area&lt;/a&gt; version 1.0.0.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-23T21:32:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog</title><subtitle>https://1317stephen.github.io</subtitle><author><name>Stephen</name></author><entry><title type="html">Applying Architecture Patterns</title><link href="http://localhost:4000/swift/Swift-Architecture-Pattern/" rel="alternate" type="text/html" title="Applying Architecture Patterns" /><published>2021-09-15T22:08:38+09:00</published><updated>2021-09-15T22:08:38+09:00</updated><id>http://localhost:4000/swift/Swift-Architecture-Pattern</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Architecture-Pattern/">&lt;p&gt;: In this page, I will apply the architecture patterns to &lt;a href=&quot;https://1317stephen.github.io/swift/project/iOS-Application/&quot;&gt;Project Smoking Area&lt;/a&gt; version 1.0.0.&lt;/p&gt;
 
 &lt;h3 id=&quot;smoking-area-v100-mvc&quot;&gt;Smoking Area v1.0.0: MVC&lt;/h3&gt;
 &lt;ul&gt;
@@ -53,15 +53,6 @@ rxswift / combine&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /><summary type="html">To-do list &amp; Loadmap</summary></entry><entry><title type="html">QA TO-DO List</title><link href="http://localhost:4000/test/QA-TODO-List/" rel="alternate" type="text/html" title="QA TO-DO List" /><published>2021-09-15T21:42:34+09:00</published><updated>2021-09-15T21:42:34+09:00</updated><id>http://localhost:4000/test/QA-TODO-List</id><content type="html" xml:base="http://localhost:4000/test/QA-TODO-List/"></content><author><name>Stephen</name></author><category term="Test" /><category term="QA" /><category term="Test" /></entry><entry><title type="html">Swift Basic: Only in Swift</title><link href="http://localhost:4000/swift/Swift-Basic(ONLY)/" rel="alternate" type="text/html" title="Swift Basic: Only in Swift" /><published>2021-09-09T16:18:40+09:00</published><updated>2021-09-09T16:18:40+09:00</updated><id>http://localhost:4000/swift/Swift-Basic(ONLY)</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Basic(ONLY)/">&lt;h2 id=&quot;underscore-_&quot;&gt;Underscore: _&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;reference:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/30876068/what-is-in-swift-telling-me&quot;&gt;What is _: in Swift telling me?&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://medium.com/@codenamehong/swift-underscore-90dcbec5072f&quot;&gt;Swift underscore(_)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39627106/why-do-i-need-underscores-in-swift&quot;&gt;Why do I need underscores in swift?&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“ignore this” &lt;br /&gt;
@@ -69,11 +60,21 @@ Underscroe is used to define the parameter is not named. &lt;br /&gt;
 In for-loop, “no index, just repeat.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;struct-vs-class&quot;&gt;Struct vs Class&lt;/h2&gt;
-&lt;p&gt;: In Swift, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt; have a lot in common.&lt;br /&gt;
--&lt;/p&gt;
+&lt;h3 id=&quot;reference&quot;&gt;reference&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/30876068/what-is-in-swift-telling-me&quot;&gt;What is _: in Swift telling me?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@codenamehong/swift-underscore-90dcbec5072f&quot;&gt;Swift underscore(_)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39627106/why-do-i-need-underscores-in-swift&quot;&gt;Why do I need underscores in swift?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;struct-vs-class&quot;&gt;Struct vs Class&lt;/h2&gt;
+&lt;p&gt;: In Swift, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt; have a lot in common.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;init()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;extension&lt;/li&gt;
+  &lt;li&gt;protocol&lt;/li&gt;
+  &lt;li&gt;subscript&lt;/li&gt;
+  &lt;li&gt;property &amp;amp; method&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Then, when should I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt;? 
@@ -116,7 +117,23 @@ I learned this from the example below.&lt;/p&gt;
     &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;exchangeCoordinateToAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coordinate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CLLocationCoordinate2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
       &lt;span class=&quot;o&quot;&gt;......&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /></entry><entry><title type="html">Swift Error Note</title><link href="http://localhost:4000/swift/Swift-Error-Note/" rel="alternate" type="text/html" title="Swift Error Note" /><published>2021-09-09T10:44:40+09:00</published><updated>2021-09-09T10:44:40+09:00</updated><id>http://localhost:4000/swift/Swift-Error-Note</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Error-Note/">&lt;h2 id=&quot;type-has-no-member&quot;&gt;Type has no member&lt;/h2&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Above code did not work(&lt;a href=&quot;https://1317stephen.github.io/swift/Swift-Error-Note/#self-parameter-inside-struct-init&quot;&gt;Swift Error Note&lt;/a&gt;) because the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; is the value type, so &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exchangeCoordinateToAddress()&lt;/code&gt; method called in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;init()&lt;/code&gt; did not work.&lt;/p&gt;
+
+&lt;p&gt;So, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt; should be used in these cases,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;When you want to change the value. (call by reference)&lt;/li&gt;
+  &lt;li&gt;inheritance&lt;/li&gt;
+  &lt;li&gt;type casting&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of other cases, there would be no problem to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference-1&quot;&gt;reference&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@jgj455/오늘의-swift-상식-struct-class-60fa5fd2218d&quot;&gt;Struct, Class&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Stephen</name></author><category term="Swift" /><category term="Swift" /><category term="iOS" /></entry><entry><title type="html">Swift Error Note</title><link href="http://localhost:4000/swift/Swift-Error-Note/" rel="alternate" type="text/html" title="Swift Error Note" /><published>2021-09-09T10:44:40+09:00</published><updated>2021-09-09T10:44:40+09:00</updated><id>http://localhost:4000/swift/Swift-Error-Note</id><content type="html" xml:base="http://localhost:4000/swift/Swift-Error-Note/">&lt;h2 id=&quot;type-has-no-member&quot;&gt;Type has no member&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Search:
     &lt;ul&gt;
@@ -219,7 +236,7 @@ error: did not match any file(s) known to…&lt;/p&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Cuase: Trying to pass to the value type(structure).&lt;/li&gt;
-  &lt;li&gt;Result: Separate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Model&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Result: Change the struct to the class or separate the method.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;crash-nsinvalidargumentexception&quot;&gt;Crash: NSInvalidArgumentException&lt;/h2&gt;
