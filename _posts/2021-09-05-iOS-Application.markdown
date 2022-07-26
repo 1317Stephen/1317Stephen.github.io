@@ -12,7 +12,7 @@ tags:
   - API
   - Alamofire
 
-excerpt: "Develop the iOS Application(Swift) that mark the Smoking/Non-smoking Areas in the map."
+excerpt: "Develop iOS Application(Swift Storyboard) that mark the Smoking/Non-smoking areas in the map."
 toc: true
 
 
@@ -41,38 +41,44 @@ storyboard:
     alt: "storyboard"
 ---
 # 1. Requirements
+
 ## Project Objectives
-Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea.  
+
+Produce an iOS application that display 🚬smoking areas for smokers and 🚭 non-smoking areas for non-smokers in South Korea.  
 
 ## Specification
+
 ### version 1.0.0
-  - Mark smoking areas in the map. (YongSan-Gu)
-  - Mark non-smoking areas in the map. 
-  - The map screen can be zoomed.
-  - Can move to the current position on the map screen.
+
+- Mark smoking areas in the map. (YongSan-Gu)
+- Mark non-smoking areas in the map.
+- The map screen can be zoomed.
+- Can move to the current position on the map screen.
 
 ### Next version
-  - Precise way to mark 'near' positioin in non-smoking area. (current: same administrative & locality)
-  - Mark other localities' smoking area API. (current: smoking area 1, non-smoking area: all South Korea except API error area.)
-  - Show information of the selected area.
-  - Optional: people density 
+
+- Precise way to mark 'near' positioin in non-smoking area. (current: same administrative & locality)
+- Mark other localities' smoking area API. (current: smoking area 1, non-smoking area: all South Korea except API error area.)
+- Show information of the selected area.
+- Optional: people density
 
 <br />
 <br />
-
 
 # 2. Structure/Function
+
 ## version 1.0.0
+
 : one view, one controller, one model.
 
 (1) View(main storyboard)
+
 - Apple MapView
 - two switch(smoking area, nonsmoking area on/off) with each label → stack view
 - stepper(zoom)
 - button(current location)
 
 {% include gallery id="storyboard" caption="Smoking Area v1.0.0 storyboard with constraints" %}
-
 
 (2) Main Controller
 
@@ -85,38 +91,43 @@ Produce iOS apps that display 🚬smoking areas for smokers and 🚭 non-smoking
 - `smokingAreaSwitchAction()`: smoking area annotations on/off.
 - `nonsmokingAreaSwitchAction()`: nonsmoking area annotations on/off.
 
-
 (3) API Model
+
 - nonsmoking area API model
 - smoking area API model
 - address model
 
 ## Next version
+
 - Applying design patterns.
 
 <br />
 <br />
 
-
 # 3. Implementation: Focus on the Problem-Solving
+
 : Among the implementations, parts that take a long time or still have a room for improvement are summarized with the source.
 
 ## version 1.0.0
+
 In version 1.0.0, there are main 4 features.
 
-➀ Move to current location.   
-➁ Zoom in/out map.   
-➂ Display the non-smoking area data near the user on the map.   
-➃ Display the smoking area data of Yonsan-Gu on the map.   
-   
+➀ Move to current location.
+➁ Zoom in/out map.
+➂ Display the non-smoking area data near the user on the map.
+➃ Display the smoking area data of Yonsan-Gu on the map.
+
 The codes below are the main functions needed to implement these four features.
 
 ### Main problems
+
 - call XML/JSON API
 - synchronize with/without loop
 
 ### Functions
-#### ➀ Move to current locations.
+
+#### ➀ Move to current locations
+
 - basic settings in `viewDidLoad()`
 {% highlight swift %}
 {% raw %}
@@ -136,7 +147,6 @@ self.mapView.delegate = self
 {% endraw %}
 {% endhighlight %}
 
-
 - `moveToCurrentLocation()`
 {% highlight swift %}
 {% raw %}
@@ -149,8 +159,8 @@ private func moveToCurrentLocation() {
 {% endraw %}
 {% endhighlight %}
 
-
 #### ➁ Zoom map with Stepper
+
 - basic settings in `viewDidLoad()`
 {% highlight swift %}
 {% raw %}
@@ -161,7 +171,6 @@ mapScaleStepperOulet.minimumValue = -1000
 mapScaleStepperOulet.maximumValue = 1000
 {% endraw %}
 {% endhighlight %}
-
 
 - `mapScaleStepper(_ sender: UIStepper)`
 {% highlight swift %}
@@ -175,18 +184,18 @@ mapScaleStepperOulet.maximumValue = 1000
       mapView.setRegion(region, animated: true)
   } else  {
       region.span.latitudeDelta *= 2.0
-      region.span.longitudeDelta *= 2.0
+region.span.longitudeDelta*= 2.0
       mapView.setRegion(region, animated: true)
-      
+
   }
   mapScaleValue = sender.value
 }
 {% endraw %}
 {% endhighlight %}
 
-
 #### ➂ Add/Remove multiple Annotations in the map
-: `Area` is the structure implemented in the `Model`. 
+
+: `Area` is the structure implemented in the `Model`.
 
 - Add
 {% highlight swift %}
@@ -197,7 +206,7 @@ private func addAnnotations(areas: [Area]){
         annotation.title = area.placeName
         annotation.coordinate = area.coordinate
         annotation.subtitle = area.placeSubtitle.rawValue
-        
+
         return annotation
     }
     mapView.addAnnotations(annotations)
@@ -225,13 +234,13 @@ private func addAnnotations(areas: [Area]){
 {% endraw %}
 {% endhighlight %}
 
-
 #### ➃ Exchange Latitude & Longitude to Address
+
 : This function is used in the `nonsmokingAreaSwitchAction()` function with the flow shown below.
- > Get current location's latitude & longitude    
- > → exchange latitude & longitude to Korean Address    
- > → Extract the specific factor (ex. `administrativeArea`, `locality` of Address)     
- > → get current location's non-smoking areas' API using the factor    
+ > Get current location's latitude & longitude
+ > → exchange latitude & longitude to Korean Address
+ > → Extract the specific factor (ex. `administrativeArea`, `locality` of Address)
+ > → get current location's non-smoking areas' API using the factor
 
 {% highlight swift %}
 {% raw %}
@@ -239,7 +248,7 @@ private func getCoordinateToAddress(coordinate: CLLocationCoordinate2D) {
     let coordinateLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
     let geocoder = CLGeocoder()
     let locale = Locale(identifier: "Ko-kr")
-    
+
     geocoder.reverseGeocodeLocation(coordinateLocation, preferredLocale: locale, completionHandler: {(placemarks, error) in
         if let fullAddress: [CLPlacemark] = placemarks {
             if let locality = fullAddress.last?.locality, let administrativeArea = fullAddress.last?.administrativeArea {
@@ -251,8 +260,8 @@ private func getCoordinateToAddress(coordinate: CLLocationCoordinate2D) {
 {% endraw %}
 {% endhighlight %}
 
-
 #### ➄ API: XML format
+
 : In this project, the `Alamofire`, `CFRunLoop` and `completion` is used to handle the XML type multiple API in the loop.
 
 Calling API with `NSXMLParserDelegate`, handling its data and other ways to synchronize it will be delt with in another post.
@@ -302,8 +311,8 @@ private func callXmlApi(baseUrl: String, endPage: Int, completion: @escaping ([A
 {% endraw %}
 {% endhighlight %}
 
-
 #### ➅ API: JSON format
+
 {% highlight swift %}
 {% raw %}
 private func callJsonApi(urlStr: String, completion: @escaping ([Area])->()) {
@@ -321,8 +330,8 @@ private func callJsonApi(urlStr: String, completion: @escaping ([Area])->()) {
             for row in dataDecode.data {
                 if let latitudeDouble: Double = Double(row.latitude),let longitudeDouble: Double = Double(row.longitude) {
                     smokingAreas.append(Area(placeSubtitle: Area.PlaceSubtitle.Smoking, placeName: row.installationLocation, coordinate: CLLocationCoordinate2D(latitude: latitudeDouble, longitude: longitudeDouble)))
-                }   
-            }           
+                }
+            }
             completion(smokingAreas)
         } catch let error {
             print("JSONDecoder Error: \(error)")
@@ -333,32 +342,29 @@ private func callJsonApi(urlStr: String, completion: @escaping ([Area])->()) {
 {% endraw %}
 {% endhighlight %}
 
-
-
 <!-- #### ➆
 {% highlight swift %}
 {% raw %}
 {% endraw %}
 {% endhighlight %}
 
-
 ➀➁➂➃➄➅➆➇➈➉
 
 #### -->
 
-
 ### Further Improvement
+
 #### Refactoring
+
 - guard
 - log(current: print) → warning/error/info/debug
 - Other ways to syncßhronize the API function.
 - Unit Test
 - (UI Test?)
 
-#### Calling multiple APIs FAST without CPU, Momory overloading.
+#### Calling multiple APIs FAST without CPU, Momory overloading
+
 : In version 1.0.0, the application is quite slow especially when calling API.
-
-
 
 <!-- ## Problems
 ### 1) Calling API and extract Data.
@@ -371,7 +377,6 @@ First time, I tried to call API with just `XMLParserDelegate` in Swift and `pars
 
 [XML parsing: This page has full coding and clear description.]: https://rhammer.tistory.com/131
 
-
 - `Alamofire`
 
 [Install Alamofire Library]: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=hoon299&logNo=221589855345
@@ -380,20 +385,14 @@ First time, I tried to call API with just `XMLParserDelegate` in Swift and `pars
 
 [Podfile usage and CocoaPods install]: https://zeddios.tistory.com/25
 
-
 #### JSON Format API
 : Smoking Area in Yong-San Gu send API in JSON format. 
-
-
 
 #### Synchronize the Asynchronous function
 - Without Loop: Completion
 
-
-
 - call multiple Open APIs with Loop: CFRunLoop
 : The nonsmoking area Open API has the whole country 
-
 
 ### 2) Calling multiple API pages(upto 900 APIs with 1000 rows) FAST without CPU, Momory overloading.
 
@@ -425,17 +424,10 @@ What had to be considered in the process was the definition of 'near'.
 The simplest thing is the circle of the pinpoint, but it is impossible to call the APIS with range of latitude and longitude.
 The next thing is to 
 
-
-
-
 - Should I call the entire data in the first time when button pressed?
   - This is way too heavy. (Calling the 1/4 of the entire data also takes too long... and don't want to recommended)
 
-
-
-
 http://api.data.go.kr/openapi/tn_pubr_public_prhsmk_zn_api?serviceKey=54PZHQOEMuoKu%2F2qc%2FePaSammRtXkjShRY1JS4dLgXmCr1LOoLA3keN2CApbO65Uj64E6O3oxWkwYypedHf8sA%3D%3D&pageNo=0&numOfRows=100&ctprvnNm=서울특별시&type=xml
-
 
 ### 3) Other problems.
 - Settings
@@ -447,7 +439,6 @@ http://api.data.go.kr/openapi/tn_pubr_public_prhsmk_zn_api?serviceKey=54PZHQOEMu
   [ATS Errors]: https://y8k.me/article/847
 
 ➀➁➂➃➄➅➆➇➈➉
-
 
 - Show multiple `Annotations` in Apple MapView 
 : non-smoking area datas in `areas`struct Array → mapping to annotation → add annotations in mapView. (For security purpose, Variable names and details are slightly different from actual code developed.)
@@ -466,8 +457,6 @@ self.map.addAnnotations(annotations)
 self.map.showAnnotations(annotations, animated: false)
 {% endhighlight %}
 
-
-
 (reference: 
 Similar problem: 
 https://stackoverflow.com/questions/51795862/how-to-add-annotations-in-map-view-only-show-one-pin
@@ -475,23 +464,21 @@ https://stackoverflow.com/questions/51795862/how-to-add-annotations-in-map-view-
 Fix: 
 https://stackoverflow.com/questions/36666968/how-to-set-up-array-for-multi-annotations-with-swift/36668011#36668011) -->
 
- 
 <br />
 <br />
 
 # 4. Result
+
 ## version 1.0.0
+
 <video height="900" controls="controls">
   <source src="/assets/images/smokingArea/smokingArea_v1_video.mp4" type="video/mp4">
 </video>
 - period: Aug 9, 2021 ~ Sep 5, 2021
 
-
-
 [application.properties file]: /project/Web-Application-SpringBoot-Impementation/#applicationproperties
 [Config package implementation]: /project/Web-Application-SpringBoot-Impementation/#config-package
 
 [ApiResponse package implementation]: /project/Web-Application-SpringBoot-Impementation/#apiresponse-package
-
 
 [Main API packages implementation]: /project/Web-Application-SpringBoot-Impementation/#main-api-packages
