@@ -1,0 +1,360 @@
+---
+# layout: posts
+title: "[SwiftUI] Vocamera"
+date: 2022-07-07 19:40:22 +0900
+categories:
+  - Swift
+  - Project
+tags:
+  - iOS
+  - Swift
+  - SwiftUI
+  - CoreData
+  - PhotosUI
+  - VisionKit
+  - NaturalLanguage
+  
+
+excerpt: "Develop iOS Application(SwiftUI) 'Vocamera (Voca + Camera)' that scans pages, extracts words, and make them into a wordbook."
+toc: true
+
+
+frontend-plan-draft:
+  - url: /assets/images/fronted-draft.png
+    image_path: assets/images/fronted-draft.png
+    alt: "Frontend plan draft"
+
+v1.0.0_screenshots:
+  - url: /assets/images/Home_page.png
+    image_path: assets/images/Home_page.png
+    alt: "Home page"
+  - url: /assets/images/Home_page_with_sidebar_open.png
+    image_path: assets/images/Home_page_with_sidebar_open.png
+    alt: "Home page with sidebar"
+  - url: /assets/images/Post_page.png
+    image_path: assets/images/Post_page.png
+    alt: "Post page"
+  - url: /assets/images/Article_page.png
+    image_path: assets/images/Article_page.png
+    alt: "Article page"
+
+storyboard:
+  - url: /assets/images/smokingArea/smokingArea_mainstoryboard_with_constraints_v1.png
+    image_path: assets/images/smokingArea/smokingArea_mainstoryboard_with_constraints_v1.png
+    alt: "storyboard"
+
+
+VocaNoteView:
+  - url: /assets/images/Vocamera/1_0_0/VocaNoteView.png
+    image_path: assets/images/Vocamera/1_0_0/VocaNoteView.png
+    alt: "VocaNoteView"
+
+AddVocaNoteView:
+  - url: /assets/images/Vocamera/1_0_0/AddVocaNoteView.png
+    image_path: assets/images/Vocamera/1_0_0/AddVocaNoteView.png
+    alt: "AddVocaNoteView"
+
+VocaView:
+  - url: /assets/images/Vocamera/1_0_0/VocaView.png
+    image_path: assets/images/Vocamera/1_0_0/VocaView.png
+    alt: "VocaView"
+
+ImageRecognizeView:
+  - url: /assets/images/Vocamera/1_0_0/ImageRecognizeView.png
+    image_path: assets/images/Vocamera/1_0_0/ImageRecognizeView.png
+    alt: "ImageRecognizeView"
+
+v1.0.0_Views:
+  - url: /assets/images/Vocamera/1_0_0/VocaNoteView.png
+    image_path: assets/images/Vocamera/1_0_0/VocaNoteView.png
+    alt: "VocaNoteView"
+  - url: /assets/images/Vocamera/1_0_0/AddVocaNoteView.png
+    image_path: assets/images/Vocamera/1_0_0/AddVocaNoteView.png
+    alt: "AddVocaNoteView"
+  - url: /assets/images/Vocamera/1_0_0/VocaView.png
+    image_path: assets/images/Vocamera/1_0_0/VocaView.png
+    alt: "VocaView"
+  - url: /assets/images/Vocamera/1_0_0/ImageRecognizeView.png
+    image_path: assets/images/Vocamera/1_0_0/ImageRecognizeView.png
+    alt: "ImageRecognizeView"
+
+v1.0.0_VocaNoteViews:
+  - url: /assets/images/Vocamera/1_0_0/VocaNoteView.png
+    image_path: assets/images/Vocamera/1_0_0/VocaNoteView.png
+    alt: "VocaNoteView"
+  - url: /assets/images/Vocamera/1_0_0/AddVocaNoteView.png
+    image_path: assets/images/Vocamera/1_0_0/AddVocaNoteView.png
+    alt: "AddVocaNoteView"
+
+v1.0.0_VocaAndImageRecogView:
+  - url: /assets/images/Vocamera/1_0_0/VocaView.png
+    image_path: assets/images/Vocamera/1_0_0/VocaView.png
+    alt: "VocaView"
+  - url: /assets/images/Vocamera/1_0_0/ImageRecognizeView.png
+    image_path: assets/images/Vocamera/1_0_0/ImageRecognizeView.png
+    alt: "ImageRecognizeView"
+
+v1.0.0_coreData:
+  - url: /assets/images/Vocamera/1_0_0/coredata.png
+    image_path: assets/images/Vocamera/1_0_0/coredata.png
+    alt: "coreData"
+
+v1.0.0_appstore:
+  - url: /assets/images/Vocamera/1_0_0/vocamera_appstore.PNG
+    image_path: assets/images/Vocamera/1_0_0/vocamera_appstore.PNG
+    alt: "appstore"
+
+
+
+---
+# 1. Requirements
+
+## Project Objectives
+
+While studying English, I found it troublesome to write down all of English words that I didn't know in the book. I thought it would be useful if there was an application that made a page of a book into an English vocabulary. I looked it up in the App Store, but there was no such application, so I made it myself!
+
+## Specification
+
+### version 1.0.0
+
+- Vocabulary
+  - Create
+  - Edit
+  - Delete
+- Vocabulary Note
+  - Create
+  - Edit
+  - Delete
+- Get Image from
+  - Library
+  - Camera
+- Convert Image to Words
+- Extract only the vocabulary of all words
+
+<!-- ### Next version -->
+
+<br />
+<br />
+
+# 2. Structure/Function
+
+## version 1.0.0
+
+Roughly, Vocamera version 1.0.0 consists of the following:
+
+- 2 Models: Voca, VocaNote Entities - Core Data Classes & Properties
+- 4 Views: Voca, VocaNote, AddVocaNote, ImageRecognize
+- Image Process structs: Library, Scanner
+- TextRecognizer Class
+- TextProcess Class
+- Others: Utilities, Persistence...
+
+<!-- <br /> -->
+<br />
+
+(1) Models
+: Each entity has a Class and Properties.
+{% include gallery id="v1.0.0_coreData" caption="CoreData" %}
+
+(2) Views
+: `ImageRecognizeView` can access to the photo library or camera.
+<!-- - VocaNote Views: -->
+
+{% include gallery id="v1.0.0_VocaNoteViews" caption="VocaNoteView(left), AddVocaNoteView(right)" %}
+
+{% include gallery id="v1.0.0_VocaAndImageRecogView" caption="VocaView(left), ImageRecognizeView(right)" %}
+
+(3) Image Process Structs
+: Each struct has its `Coordinate` Class and load PhotoLibrary or Scanner.
+
+(4) TextRecognizer Class, TextProcess Class:
+: `TextRecognizer` Class get UIImages or CGImages and transform them into texts. `TextProcess` Class removes whitespace, unecessary words.
+
+(5) Others
+: `UtilityVies`, `UtilityExtensions`, `Persistence`...
+
+<!-- ## Next version -->
+
+<br />
+<br />
+
+# 3. Implementation: Focus on the Problem-Solving
+
+: Among the implementations, parts that take a long time or still have a room for improvement are summarized with the source.
+
+## version 1.0.0
+
+In version 1.0.0, the followings are the main features that were difficult(or first) to implement.
+
+➀ Use CoreData<br>
+➁ Use various View(Navigation View, fullScreenCover, sheet...) and personal EditMode<br>
+➂ Take a pictures or import an existing images and convert it into text.<br>
+➃ Trim text extracted from the image.<br>
+⑤ Determine a valid words in trimmed text.<br>
+<!-- ⑥⑦⑧ -->
+
+The codes below are the main functions needed to implement these features.
+
+### Main problems
+
+- Transform Image to Texts
+- Handling with texts
+
+### Functions
+
+#### ➀ View: Switch Screen, Presonal EditMode
+
+: Navigation View, fullScreenCover, sheet...
+
+- Personal EditMode
+{% highlight swift %}
+{% raw %}
+@Environment(\.editMode) private var editMode
+@State private var mode: EditMode = .inactive
+...
+...
+...
+.onChange(of: mode, perform: { newMode in
+            if newMode == .active {
+                editNote = EditNote(vocaNote: parentVocaNote, viewContext: viewContext)
+            } else if newMode == .inactive {
+                if parentVocaNote.title.count < 1 {
+                    parentVocaNote.title = editNote.beforeNoteTitle
+                    showNoteTitleAlert = true
+                    self.mode = .active
+                }
+            }
+        })
+.navigationBarItems(leading: mode == .active ? cancelButton : nil)
+.environment(\.editMode, $mode)
+...
+...
+...
+{% endraw %}
+{% endhighlight %}
+
+#### ➁ Transform Images to text
+
+- Input: UIImages or CGImages (In case of UIImage, transform into CGImage)
+- `recognizeText` function: Transform CGImage into text using `DispatchQueue` and `completionHandler`.
+
+{% highlight swift %}
+{% raw %}
+    func recognizeText(withCompletionHandler completionHandler:@escaping ([String])-> Void) {
+        queue.async {
+            var cgImages = [CGImage]()
+            if self.uiImages == nil {
+                cgImages = (0..<self.cameraScan!.pageCount).compactMap({
+                    self.cameraScan?.imageOfPage(at: $0).cgImage
+                })
+            } else if let uiImages = self.uiImages {
+                for uiImage in uiImages {
+                    let ciImage = CIImage(image: uiImage)!
+                    let ciContext = CIContext(options: nil)
+                    let cgImage = ciContext.createCGImage(ciImage, from: ciImage.extent)
+                    cgImages.append(cgImage!)
+                }
+            }
+            let imagesAndRequests = cgImages.map({(image: $0, request:VNRecognizeTextRequest())})
+            let textPerPage = imagesAndRequests.map{image,request->String in
+                let handler = VNImageRequestHandler(cgImage: image, options: [:])
+                do{
+                    try handler.perform([request])
+                    guard let observations = request.results else { return "" }
+                    return observations.compactMap({$0.topCandidates(1).first?.string}).joined(separator: "\n")
+                }
+                catch{
+                    print("Failed to recognize the text: ", error)
+                    return ""
+                }
+            }
+            DispatchQueue.main.async {
+                completionHandler(textPerPage)
+            }
+        }
+    }
+{% endraw %}
+{% endhighlight %}
+
+#### ➂ Trim text & Validation
+
+- Trim: Using `NLTagger`'s options & personal NLTag extesion.
+{% highlight swift %}
+{% raw %}
+extension NLTag {
+    func isBeHaveVerb(word: String) -> Bool {
+        if NLTagConstants.beVerb.contains(word) || NLTagConstants.haveVerb.contains(word) || NLTagConstants.otherEraseWords.contains(word) { return true }
+        else { return false }
+    }
+    func containsNumbers(word: String) -> Bool {
+        let numberSet = NSCharacterSet.decimalDigits
+
+        if word.rangeOfCharacter(from: numberSet) != nil { return true }
+        else { return false }
+    }
+    ...
+    ...
+    ...
+}
+{% endraw %}
+{% endhighlight %}
+
+- Validation: `NLtag`'s `enumerateTags`
+
+{% highlight swift %}
+{% raw %}
+...
+...
+...
+tagger.enumerateTags(in: sentences.startIndex..<sentences.endIndex, unit: .word, scheme: .lexicalClass, options: options) { tag, tokenRange in
+            let word = "\(sentences[tokenRange])"
+            guard let tag = tag, word.count > 1, !tag.containsNumbers(word: word), !tag.isBeHaveVerb(word: word), tag != .conjunction, tag != .number, tag != .pronoun ,tag != .preposition else { return true }
+            words.append(word)
+            return true
+        }
+
+{% endraw %}
+{% endhighlight %}
+
+<!-- #### ➆
+{% highlight swift %}
+{% raw %}
+{% endraw %}
+{% endhighlight %}
+
+➀➁➂➃➄➅➆➇➈➉
+
+#### -->
+
+<!-- ### Further Improvement -->
+
+<!-- #### Refactoring -->
+
+<br />
+<br />
+
+<!-- # 4. Tests -->
+
+# 4. Result
+
+## version 1.0.0
+
+- period: May 15, 2022 ~ July 6, 2022
+
+- Appstore  
+
+![Vocamera 1.0.0 Appstore](/assets/images/Vocamera/1_0_0/vocamera_appstore.PNG){: width="420"}
+
+- Vocamera 1.0.0 (video)  
+
+<video height="900" controls="controls">
+  <source src="/assets/images/Vocamera/1_0_0/vocamera_vid.MP4" type="video/mp4">
+
+</video>
+
+[application.properties file]: /project/Web-Application-SpringBoot-Impementation/#applicationproperties
+[Config package implementation]: /project/Web-Application-SpringBoot-Impementation/#config-package
+
+[ApiResponse package implementation]: /project/Web-Application-SpringBoot-Impementation/#apiresponse-package
+
+[Main API packages implementation]: /project/Web-Application-SpringBoot-Impementation/#main-api-packages
